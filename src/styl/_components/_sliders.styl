@@ -17,3 +17,126 @@
 			opacity 0
 			visibility hidden
 			pointer-events none
+	
+	&__pagination
+		text-align center
+		.swiper-pagination-bullet
+			opacity 1
+			width 8px
+			height 8px
+			background-color $pagination-color
+			transition background-color .17s ease-in-out
+			margin-right 16px
+			&:last-child
+				margin-right 0
+			&:hover
+				background-color $accent-color
+			&:focus
+				outline none
+			&-active
+				background-color $accent-color
+				
+	&__navigation
+		font-size 0
+		.btn__arrow
+			margin-right 60px
+			&:last-child
+				margin-right 0
+
+.swiper-container
+	*
+		box-sizing border-box
+// Promo slider
+.promo
+	&-slider
+		position relative
+		.slider__pagination
+			position absolute
+			horisontal-center()
+			z-index 1
+			bottom 95px
+			
+		.swiper-slide
+			padding-bottom 50px
+	&-slide
+		height 580px
+		display flex
+		align-items center
+		padding 100px 0
+		box-shadow 0px 15px 35px rgba(0, 0, 0, 0.07)
+		br(0,0,6px,6px)
+		.page-title
+			margin-bottom 40px
+		&__text
+			font-size 16px
+			margin-bottom 40px
+			b, span, strong
+				color $accent-color
+				font-family $Heavy
+				
+		&__btns
+			.btn
+				margin-right 20px
+				&:last-child
+					margin-right 0
+					
+// Car card
+.car-card
+	&__slider
+		background-color $basic-white-color
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			fullSize()
+			box-shadow inset 0px 0px 14px rgba($basic-black-color, 0.08)
+			z-index 3
+		// .swiper
+		// 	&-slide,
+		// 	&-container,
+		// 	&-wrapper
+		// 		width 100% !important
+		&--slide
+			position relative
+			height 340px
+			width 100%
+		
+			img
+				display block
+				width 100%
+				height 100%
+				object-fit cover
+				
+		.slider
+			&__pagination
+				position absolute
+				horisontal-center()
+				bottom 15px
+				z-index 4
+				
+				.swiper-pagination-bullet
+					box-shadow 0px 4px 4px rgba($basic-black-color, 0.07)
+					&-active
+						box-shadow none
+			
+			&__navigation
+				position absolute	
+				vertical-center()
+				z-index 4
+				width 100%
+				display flex
+				align-items center
+				justify-content space-between
+				padding-left 20px
+				padding-right 20px
+				
+			
+		.btn__arrow
+			width 15px
+			height 33px		
+				
+		
+
+.stocks-slider
+	&__slide	
+		padding 0 15px 50px 15px

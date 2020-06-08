@@ -15,45 +15,75 @@ input[type="search"]::-webkit-search-results-decoration
 
 
 .form
-	max-width 600px
-	margin 40px auto
+	&-group
+		&__input
+			display block
+			background-color $light-color
+			border 1px solid transparent
+			border-radius 6px
+			@extends .box-shadow
+			font 14px $Reg
+			color $alternate-text-color
+			padding 15px
+			&:focus,
+			&:hover
+				border-color $accent-color
+				
+			&:focus
+				+ .arrow
+					svg
+						fill $accent-color
+				
+			&::-webkit-input-placeholder
+				font 1em $Reg
+				color $text-color
+			&::-moz-placeholder
+				font 1em $Reg
+				color $text-color
+			&:-moz-placeholder
+				font 1em $Reg
+				color $text-color
+			&:-ms-input-placeholder
+				font 1em $Reg
+				color $text-color
+				
+			&.is-error
+				border-color red
+				
+			&.is-disabled,
+			&:disabled
+				pointer-events none
+				
+				+ .arrow
+					display none
+				
+			&--wrapper
+				position relative
+				.arrow
+					position absolute
+					vertical-center()
+					right 15px
+					pointer-events none
+				
+		&__select
+			display block
+			width 100%
+			padding-right 45px
+					
+		&__inputs--row
+			margin-left -7.5px
+			margin-right -7.5px
+			.form-group__input--wrapper
+				flex 1
+				max-width 350px
+				padding 0 7.5px
 	
-.input
-	display block
-	width 100%
-	padding 10px 15px
-	text-align left
-	background-color $light-color
-	border 2px solid transparent
-	font 1em $Reg
-	color $text-color
-	&:hover,
-	&:focus
-		border-color $accent-color
-	&::-webkit-input-placeholder
-		font 1em $Reg
-		color $text-color
-	&::-moz-placeholder
-		font 1em $Reg
-		color $text-color
-	&:-moz-placeholder
-		font 1em $Reg
-		color $text-color
-	&:-ms-input-placeholder
-		font 1em $Reg
-		color $text-color
-		
-	&__wrapper
-		margin-bottom 15px
-		position relative
-		
-	&.is-error
-		border-color red
+
 	
 
 
-.checkbox,
-.radio
+.form-group__checkbox,
+.form-group__radio
 	position relative
 	display inline-block
 	margin-left 0
@@ -69,13 +99,13 @@ input[type="search"]::-webkit-search-results-decoration
 		left 0
 		vertical-center()
 			
-	&__label
+	&--label
 		cursor pointer
 		display inline-block
 		input
 			display none
 
-.checkbox
+.form-group__checkbox
 	&:before
 		border-radius 4px
 		width 18px
@@ -91,7 +121,7 @@ input[type="search"]::-webkit-search-results-decoration
 		left 3px
 		top 8px
 		opacity 0
-	&__label
+	&--label
 		input
 			&:checked 
 				+ span
@@ -101,7 +131,7 @@ input[type="search"]::-webkit-search-results-decoration
 					&:after
 						opacity 1
 			
-.radio
+.form-group__radio
 	&:before
 	&:after
 		border-radius 50%
@@ -118,7 +148,7 @@ input[type="search"]::-webkit-search-results-decoration
 		top 8px
 		opacity 0
 		
-	&__label
+	&--label
 		input
 			&:checked 
 				+ span
@@ -128,4 +158,17 @@ input[type="search"]::-webkit-search-results-decoration
 					&:after
 						opacity 1
 
+
+.search-form
+
+	.form-group
+		&__inputs--row
+			margin-left -12.5px
+			margin-right -12.5px
+		&__input
+			&--wrapper
+				padding 0 12.5px
+				.arrow
+					right 27.5px
+		
 		

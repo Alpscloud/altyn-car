@@ -1,0 +1,52 @@
+// Links
+.link-with-ic
+	display inline-block
+	position relative
+	text-transform uppercase
+	line-height 1
+	font 14px $Semibold
+	color $lighter-text-color
+	padding-right 30px
+	&__ic
+		display block
+		width 20px
+		height 20px
+		position absolute
+		right 0
+		vertical-center()
+	
+	svg
+		svg()
+		fill $lighter-text-color
+		
+	&:hover
+		color $accent-color
+		svg
+			fill $accent-color
+			
+.phone-link
+	display inline-block
+	position relative
+	font 12px $Semibold
+	color $accent-color
+	&:hover
+		color $text-color
+	&:before 
+		content '|'
+		
+// Arrow
+.arrow
+	display inline-block
+	width 10px
+	height 7px
+	svg
+		svg()
+		fill $alternate-text-color
+	&:hover
+		svg
+			fill $accent-color
+			
+
+// Permalink
+.permalink__wrapper
+	margin-top 10px

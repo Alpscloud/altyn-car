@@ -102,10 +102,24 @@ img
 	width 100%
 	height 100%
 	
-.sect-title
-	font 24px $Bold
-	line-height 29px
-	margin-bottom 25px
+.sect
+	&-title
+		font 24px $Bold
+		line-height 29px
+		margin-bottom 25px
+		&__with-text
+			margin-bottom 15px
+		&__row
+			margin-bottom 50px
+			.sect-title
+				margin-bottom 0
+			
+			.slider__navigation
+				margin-left 150px
+	&-text
+		font-size 14px
+		color $light-text-color
+		margin-bottom 65px
 		
 .page-title
 	font 52px $Heavy
@@ -176,6 +190,20 @@ img
 	
 .b-radius
 	border-radius 10px
+
+
+.main
+	padding-top 87px
 	
+.list-title
+	color $accent-color
+	font 18px $Bold
+	margin-bottom 30px
+	a
+		color inherit
+		border-bottom 1.5px solid
+		&:hover
+			color $text-color
+			border-color $text-color
 
 // ========== ========== ========== ========== ========== ==========

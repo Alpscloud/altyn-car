@@ -10,6 +10,473 @@
 
 		<!-- Main -->
 		<main class="main">
+			<!-- Section promo -->
+			<section class="sect__promo">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="promo-slider">
+					<div class="swiper-container js-promo-slider">
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div class="swiper-slide">
+								<div class="promo-slide bg" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+									<div class="container">
+										<div class="promo-slide__content">
+											<h1 class="page-title">Лучшие автомобили<br>по выгодной цене</h1>
+											<p class="promo-slide__text">Сейчас на выбор <strong>2 546</strong> авто</p>
+
+											<div class="promo-slide__btns">
+												<a href="page-buy-car.html" class="btn">Купить авто</a>
+												<a href="page-sale-car.html" class="btn btn-light">Продать авто</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //Slide -->
+
+							<!-- Slide -->
+							<div class="swiper-slide">
+								<div class="promo-slide bg" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+									<div class="container">
+										<div class="promo-slide__content">
+											<h1 class="page-title">Лучшие автомобили<br>по выгодной цене2</h1>
+											<p class="promo-slide__text">Сейчас на выбор <strong>2 546</strong> авто</p>
+
+											<div class="promo-slide__btns">
+												<a href="page-buy-car.html" class="btn">Купить авто</a>
+												<a href="page-sale-car.html" class="btn btn-light">Продать авто</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //Slide -->
+						</div>
+					</div>
+
+					<!-- Pagination -->
+					<div class="slider__pagination js-promo-slider-pagination"></div>
+					<!-- //Pagination -->
+				</div>
+			</section>
+			<!-- //Section promo -->
+
+			<!-- Section search -->
+			<section class="sect__search gutter-bottom">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+					<div class="search">
+						<!-- Tab controls -->
+						<div class="search-tabs__controls">
+							<button class="search-tabs__controls--btn is-active js-tab-btn" type="button">Поиск авто</button>
+							<button class="search-tabs__controls--btn js-tab-btn" type="button">Все марки</button>
+						</div>
+						<!-- //Tab controls -->
+
+						<div class="search-tabs__content">
+							<div class="search-tabs__content--item js-tab-content">
+								<!-- Search form -->
+								<form  class="search-form">
+									<div class="row align-horisontal-start form-group__inputs--row">
+										<div class="form-group__input--wrapper">
+											<select name="car-Brand"  class="form-group__input form-group__select">
+												<option value="Марка" disabled>Выберите марку</option>
+												<option value="Марка 1">Марка 1</option>
+												<option value="Марка 2">Марка 2</option>
+												<option value="Марка 3">Марка 3</option>
+											</select>
+
+											{% include '../parts/components/interface/arrow.html' %}
+										</div>
+
+										<div class="form-group__input--wrapper">
+											<select name="car-Model"  class="form-group__input form-group__select is-disabled" disabled>
+												<option value="Модель" disabled>Выберите модель</option>
+												<option value="Модель 1">Модель 1</option>
+												<option value="Модель 2">Модель 2</option>
+												<option value="Модель 3">Модель 3</option>
+											</select>
+
+											{% include '../parts/components/interface/arrow.html' %}
+										</div>
+
+										<div class="form-group__input--wrapper">
+											<button class="btn" type="submit">Подобрать</button>
+										</div>
+									</div>
+								</form>
+								<!-- //Search form -->
+							</div>
+
+							<div class="search-tabs__content--item js-tab-content">
+								<div class="car-categories">
+									<div class="row align-horisontal-start">
+										<div class="car-categories__col">
+											<h3 class="list-title"><a href="#">Легковые</a></h3>
+											<ul>
+												<li><a href="#">Все марки <span>(2256)</span></a></li>
+												<li><a href="#">Новые <span>(145)</span></a></li>
+												<li><a href="#">Acura <span>(1)</span></a></li>
+												<li><a href="#">Audi <span>(65)</span></a></li>
+												<li><a href="#">BMW <span>(118)</span></a></li>
+												<li><a href="#">Cadillac <span>(2)</span></a></li>
+												<li><a href="#">Chery <span>(10)</span></a></li>
+												<li><a href="#">Chevrolet <span>(77)</span></a></li>
+												<li><a href="#">Chrysler <span>(3)</span></a></li>
+												<li><a href="#">Citroen <span>(24)</span></a></li>
+												<li><a href="#">Daewoo <span>(7)</span></a></li>
+												<li><a href="#">Daihatsu <span>(3)</span></a></li>
+												<li><a href="#">Datsun <span>(6)</span></a></li>
+												<li><a href="#">Dodge <span>(4)</span></a></li>
+												<li><a href="#">Fiat <span>(4)</span></a></li>
+												<li><a href="#">Ford <span>(110)</span></a></li>
+												<li><a href="#">Geely <span>(4)</span></a></li>
+												<li><a href="#">Genesis <span>(1)</span></a></li>
+												<li><a href="#">GMC <span>(1)</span></a></li>
+
+												<li><a href="#">Все марки <span>(2256)</span></a></li>
+												<li><a href="#">Новые <span>(145)</span></a></li>
+												<li><a href="#">Acura <span>(1)</span></a></li>
+												<li><a href="#">Audi <span>(65)</span></a></li>
+												<li><a href="#">BMW <span>(118)</span></a></li>
+												<li><a href="#">Cadillac <span>(2)</span></a></li>
+												<li><a href="#">Chery <span>(10)</span></a></li>
+												<li><a href="#">Chevrolet <span>(77)</span></a></li>
+												<li><a href="#">Chrysler <span>(3)</span></a></li>
+												<li><a href="#">Citroen <span>(24)</span></a></li>
+												<li><a href="#">Daewoo <span>(7)</span></a></li>
+												<li><a href="#">Daihatsu <span>(3)</span></a></li>
+												<li><a href="#">Datsun <span>(6)</span></a></li>
+												<li><a href="#">Dodge <span>(4)</span></a></li>
+												<li><a href="#">Fiat <span>(4)</span></a></li>
+												<li><a href="#">Ford <span>(110)</span></a></li>
+												<li><a href="#">Geely <span>(4)</span></a></li>
+												<li><a href="#">Genesis <span>(1)</span></a></li>
+												<li><a href="#">GMC <span>(1)</span></a></li>
+
+												<li><a href="#">Все марки <span>(2256)</span></a></li>
+												<li><a href="#">Новые <span>(145)</span></a></li>
+												<li><a href="#">Acura <span>(1)</span></a></li>
+												<li><a href="#">Audi <span>(65)</span></a></li>
+												<li><a href="#">BMW <span>(118)</span></a></li>
+												<li><a href="#">Cadillac <span>(2)</span></a></li>
+												<li><a href="#">Chery <span>(10)</span></a></li>
+												<li><a href="#">Chevrolet <span>(77)</span></a></li>
+												<li><a href="#">Chrysler <span>(3)</span></a></li>
+												<li><a href="#">Citroen <span>(24)</span></a></li>
+												<li><a href="#">Daewoo <span>(7)</span></a></li>
+												<li><a href="#">Daihatsu <span>(3)</span></a></li>
+												<li><a href="#">Datsun <span>(6)</span></a></li>
+												<li><a href="#">Dodge <span>(4)</span></a></li>
+												<li><a href="#">Fiat <span>(4)</span></a></li>
+												<li><a href="#">Ford <span>(110)</span></a></li>
+												<li><a href="#">Geely <span>(4)</span></a></li>
+												<li><a href="#">Genesis <span>(1)</span></a></li>
+												<li><a href="#">GMC <span>(1)</span></a></li>
+											</ul>
+										</div>
+										<!-- //col -->
+
+										<div class="car-categories__col">
+											<h3 class="list-title"><a href="#">Внедорожники и пикапы</a></h3>
+											<ul>
+												<li><a href="#">Все марки <span>(2256)</span></a></li>
+												<li><a href="#">Новые <span>(145)</span></a></li>
+												<li><a href="#">Acura <span>(1)</span></a></li>
+												<li><a href="#">Audi <span>(65)</span></a></li>
+												<li><a href="#">BMW <span>(118)</span></a></li>
+												<li><a href="#">Cadillac <span>(2)</span></a></li>
+												<li><a href="#">Chery <span>(10)</span></a></li>
+												<li><a href="#">Chevrolet <span>(77)</span></a></li>
+												<li><a href="#">Chrysler <span>(3)</span></a></li>
+												<li><a href="#">Citroen <span>(24)</span></a></li>
+												<li><a href="#">Daewoo <span>(7)</span></a></li>
+												<li><a href="#">Daihatsu <span>(3)</span></a></li>
+												<li><a href="#">Datsun <span>(6)</span></a></li>
+												<li><a href="#">Dodge <span>(4)</span></a></li>
+
+											</ul>
+										</div>
+										<!-- //col -->
+
+										<div class="car-categories__col">
+											<h3 class="list-title"><a href="#">Минивены и микроавтобусы</a></h3>
+											<ul>
+												<li><a href="#">Все марки <span>(2256)</span></a></li>
+												<li><a href="#">Новые <span>(145)</span></a></li>
+												<li><a href="#">Acura <span>(1)</span></a></li>
+												<li><a href="#">Audi <span>(65)</span></a></li>
+												<li><a href="#">BMW <span>(118)</span></a></li>
+												<li><a href="#">Cadillac <span>(2)</span></a></li>
+												<li><a href="#">Chery <span>(10)</span></a></li>
+												<li><a href="#">Chevrolet <span>(77)</span></a></li>
+												<li><a href="#">Chrysler <span>(3)</span></a></li>
+												<li><a href="#">Citroen <span>(24)</span></a></li>
+												<li><a href="#">Daewoo <span>(7)</span></a></li>
+
+											</ul>
+										</div>
+										<!-- //col -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section search -->
+
+			<!-- Section services -->
+			<section class="sect__services gutter-bottom">
+				<h2 class="sect-title container text-left">Услуги</h2>
+
+				<div class="container">
+					<div class="services">
+						<div class="row align-horisontal-start services__row row-gutters">
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-catalog.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/1.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/1-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Каталог автомобилей</span>
+									<span class="service-card__description">Галлерея автомобилей в наличии</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-trade-in.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/2.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/2-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Обмен (Trade-in)</span>
+									<span class="service-card__description">Выгодный обмен автомобиля с персональными условиями</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-online.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/3.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/3-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Выкуп (Online оценка)</span>
+									<span class="service-card__description">Онлайн оценка вашего а/м не выходя из дома</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-crediting.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/4.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/4-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Кредитование</span>
+									<span class="service-card__description">Выгодные кредитные условия для наших клиентов</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-delivery-car.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/5.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/5-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Доставка а/м</span>
+									<span class="service-card__description">Доставим Ваш автомобиль после покупки</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-guarantee.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/6.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/6-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">Гарантия AltynCar Garant</span>
+									<span class="service-card__description">Программа продления технической гарантии AltynCar Garant на срок до 12 месяцев!</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+							<!-- Service item -->
+							<div class="service-card__wrapper">
+								<a href="page-swap.html" class="service-card b-radius box-shadow">
+									<span class="service-card__ic">
+										<span class="service-card__ic--static" style="background-image: url('img/icons/svg/services/7.svg');"></span>
+										<span class="service-card__ic--hover" style="background-image: url('img/icons/svg/services/7-hover.svg');"></span>
+									</span>
+									<span class="service-card__title">14 дней гарантия на обмен</span>
+									<span class="service-card__description">Программа “Гарантия обмена купленного автомобиля AltynCar в первые 14 дней”</span>
+								</a>
+							</div>
+							<!-- //Service item -->
+
+
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section services -->
+
+			<!-- Section stocks -->
+			<section class="sect__stocks gutter-bottom">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+					<div class="sect-title__row row align-horisontal-start align-vertical-center row-nowrap">
+						<h3 class="sect-title">Акции и горячие предложения</h3>
+
+						<!-- Slider controls -->
+						<div class="slider__navigation">
+							<button class="btn__arrow js-stocks-slider-btn-prev" type="button">
+								<svg  viewBox="0 0 17 37" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.12865 18.0032L16.0355 33.372C16.5416 33.9747 16.5416 34.9517 16.0355 35.5543C15.5294 36.157 14.7089 36.157 14.2028 35.5543L0.379569 19.0943C-0.126523 18.4917 -0.126523 17.5146 0.379569 16.912L14.2028 0.451972C14.7089 -0.150657 15.5294 -0.150657 16.0355 0.451972C16.5416 1.0546 16.5416 2.03166 16.0355 2.63428L3.12865 18.0032Z"/>
+								</svg>
+
+							</button>
+
+							<button class="btn__arrow js-stocks-slider-btn-next" type="button">
+								<svg viewBox="0 0 17 37"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.8714 18.0036L0.964474 2.63468C0.458382 2.03205 0.458382 1.05499 0.964474 0.452364C1.47057 -0.150267 2.2911 -0.150267 2.79719 0.452364L16.6204 16.9124C17.1265 17.515 17.1265 18.4921 16.6204 19.0947L2.79719 35.5547C2.2911 36.1574 1.47056 36.1574 0.964472 35.5547C0.45838 34.9521 0.45838 33.9751 0.964472 33.3724L13.8714 18.0036Z" />
+								</svg>
+
+
+							</button>
+
+						</div>
+						<!-- //Slider controls -->
+					</div>
+					
+					<!-- Slider -->
+					<div class="stocks-slider">
+						<div class="swiper-container js-stocks-slider">
+							<div class="swiper-wrapper">
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="stocks-slider__slide">
+										{% include '../parts/components/car/car-card-labels.html' %}
+									</div>
+								</div>
+								<!-- //Slide -->
+
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="stocks-slider__slide">
+										{% include '../parts/components/car/car-card.html' %}
+									</div>
+								</div>
+								<!-- //Slide -->
+
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="stocks-slider__slide">
+										{% include '../parts/components/car/car-card.html' %}
+									</div>
+								</div>
+								<!-- //Slide -->
+
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="stocks-slider__slide">
+										{% include '../parts/components/car/car-card.html' %}
+									</div>
+								</div>
+								<!-- //Slide -->
+
+
+							</div>
+						</div>
+					</div>
+					<!-- //Slider -->
+
+					<div class="permalink__wrapper text-center">
+						<a href="page-catalog.html" class="btn">Все автомобили</a>
+					</div>
+				</div>
+				
+
+			</section>
+			<!-- //Section stocks -->
+
+			<!-- Section steps -->
+			<section class="sect__steps b-radius">
+				<h2 class="sect-title sect-title__with-text container">4 простых шага, как продать Ваш автомобиль:</h2>
+				<p class="sect-text container">Мы сделаем это быстро, просто и безопасно</p>
+
+				<div class="container">
+					<div class="steps">
+						<div class="row align-vertical-center align-horisontal-start row-gutters steps__row">
+							<!-- Step -->
+							<div class="step__wrapper">
+								<div class="step">
+									<span class="step__ic" style="background-image: url('img/icons/svg/steps/1.svg');"></span>
+									<div class="step__content">
+										<span class="step__count">Шаг 1</span>
+										<h3 class="step__title">Запишись online или по телефону</h3>
+									</div>
+								</div>
+							</div>
+							<!-- //Step -->
+
+							<!-- Step -->
+							<div class="step__wrapper">
+								<div class="step">
+									<span class="step__ic" style="background-image: url('img/icons/svg/steps/2.svg');"></span>
+									<div class="step__content">
+										<span class="step__count">Шаг 2</span>
+										<h3 class="step__title">Пройди оценку</h3>
+									</div>
+								</div>
+							</div>
+							<!-- //Step -->
+
+							<!-- Step -->
+							<div class="step__wrapper">
+								<div class="step">
+									<span class="step__ic" style="background-image: url('img/icons/svg/steps/3.svg');"></span>
+									<div class="step__content">
+										<span class="step__count">Шаг 3</span>
+										<h3 class="step__title">Передай а/м и документы</h3>
+									</div>
+								</div>
+							</div>
+							<!-- //Step -->
+
+							<!-- Step -->
+							<div class="step__wrapper">
+								<div class="step">
+									<span class="step__ic" style="background-image: url('img/icons/svg/steps/4.svg');"></span>
+									<div class="step__content">
+										<span class="step__count">Шаг 4</span>
+										<h3 class="step__title">Получи деньги</h3>
+									</div>
+								</div>
+							</div>
+							<!-- //Step -->
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section steps -->
 		</main>
 		<!-- //Main -->
 

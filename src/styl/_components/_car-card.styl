@@ -1,0 +1,66 @@
+.price
+	color $accent-color
+	font 16px $Bold
+	position relative
+	&:after
+		content '\20B8'
+		display inline-block
+		margin-left 3px
+
+.car-card
+	position relative
+	padding-top 25px
+	&:hover
+		.car-card__body
+			box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
+	&__body
+		position relative
+		border-radius 10px
+		overflow hidden
+		background-color $basic-white-color
+		radius-overflow()
+		transition box-shadow .17s ease-in-out
+	
+	&__labels
+		position absolute
+		top 0
+		left 7px
+
+	&__label
+		display inline-block
+		margin-right 6px
+		br(4px, 4px, 0, 0)
+		text-align center
+		color $basic-white-color
+		line-height 1
+		font-size 12px
+		padding 7px 10px
+		&:last-child
+			margin-right 0
+			
+		&--recommended
+			background-color $label-recommended-color
+		&--new
+			background-color $label-new-color
+		&--guarantee
+			background-color $label-guarantee-color
+			
+	&__information
+		padding 20px 30px
+	
+	&__description
+		font 14px $Reg
+		color $alternate-text-color
+		
+	&__title
+		color $alternate-text-color
+		font 18px $Bold
+		line-height 21px
+		margin-bottom 10px
+		a
+			color inherit
+			&:hover
+				color $accent-color
+				
+	&__price
+		margin-bottom 10px

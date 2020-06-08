@@ -1,0 +1,110 @@
+// Search
+.sect__search
+	padding-bottom 105px
+	
+.search-tabs
+	&__controls
+		margin-bottom 30px
+		&--btn
+			display inline-block
+			margin-right 36px
+			color $lighter-text-color
+			font 24px $Heavy
+			&:hover,
+			&.is-active
+				color $accent-color
+			&:last-child
+				margin-right 0
+				
+.car-categories
+	padding-top 35px
+	.list-title
+		margin-bottom 40px
+		
+	ul
+		li
+
+			margin-bottom 20px
+			&:last-child
+				margin-bottom 0
+				
+		a
+			font 14px $Reg
+			color $light-text-color
+			border-bottom 1px solid transparent
+			&:hover
+				border-color $accent-color
+				color $accent-color
+			span
+				font-family $Med
+				color $accent-color
+		
+	&__col
+		width 25%
+		border-left 1px solid #E0E0E0
+		padding 0 25px 30px 25px
+		&:first-child
+			width 50%
+			
+			ul
+				column-count 3
+				column-gap 30px
+				
+// Services
+.service-card
+	display block
+	height 100%
+	background-color $basic-white-color
+	border-radius 20px
+	padding 30px
+	height 250px
+	font 14px $Reg
+	color $light-text-color
+	&__title
+		font 18px $Semibold
+		color $text-color
+		margin-bottom 10px
+		display block
+	&__ic
+		display block
+		width 72px
+		height 72px
+		margin-bottom 30px
+		position relative
+		span
+			display block
+			width 72px
+			height 72px
+			background-position 50% 50%
+			background-size contain
+			background-repeat no-repeat
+			transition opacity .17s ease-in-out
+			position absolute
+			position-center()
+		&--hover
+			opacity 0
+			z-index 2
+			
+	&:hover
+		box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
+		
+		.service-card__ic
+			&--static
+				opacity 0
+			&--hover
+				opacity 1
+	&__wrapper
+		flex 1 0 25%
+		max-width 33.3333%
+		padding 15px
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3)
+			flex 1 0 33.3333%
+			
+// Steps
+.sect__steps
+	padding 130px 0 90px
+	background-color $basic-white-color
+	box-shadow 0px 15px 35px rgba($basic-black-color, 0.07)
+		
