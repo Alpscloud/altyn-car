@@ -62,6 +62,22 @@ $(document).ready(function() {
 		}
 	});
 
+	var aboutUsSlider = new Swiper('.js-about-us-slider', {
+		loop: true,
+		spaceBetween: 0,
+		pagination: {
+			el: '.js-about-us-slider-pagination',
+			clickable: true
+		},
+		navigation: {
+			prevEl: '.js-about-us-slider-btn-prev',
+			nextEl: '.js-about-us-slider-btn-next',
+		},
+		autoplay: {
+			delay: 8000,
+		},
+	});
+
 	// Fancybox
 	$('[data-fancybox]').fancybox({
 		loop: true,

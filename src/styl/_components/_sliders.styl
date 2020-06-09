@@ -81,6 +81,33 @@
 					margin-right 0
 					
 // Car card
+.single-slider
+	position relative
+	.slider
+		&__pagination
+			position absolute
+			horisontal-center()
+			bottom 15px
+			z-index 4
+			
+			.swiper-pagination-bullet
+				box-shadow 0px 4px 4px rgba($basic-black-color, 0.07)
+				&-active
+					box-shadow none
+		
+		&__navigation
+			position absolute	
+			vertical-center()
+			z-index 4
+			width 100%
+			display flex
+			align-items center
+			justify-content space-between
+			padding-left 20px
+			padding-right 20px
+			
+	
+	
 .car-card
 	&__slider
 		background-color $basic-white-color
@@ -91,11 +118,7 @@
 			fullSize()
 			box-shadow inset 0px 0px 14px rgba($basic-black-color, 0.08)
 			z-index 3
-		// .swiper
-		// 	&-slide,
-		// 	&-container,
-		// 	&-wrapper
-		// 		width 100% !important
+
 		&--slide
 			position relative
 			height 340px
@@ -107,36 +130,25 @@
 				height 100%
 				object-fit cover
 				
-		.slider
-			&__pagination
-				position absolute
-				horisontal-center()
-				bottom 15px
-				z-index 4
-				
-				.swiper-pagination-bullet
-					box-shadow 0px 4px 4px rgba($basic-black-color, 0.07)
-					&-active
-						box-shadow none
-			
-			&__navigation
-				position absolute	
-				vertical-center()
-				z-index 4
-				width 100%
-				display flex
-				align-items center
-				justify-content space-between
-				padding-left 20px
-				padding-right 20px
-				
-			
 		.btn__arrow
 			width 15px
 			height 33px		
+				
+				
+		
 				
 		
 
 .stocks-slider
 	&__slide	
 		padding 0 15px 50px 15px
+		
+// About us
+.about-us
+	&__slider
+		width 50%
+		&--slide
+			position relative
+			padding-top 65%
+			img
+				@extends .visually-hidden
