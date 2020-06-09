@@ -78,6 +78,37 @@ $(document).ready(function() {
 		},
 	});
 
+	// Map markers
+	$('.js-salon-address').on('click', '.salon-address__marker', function(e) {
+		e.preventDefault();
+
+		var self = $(this);
+
+		var salonAddress = self.parents('.js-salon-address');
+
+		if(salonAddress.hasClass('is-active')) {
+			salonAddress.removeClass('is-active');
+			$('.js-salon-address').removeClass('is-active');
+		} else {
+			$('.js-salon-address').removeClass('is-active');
+			salonAddress.addClass('is-active');
+		}
+
+
+	});
+
+	$(document.body).on('click', function(e){
+		if(!$(e.target).closest('.js-salon-address').length){
+			$('.js-salon-address').removeClass('is-active');
+		}
+	});
+
+	// User city
+	$('.js-close-user-city-popup-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-user-city-popup').fadeOut(150);
+	});
+
 	// Fancybox
 	$('[data-fancybox]').fancybox({
 		loop: true,
