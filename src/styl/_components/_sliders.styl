@@ -112,13 +112,16 @@
 	&__slider
 		background-color $basic-white-color
 		position relative
+		min-width 0
 		&:before
 			pseudo()
 			position absolute
 			fullSize()
 			box-shadow inset 0px 0px 14px rgba($basic-black-color, 0.08)
 			z-index 3
-
+		
+		.swiper-wrapper
+			position relative
 		&--slide
 			position relative
 			height 340px

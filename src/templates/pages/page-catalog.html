@@ -1,0 +1,96 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+			<section class="sect__catalog">
+				<h1 class="w3c">Каталог автомобилей</h1>
+
+				<div class="page-container">
+
+					<!-- Catalog -->
+					<div class="catalog">
+						<div class="row align-vertical-start align-horisontal-between catalog__row">
+							<!-- Aside -->
+							{% include '../parts/sections/aside.html' %}
+							<!-- //Aside -->
+
+							<!-- Cars -->
+							<div class="cars__wrapper">
+
+								<!-- Sorting -->
+								<div class="sorting">
+									<div class="row align-horisontal-end sorting__row">
+
+										<div class="sorting__item">
+											<div class="form-group__input--wrapper">
+												<select name="dates"  class="form-group__input form-group__select">
+													<option value="" disabled selected>По дате</option>
+													<option value="Сначала новые">Сначала новые</option>
+													<option value="Сначала старые">Сначала старые</option>
+												</select>
+
+												{% include '../parts/components/interface/arrow.html' %}
+											</div>
+										</div>
+
+										<div class="sorting__item">
+											<div class="form-group__input--wrapper">
+												<select name="salons"  class="form-group__input form-group__select">
+													<option value="" disabled selected>Все салоны</option>
+													<option value="Салон 1">Салон 1</option>
+													<option value="Салон 2">Салон 2</option>
+													<option value="Салон 3">Салон 3</option>
+												</select>
+
+												{% include '../parts/components/interface/arrow.html' %}
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Sorting -->
+
+								<div class="row align-horisontal-start cars__row row-gutters">
+									{% include '../parts/components/car/car-card-labels.html' %}
+									{% include '../parts/components/car/car-card.html' %}
+									{% include '../parts/components/car/car-card.html' %}
+									{% include '../parts/components/car/car-card.html' %}
+									{% include '../parts/components/car/car-card.html' %}
+									{% include '../parts/components/car/car-card.html' %}
+								</div>
+
+							</div>
+							<!-- //Cars -->
+						</div>
+					</div>
+					<!-- //Catalog -->
+
+				</div>
+				<!-- //page container -->
+
+
+			</section>
+			
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

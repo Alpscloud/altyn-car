@@ -127,35 +127,6 @@ $(document).ready(function() {
 	}).eq(0).addClass('is-active');
 
 
-	// Custom inputs
-	var nonLinearSlider = $('price');
-
-	if (nonLinearSlider) {
-
-		noUiSlider.create(nonLinearSlider, {
-			connect: true,
-			behaviour: 'tap',
-			start: [0, 1000000],
-			range: {
-				'min': [0],
-				'max': [1000000]
-			}
-		});
-
-		var nodes = [
-			document.getElementById('priceLow'), // 0
-			document.getElementById('priceHigh')  // 1
-		];
-
-		var priceInput = $('.js-price-input');
-
-		nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
-			nodes[handle].innerHTML = values[handle];
-			priceInput.val(values[handle]);
-		});
-	}
-
-
 	$('input[type=tel]').mask('+7 (999) 999-99-99');
 
 

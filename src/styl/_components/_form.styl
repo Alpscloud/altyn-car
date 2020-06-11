@@ -16,9 +16,16 @@ input[type="search"]::-webkit-search-results-decoration
 
 .form
 	&-group
+		&__title
+			color $alternate-text-color
+			font 16px $Semibold
+			line-height 19px
+			margin-bottom 10px
+			width 100%
 		&__input
 			display block
-			background-color $light-color
+			width 100%
+			background-color $basic-white-color
 			border 1px solid transparent
 			border-radius 6px
 			@extends .box-shadow
@@ -64,6 +71,21 @@ input[type="search"]::-webkit-search-results-decoration
 					vertical-center()
 					right 15px
 					pointer-events none
+					
+			&--price
+				padding-left 60px
+				font-family $Semibold
+				&_mark
+					position absolute
+					left 15px
+					vertical-center()
+					pointer-events none
+					z-index 1
+					font 12px $Reg
+					color $alternate-text-color
+				
+				&_sm-gutter
+					padding-left 30px
 				
 		&__select
 			display block
@@ -77,6 +99,36 @@ input[type="search"]::-webkit-search-results-decoration
 				flex 1
 				max-width 350px
 				padding 0 7.5px
+				
+		&__price-range
+			height 4px
+			background-color #ECEBED
+			border-radius 2px
+			border none
+			box-shadow none
+			
+			.noUi
+				&-connect
+					background-color $accent-color
+				&-handle
+					border 2px solid $basic-white-color
+					border-radius 50%
+					width 32px
+					height 32px
+					background-color $accent-color
+					box-shadow none
+					top -14px
+					right -16px
+					&:focus,
+					&:hover
+						outline none
+					&:before,
+					&:after
+						display none
+			&--wrapper
+				width 100%
+				padding 0 20px
+				margin-top 15px
 	
 
 	
@@ -87,14 +139,14 @@ input[type="search"]::-webkit-search-results-decoration
 	position relative
 	display inline-block
 	margin-left 0
-	padding-left 25px
+	padding-left 40px
 	font 1em $Reg
 	line-height 1
-	color $text-color
+	color $basic-black-color
 	&:before,
 	&:after
 		pseudo()
-		transition all .25s ease-in-out
+		transition all .17s ease-in-out
 		position absolute
 		left 0
 		vertical-center()
@@ -108,28 +160,23 @@ input[type="search"]::-webkit-search-results-decoration
 .form-group__checkbox
 	&:before
 		border-radius 4px
-		width 18px
-		height 18px
-		border 1px solid $accent-color
-		background-color transparent
-	&:after
-		width 12px
-		height 12px
-		background url('../img/icons/svg/checkbox-ic.svg') 50% 50% no-repeat
-		background-size 12px 12px
-		position absolute
-		left 3px
-		top 8px
-		opacity 0
+		width 30px
+		height 30px
+		border 1px solid #E5E5E5
+		background-color $basic-white-color
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size 18px 18px
+		box-shadow 0px 7px 64px rgba(0, 0, 0, 0.07)
+		border-radius 6px
+	
 	&--label
 		input
 			&:checked 
 				+ span
 					&:before
-						border-color $dark-color
-						background-color $dark-color
-					&:after
-						opacity 1
+						border-color $accent-color
+						background-image url('../img/icons/svg/checkbox-ic.svg')
 			
 .form-group__radio
 	&:before

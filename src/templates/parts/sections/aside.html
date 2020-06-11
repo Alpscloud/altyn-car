@@ -1,0 +1,194 @@
+<aside class="aside b-radius">
+	<h2 class="sect-title text-center">Каталог автомобилей</h2>
+
+	<form class="filter-form">
+		<!-- Form group -->
+		<div class="form-group__input--wrapper">
+			<select name="body-type"  class="form-group__input form-group__select">
+				<option value="" disabled selected>Тип кузова</option>
+				<option value="Седан">Седан</option>
+				<option value="Купе">Купе</option>
+				<option value="Хэч-бек">Хэч-бек</option>
+				<option value="Пикап">Пикап</option>
+			</select>
+
+			{% include '../components/interface/arrow.html' %}
+		</div>
+		<!-- //Form group -->
+
+		<!-- Form group -->
+		<div class="form-group__input--wrapper">
+			<select name="city"  class="form-group__input form-group__select">
+				<option value="" disabled selected>Город</option>
+				<option value="Город 1">Город 1</option>
+				<option value="Город 2">Город 2</option>
+				<option value="Город 3">Город 3</option>
+				<option value="Город 4">Город 4</option>
+			</select>
+
+			{% include '../components/interface/arrow.html' %}
+		</div>
+		<!-- //Form group -->
+
+		<div class="row align-horisontal-start filter-form__inputs">
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<select name="car-brand"  class="form-group__input form-group__select">
+					<option value="" disabled selected>Марка</option>
+					<option value="Марка 1">Марка 1</option>
+					<option value="Марка 2">Марка 2</option>
+					<option value="Марка 3">Марка 3</option>
+					<option value="Марка 4">Марка 4</option>
+				</select>
+
+				{% include '../components/interface/arrow.html' %}
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<select name="car-model"  class="form-group__input form-group__select is-disabled" disabled>
+					<option value="" disabled selected>Модель</option>
+					<option value="Модель 1">Модель 1</option>
+					<option value="Модель 2">Модель 2</option>
+					<option value="Модель 3">Модель 3</option>
+					<option value="Модель 4">Модель 4</option>
+				</select>
+
+				{% include '../components/interface/arrow.html' %}
+			</div>
+			<!-- //Form group -->
+		</div>
+
+		<div class="row align-horisontal-start filter-form__inputs">
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<select name="year-of-issue"  class="form-group__input form-group__select">
+					<option value="" disabled selected>Год выпуска, от</option>
+					<option value="Год 1">Год 1</option>
+					<option value="Год 2">Год 2</option>
+					<option value="Год 3">Год 3</option>
+					<option value="Год 4">Год 4</option>
+				</select>
+
+				{% include '../components/interface/arrow.html' %}
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<select name="year-of-issue-until"  class="form-group__input form-group__select">
+					<option value="" disabled selected>Год выпуска, до</option>
+					<option value="Год 1">Год 1</option>
+					<option value="Год 2">Год 2</option>
+					<option value="Год 3">Год 3</option>
+					<option value="Год 4">Год 4</option>
+				</select>
+
+				{% include '../components/interface/arrow.html' %}
+			</div>
+			<!-- //Form group -->
+		</div>
+
+		<div class="row align-horisontal-start filter-form__inputs js-range-inputs-parent">
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<span class="form-group__input--price_mark">Цена, от</span>
+				<input name="price-min" type="text" class="form-group__input form-group__input--price js-range-input-val-min">
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<span class="form-group__input--price_mark">Цена, до</span>
+				<input name="price-max" type="text" class="form-group__input form-group__input--price js-range-input-val-max">
+			</div>
+			<!-- //Form group -->
+			
+			<!-- Price range -->
+			<div class="form-group__price-range--wrapper">
+				<div class="form-group__price-range js-range-input"></div>
+			</div>
+			<!-- //Price range -->
+		</div>
+
+		<div class="row align-horisontal-start filter-form__inputs filter-form__checkboxes">
+			<!-- Form group -->
+			<div class="form-group__input--wrapper form-group__input--wrapper_wide">
+				<label class="form-group__checkbox--label">
+					<input type="checkbox" name="altyncar-guarantee">
+					<span class="form-group__checkbox">Авто с гарантией AltynCar Garant</span>
+				</label>
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<label class="form-group__checkbox--label">
+					<input type="checkbox" name="car-discount">
+					<span class="form-group__checkbox">Авто со скидкой</span>
+				</label>
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<label class="form-group__checkbox--label">
+					<input type="checkbox" name="car-new-items">
+					<span class="form-group__checkbox">Новые поступления</span>
+				</label>
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<label class="form-group__checkbox--label">
+					<input type="checkbox" name="car-buy-crediting">
+					<span class="form-group__checkbox">Покупка в кредит</span>
+				</label>
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<label class="form-group__checkbox--label">
+					<input type="checkbox" name="car-buy-without-prepayment">
+					<span class="form-group__checkbox">Без первоначального взноса</span>
+				</label>
+			</div>
+			<!-- //Form group -->
+
+
+
+		</div>
+
+		<div class="row align-horisontal-start filter-form__inputs js-range-inputs-parent">
+			<h4 class="form-group__title">Превоначальный взнос</h4>
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<span class="form-group__input--price_mark">От</span>
+				<input name="prepayment-price-min" type="text" class="form-group__input form-group__input--price form-group__input--price_sm-gutter js-range-input-val-min">
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper">
+				<span class="form-group__input--price_mark">До</span>
+				<input name="prepayment-price-max" type="text" class="form-group__input form-group__input--price form-group__input--price_sm-gutter js-range-input-val-max">
+			</div>
+			<!-- //Form group -->
+			
+			<!-- Price range -->
+			<div class="form-group__price-range--wrapper">
+				<div class="form-group__price-range js-range-input"></div>
+			</div>
+			<!-- //Price range -->
+		</div>
+
+		<div class="filter-form__btns">
+			<button class="btn btn-wide" type="button">Больше фильтров</button>
+			<button class="btn btn-faded btn-wide" type="button">Скрыть фильтр</button>
+		</div>
+
+	</form>
+</aside>
