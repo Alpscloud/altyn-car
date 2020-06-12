@@ -16,6 +16,21 @@ input[type="search"]::-webkit-search-results-decoration
 
 .form
 	&-group
+		&__submit
+			display flex
+			align-items center
+			flex-direction column
+			margin-top 40px
+			.btn__reset
+				margin-top 15px
+		&__notice
+			color $light-text-color
+			margin-bottom 20px
+			a
+				color $alternate-text-color
+				border-bottom 1px solid
+				&:hover
+					color $accent-color
 		&__title
 			color $alternate-text-color
 			font 16px $Semibold
@@ -63,17 +78,47 @@ input[type="search"]::-webkit-search-results-decoration
 				
 				+ .arrow
 					display none
+					
+				&::-webkit-input-placeholder
+					color $grey-text-color
+				&::-moz-placeholder
+					color $grey-text-color
+				&:-moz-placeholder
+					color $grey-text-color
+				&:-ms-input-placeholder
+					color $grey-text-color
 				
 			&--wrapper
 				position relative
+				text-align left
 				.arrow
 					position absolute
 					vertical-center()
 					right 15px
 					pointer-events none
 					
+			&--search
+				padding-left 45px
+				&::-webkit-input-placeholder
+					font 15px $Reg
+					color $grey-text-color
+				&::-moz-placeholder
+					font 15px $Reg
+					color $grey-text-color
+				&:-moz-placeholder
+					font 15px $Reg
+					color $grey-text-color
+				&:-ms-input-placeholder
+					font 15px $Reg
+					color $grey-text-color
+					
+				&_notice
+					margin-top 15px
+					color $light-text-color
+					font-size 10px
+					
 			&--price
-				padding-left 60px
+				padding-left 65px
 				font-family $Semibold
 				&_mark
 					position absolute
@@ -90,7 +135,9 @@ input[type="search"]::-webkit-search-results-decoration
 		&__select
 			display block
 			width 100%
-			padding-right 45px
+			padding-right 25px
+			&-capacity
+				padding-left 110px
 					
 		&__inputs--row
 			margin-left -7.5px
@@ -128,7 +175,9 @@ input[type="search"]::-webkit-search-results-decoration
 			&--wrapper
 				width 100%
 				padding 0 20px
-				margin-top 15px
+				margin-top 30px
+				&.no-bottom-gutter
+					margin-bottom 0 
 	
 
 	
@@ -217,5 +266,78 @@ input[type="search"]::-webkit-search-results-decoration
 				padding 0 12.5px
 				.arrow
 					right 27.5px
+
+
+	
+
+
+.filter-form
+	margin-top 45px
+	
+	.form-group__input--wrapper
+		margin-bottom 15px
 		
+
+	
+	.form-group__title
+		padding-left 5px
+		padding-right 5px
+
+			
+	&__btns
+		margin-top 40px
+		.btn
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+				
+
+.trade-in-form
+	margin-top 35px
+	.block-title
+		margin-bottom 20px
+		
+	.form-group__submit
+		margin-top 25px
+		
+.contact-form__inputs
+	margin 0 auto
+	max-width 360px
+	
+	.form-group__input--wrapper
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+
+
+.row-inputs
+	margin-left -5px
+	margin-right -5px
+	&:last-child
+		margin-bottom 0
+		
+	.form-group
+		&__input--wrapper
+			&_col
+				padding-left 5px
+				padding-right 5px
+				margin-bottom 15px
+				.form-group__input--wrapper
+					margin-bottom 0
+
+		&__title
+			padding-left 5px
+			padding-right 5px
+		
+.row-checkboxes
+	margin-top 45px
+	
+	.form-group__input--wrapper
+		&_col
+			margin-bottom 35px
+			.form-group__input--wrapper
+				margin-bottom 0
+
+
+
 		

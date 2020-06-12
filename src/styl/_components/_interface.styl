@@ -67,6 +67,13 @@
 .permalink__wrapper
 	margin-top 10px
 	
+.link
+	font 12px $Semibold
+	border-bottom 1px solid
+	color $accent-color
+	&:hover
+		color $text-color
+	
 // Tooltip
 .tooltip
 	display inline-block
@@ -87,6 +94,7 @@
 	border-radius 8px
 	z-index 1
 	text-transform none
+	pointer-events none
 	&:after
 		pseudo()
 		left 100%
@@ -147,4 +155,20 @@
 	&--instagram
 		&:before
 			background-image url('../img/icons/svg/contacts/instagram-ic.svg')
-	
+
+
+
+.location
+	position relative
+	display inline-block
+	padding-left 36px
+	font 12px $Med
+	color $accent-color
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		width 17px
+		height 22px
+		background url('../img/icons/svg/contacts/location-ic.svg') 50% 50% no-repeat / 17px 22px

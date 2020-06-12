@@ -4,38 +4,17 @@
 	padding 50px 30px 40px 30px
 	box-shadow inset 3px 0px 14px rgba($basic-black-color, 0.1)
 	background-color $basic-white-color
+	margin-right 30px
+	position absolute
+	top 0
+	left 0
+	will-change transform
+	transition transform .2s ease-in-out
+	
+	&.is-toggled
+		transform translateX(-110%)
+		
 	
 	
-.filter-form
-	margin-top 45px
-	.form-group__input--wrapper
-		margin-bottom 15px
-		
-	&__inputs
-		margin-left -5px
-		margin-right -5px
-		
-		.form-group__title
-			padding-left 5px
-			padding-right 5px
-		.form-group__input--wrapper
-			width 50%
-			padding-left 5px
-			padding-right 5px
-			&_wide
-				width 100%
-			
-	&__checkboxes
-		margin-top 45px
-		.form-group__title
-			padding-left 5px
-			padding-right 5px
-		.form-group__input--wrapper
-			margin-bottom 35px
-			
-	&__btns
-		margin-top 40px
-		.btn
-			margin-bottom 15px
-			&:last-child
-				margin-bottom 0
+
+

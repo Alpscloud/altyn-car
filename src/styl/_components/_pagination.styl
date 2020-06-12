@@ -1,0 +1,55 @@
+.pagination
+	text-align center
+	width 100%
+	margin-top 50px
+	&__item
+		display inline-block
+		margin-right 6px
+		&:last-child
+			margin-right 0
+			margin-left 40px
+		&:first-child
+			margin-right 40px
+	&__link
+		display inline-block
+		font 18px $Semibold
+		color $alternate-text-color
+		&:hover
+			color $accent-color
+		&.is-active
+			color $accent-color
+			font 24px $Bold
+			
+		&--arrow
+			position relative
+			color #CDCDCD
+			font-family $Semibold
+			&:hover
+				color $accent-color
+			&_prev
+				padding-left 21px
+				.pagination__link--arrow_ic
+					left 0
+			&_next
+				padding-right 21px
+				.pagination__link--arrow_ic
+					right 0
+			&_ic
+				display inline-block
+				width 11px
+				height 24px
+				position absolute
+				vertical-center()
+			
+			svg
+				svg()
+				fill $accent-color
+				
+
+span.pagination__link
+	&:hover
+		color $alternate-text-color
+		
+	&.is-active
+		&:hover
+			color $accent-color

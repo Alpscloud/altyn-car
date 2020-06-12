@@ -17,6 +17,33 @@ $(document).ready(function() {
 		}, 200);
 	});
 
+	// Popups
+	$('.js-open-advanced-filter-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-advanced-filter-popup').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+
+	$('.js-close-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$(this).parents('.js-popup').fadeOut(300);
+		$('html').removeClass('is-fixed');
+	});
+
+	$('.popup__overflow').on('click', function(e) {
+		e.stopPropagation();
+
+		var content = $(this).find('.popup__body');
+
+		if(!content.is(e.target) && content.has(e.target).length === 0) {
+			$('html').removeClass('is-fixed');
+			$('.js-popup').fadeOut(300);
+		}
+
+	});
+	// ========= =========== =========== ===========
+
 	// Sliders
 	var promoSlider = new Swiper('.js-promo-slider', {
 		loop: true,
@@ -52,13 +79,29 @@ $(document).ready(function() {
 		});
 	});
 
+	$('.js-cars-slider').each(function() {
+		var self = $(this);
+		var wrapper = self.parents('section');
 
-	var stocksSlider = new Swiper('.js-stocks-slider', {
-		slidesPerView: 3,
+		var carsSlider = new Swiper(self, {
+			slidesPerView: 3,
+			spaceBetween: 0,
+			navigation: {
+				prevEl: wrapper.find('.js-cars-slider-btn-prev'),
+				nextEl: wrapper.find('.js-cars-slider-btn-next'),
+			}
+		});
+	});
+
+
+
+
+	var recommendedSlider = new Swiper('.js-recommended-slider', {
+		slidesPerView: 4,
 		spaceBetween: 0,
 		navigation: {
-			prevEl: '.js-stocks-slider-btn-prev',
-			nextEl: '.js-stocks-slider-btn-next',
+			prevEl: '.js-recommended-slider-btn-prev',
+			nextEl: '.js-recommended-slider-btn-next',
 		}
 	});
 
@@ -103,10 +146,29 @@ $(document).ready(function() {
 		}
 	});
 
+
+
 	// User city
 	$('.js-close-user-city-popup-btn').on('click', function(e) {
 		e.preventDefault();
 		$('.js-user-city-popup').fadeOut(150);
+	});
+
+	// Catalog filters
+	$('.js-hide-aside-filters-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-aside-filters').addClass('is-toggled');
+		$('.cars__wrapper').addClass('is-toggled');
+
+		$('.js-open-aside-filters-btn').addClass('is-active');
+	});
+
+	$('.js-open-aside-filters-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-aside-filters').removeClass('is-toggled');
+		$('.cars__wrapper').removeClass('is-toggled');
+
+		$(this).removeClass('is-active');
 	});
 
 	// Fancybox

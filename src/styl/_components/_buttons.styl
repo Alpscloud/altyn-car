@@ -12,6 +12,8 @@
 	color $basic-white-color
 	border 1px solid transparent
 	border-radius 6px
+	b, strong, span
+		font-family $Bold
 	&:hover
 		background-color $dark-accent-color
 		box-shadow 0px 4px 9px rgba($basic-black-color, 0.2)
@@ -59,7 +61,57 @@
 			svg
 				fill $light-color
 				
+	&__toggle
+		box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
+		background-color $accent-color
+		padding 15px 50px 15px 25px
+		br(0,10px,10px,0)
+		position absolute
+		left -20px
+		top 30px
+		font 14px $Med
+		color $basic-white-color
+		display none
+		&.is-active
+			display block
+		
+		&:after
+			pseudo()
+			position absolute
+			right 14px
+			vertical-center()
+			width 24px
+			height 24px
+			background url('../img/icons/svg/filter-ic.svg') 50% 50% no-repeat / 24px 24px
+		&:hover
+			background-color $dark-accent-color
+			box-shadow 0px 4px 9px rgba($basic-black-color, 0.2)
+			
+	&__close
+		display inline-block
+		width 16px
+		height 16px
+		svg
+			svg()
+			fill #1A051D
+		&:hover
+			svg
+				fill $accent-color
+				
+	&__reset
+		text-transform uppercase
+		font-family $Semibold
+		color #A5A5A5
+		&:hover
+			color $accent-color
+				
 	&__search
+		display inline-block
+		width 20px
+		height 20px
+		svg
+			svg()
+			fill $grey-text-color
 		&::-ms-clear
 			display none 
 			width 0
@@ -74,6 +126,14 @@
 		&::-webkit-search-results-button,
 		&::-webkit-search-results-decoration
 			display none
+			
+		&--absolute
+			position absolute
+			vertical-center()
+			left 15px
+			
+	
+		
 		
 	
 	

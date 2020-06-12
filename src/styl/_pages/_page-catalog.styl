@@ -1,7 +1,17 @@
+.catalog
+	position relative
+	padding-top 50px
+
 .cars
 	&__wrapper
-		padding 50px 0 30px 30px
-		width calc(100% - 450px)
+		padding 20px 0
+		width calc(100% - 480px)
+		transition width .2s ease-in-out
+		&.is-toggled
+			width 100%
+			
+			.car-card__wrapper
+				width 25%
 
 	&__row
 		
@@ -13,11 +23,42 @@
 				
 
 .sorting
-	margin-bottom 40px
 	&__item
 		margin-right 25px
 		width 215px
 		&:last-child
 			margin-right 0
-				
+			
+
+.sect__offer
+	background-color $basic-white-color
+	box-shadow 0px 4px 24px rgba($basic-black-color, 0.09)
+	margin 30px -20px
+	
+.offer
+	max-width 700px
+	position relative
+	&__img
+		position absolute
+		left 100%
+		top -35px
+		margin-left -130px
+		width 780px
+		img
+			display block
+	&__content
+		position relative
+		z-index 1
+	.page-title
+		margin-bottom 30px
+		
+	p
+		color $alternate-text-color
+		font-size 16px
+		line-height 19px
+		margin-bottom 40px
+
+
+.sect__recommended
+	padding-bottom 50px
 				

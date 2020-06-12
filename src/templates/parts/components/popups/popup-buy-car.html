@@ -1,0 +1,78 @@
+<!-- Buy car popup-->
+<div class="popup js-popup js-buy-car-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			{% include 'close-popup-btn.html' %}
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Купить автомобиль</h2>
+
+				<p class="popup__text">Заполните данную форму и в ближайшее время наш специалист свяжется с вами для уточнения деталей и назначит встречу</p>
+
+				<div class="buy-car-popup">
+					{% include '../car/car-card-mini.html' %}
+					<p class="location">Казахстан, г. Астана, AltynCarSalon</p>
+				</div>
+				
+				<!-- Form -->
+				<form class="contact-form">
+					<div class="contact-form__inputs">
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<select name="city"  class="form-group__input form-group__select">
+								<option value="" disabled selected>Город</option>
+								<option value="Город 1">Город 1</option>
+								<option value="Город 2">Город 2</option>
+								<option value="Город 3">Город 3</option>
+								<option value="Город 4">Город 4</option>
+							</select>
+
+							{% include '../interface/arrow.html' %}
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+
+						<div class="form-group__input--wrapper">
+							<input type="email" name="email" placeholder="Ваш E-mail" class="form-group__input is-disabled" disabled>
+						</div>
+
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+					</div>
+
+					<div class="form-group__submit text-center">
+						<p class="form-group__notice">Отправляя данную форму Вы подтверждаете, что ознакомлены и согласны с <a href="#">политикой конфиденциальности и правилами обработки персональных данных</a></p>
+
+						<button class="btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+					</div>
+				</form>
+				<!-- //Form -->
+
+				<div class="popup-links text-center">
+					<a href="page-crediting.html" class="link">Приобрести авто в кредит</a><br>
+					<a href="page-trade-in.html" class="link">Приобрести авто по услуге Trade In</a>
+				</div>
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Buy car popup -->
