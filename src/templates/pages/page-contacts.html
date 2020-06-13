@@ -1,0 +1,113 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Popups -->
+		{% include '../parts/components/popups/popup-callback.html' %}
+		{% include '../parts/components/popups/popup-thanks.html' %}
+		<!-- //Popups -->
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			
+			<!-- Section contacts -->
+			<section class="sect__contacts">
+				<h1 class="w3c">Контакты</h1>
+
+				
+				<div class="row">
+					
+
+
+					<div class="contacts__col">
+						<div class="contacts__content">
+							<h2 class="page-title">Контакты</h2>
+
+							<div class="contacts-city">
+								<div class="h3 sect-title accent-color">Автосалон</div>
+								<div class="form-group__input--wrapper">
+									<select name="city"  class="form-group__input form-group__select">
+										<option value="Автосалон - г. Актобе" selected>Автосалон - г. Актобе</option>
+										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
+										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
+										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
+									</select>
+
+									{% include '../parts/components/interface/arrow.html' %}
+								</div>
+							</div>
+
+							<div class="contacts">
+								<p class="contact__item contact__item--address">Казахстан, г. Астана, AltynCarSalon</p>
+								<p class="contact__item contact__item--phone"><a href="tel:+85552567524" rel="nofollow">8 (555) 256-75-24 </a></p>
+								<p class="contact__item contact__item--email"><a href="mailto:aaaaltyncar@gmail.com" rel="nofollow">aaaaltyncar@gmail.com</a></p>
+								<p class="contact__item contact__item--worktime">ПН-ВС 09:00 - 20:00</p>
+								<p class="contact__item contact__item--instagram"><a href="#" rel="nofollow">@dadadadssss</a></p>
+							</div>
+
+							<div class="routes">
+								<h3 class="routes__title">Построить маршрут</h3>
+
+								<div class="routes-links">
+									<a href="#" class="route-link" title="Построить маршрут в Yandex.Maps">
+										<img src="img/routes/1.svg" alt="Yandes Maps" >
+									</a>
+									<a href="#" class="route-link" title="Построить маршрут в Google.Maps">
+										<img src="img/routes/2.svg" alt="Google Maps" >
+									</a>
+									<a href="#" class="route-link" title="Построить маршрут в 2GIS">
+										<img src="img/routes/3.svg" alt="2Gis" >
+									</a>
+								</div>
+							</div>
+
+							<button class="btn btn-short js-open-callback-popup-btn" type="button">СВЯЗАТЬСЯ С НАМИ</button>
+
+							<div class="official-partners">
+								<div class="official-partner">
+									<p>официальный партнер</p>
+									<a href="www.renault.ural-krov-auto.kz" target="_blank">www.renault.ural-krov-auto.kz</a>
+								</div>
+								<div class="official-partner">
+									<p>официальный партнер</p>
+									<a href="www.ural-krov auto.kz" target="_blank">www.ural-krov auto.kz</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Map -->
+					<div class="map__wrapper">
+						<div class="coords js-coords visually-hidden" data-latitude="51.158260" data-longitude="71.444298"></div>
+						<div id="map"></div>
+					</div>
+					<!-- //Map -->
+
+				</section>
+				<!-- //Section contacts -->
+
+
+
+
+			</main>
+			<!-- //Main -->
+
+			<!-- Footer -->
+			{% include '../parts/sections/footer.html' %}
+			<!-- //Footer -->
+
+		</div>
+		<!-- //CONTENT WRAPPER -->
+
+		{% include '../parts/scripts.html' %}
+
+	</body>
+
+	</html>

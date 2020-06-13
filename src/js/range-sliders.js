@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// }
 
 	var priceRangeInputs = document.querySelectorAll('.js-range-input');
-		console.log(priceRangeInputs);
+	
 
 	if(priceRangeInputs.length > 0) {
 

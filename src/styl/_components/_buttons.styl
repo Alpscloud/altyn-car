@@ -26,11 +26,19 @@
 			border-color transparent
 			background-color $basic-white-color
 			box-shadow 0px 4px 9px rgba($basic-black-color, 0.2)
+			
+		&-sm
+			font-size 13px
+			padding 8px
 	
 	&-wide
-		padding-left 15px
-		padding-right 15px
+		padding-left 10px
+		padding-right 10px
 		width 100%	
+		
+	&-short
+		padding-left 37.5px
+		padding-right 37.5px
 		
 	&-faded
 		background-color rgba($basic-white-color, .6)
@@ -135,7 +143,25 @@
 	
 		
 		
-	
+	&__tab
+		width 100%
+		max-width 330px
+		text-align center
+		padding 16px 10px
+		background-color $basic-white-color
+		color $accent-color
+		text-transform uppercase
+		font 16px $Semibold
+		border 1px solid $accent-color
+		&.is-active
+			background-color $accent-color
+			color $basic-white-color
+		&:hover
+			box-shadow 0px 4px 9px rgba($basic-black-color, 0.2)
+		&:first-child
+			br(6px, 0, 0, 6px)
+		&:last-child
+			br(0, 6px, 6px, 0)
 	
 
 	&__hamburger

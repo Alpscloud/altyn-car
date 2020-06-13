@@ -1,0 +1,130 @@
+.contacts
+	&__content
+		width 100%
+		max-width 720px
+		padding-right 110px
+		padding-left 20px
+		
+		.page-title
+			margin-bottom 40px
+		
+
+		.contacts
+			margin-bottom 55px
+			
+	&-city
+		
+		max-width 405px
+		margin-bottom 35px
+		
+		&__title
+			margin-bottom 23px
+			
+		
+		select
+			font-family $Semibold
+			color $text-color
+			padding-top 17px
+			padding-bottom 17px
+			
+
+	&__col
+		width 50%
+		display flex
+		justify-content flex-end
+		padding 80px 0 60px
+		
+.contact__item
+	position relative
+	padding-left 35px
+	font 14px $Semibold
+	color $dark-text-color
+	line-height 1
+	margin-bottom 25px
+	&:last-child
+		margin-bottom 0
+	a
+		color inherit
+		&:hover
+			color $accent-color
+	&:before
+		pseudo()
+		position absolute
+		left 0
+		vertical-center()
+		width 23px
+		height 23px
+		background-position 50% 50%
+		background-size 23px 23px
+		background-repeat no-repeat
+		
+	&--address
+		&:before
+			background-image url('../img/icons/svg/contacts/location-ic.svg')
+	&--phone
+		&:before
+			background-image url('../img/icons/svg/contacts/phone-ic.svg')
+	&--email
+		&:before
+			background-image url('../img/icons/svg/contacts/email-ic.svg')
+	&--worktime
+		&:before
+			background-image url('../img/icons/svg/contacts/clock-ic.svg')
+	&--instagram
+		&:before
+			background-image url('../img/icons/svg/contacts/instagram-ic.svg')
+			
+	&--delivery
+		&:before
+			background-image url('../img/icons/svg/contacts/delivery-ic.svg')
+			
+	&--wishlist
+		&:before
+			background-image url('../img/icons/svg/contacts/wishlist-ic.svg')
+			
+	&--compare
+		&:before
+			background-image url('../img/icons/svg/contacts/compare-ic.svg')
+
+
+		
+
+.routes__title
+	text-transform uppercase
+	margin-bottom 20px
+	text-transform uppercase
+	font 16px $Bold
+	color $routes-title-color
+	
+.route-link
+	display inline-block
+	margin 0 20px 20px 0
+	img
+		display block
+	&:hover
+		opacity .75
+		
+.official-partner
+	p
+		text-transform uppercase
+		font-size 12px
+		margin-bottom 2px
+		line-height 1
+	a
+		color $accent-color
+		font 14px $Semibold
+		border-bottom 1px solid transparent
+		&:hover
+			color $text-color
+			border-color $text-color
+		
+.official-partners
+	margin-top 30px
+	
+	.official-partner
+		margin-bottom 25px
+		&:last-child
+			margin-bottom 0
+			
+		p
+			font-size 14px

@@ -116,46 +116,6 @@
 				
 
 // Contacts
-.contact__item
-	position relative
-	padding-left 35px
-	font 14px $Semibold
-	color $dark-text-color
-	line-height 1
-	margin-bottom 25px
-	&:last-child
-		margin-bottom 0
-	a
-		color inherit
-		&:hover
-			color $accent-color
-	&:before
-		pseudo()
-		position absolute
-		left 0
-		vertical-center()
-		width 23px
-		height 23px
-		background-position 50% 50%
-		background-size 23px 23px
-		background-repeat no-repeat
-		
-	&--address
-		&:before
-			background-image url('../img/icons/svg/contacts/location-ic.svg')
-	&--phone
-		&:before
-			background-image url('../img/icons/svg/contacts/phone-ic.svg')
-	&--email
-		&:before
-			background-image url('../img/icons/svg/contacts/email-ic.svg')
-	&--worktime
-		&:before
-			background-image url('../img/icons/svg/contacts/clock-ic.svg')
-	&--instagram
-		&:before
-			background-image url('../img/icons/svg/contacts/instagram-ic.svg')
-
 
 
 .location
@@ -172,3 +132,87 @@
 		width 17px
 		height 22px
 		background url('../img/icons/svg/contacts/location-ic.svg') 50% 50% no-repeat / 17px 22px
+		
+
+
+.scroll-down-link
+	position absolute
+	horisontal-center()
+	bottom -60px
+	width 120px
+	height 120px
+	border 1px solid #d5d5d5
+	box-shadow 0px 12px 11px rgba($basic-black-color, 0.05)
+	border-radius 50%
+	&:before
+		pseudo()
+		width 90px
+		height 90px
+		position absolute
+		position-center()
+		background-color $basic-white-color
+		border-radius 50%
+		box-shadow 0px 12px 11px rgba($basic-black-color, 0.05)
+		transition box-shadow .17s ease-in-out
+	.arrow
+		width 18px
+		height 11px
+		position absolute
+		position-center()
+		
+		svg
+			fill $accent-color
+			
+	&:hover
+		&:before
+			box-shadow none
+			svg
+				fill $text-color
+				
+
+.fancybox-navigation 
+	.fancybox-button--arrow
+		&_left
+			left 20px
+		&_right
+			right 20px
+			
+
+	button
+		width 31px
+		height 69px
+		padding 0
+		&:before
+			display none
+		&:hover
+			color $accent-color
+			
+	svg
+		path 
+			stroke transparent
+			stroke-width 0
+			
+.fancybox-button
+	opacity 1
+	
+
+.users-count
+	position absolute
+	left -20px
+	top 65px
+	background-color $users-count-bg
+	box-shadow 4px -2px 14px rgba($basic-black-color, 0.1)
+	br(0, 25px, 0, 0)
+	padding 20px 35px 20px 45px
+	text-align center
+	color $basic-black-color
+	font 14px $Light
+	b, strong, span
+		display inline-block
+		color $accent-color
+		margin-left 16px
+		font-family $Semibold
+		
+	
+	
+		

@@ -1,0 +1,224 @@
+.car
+	&__header
+		padding-top 35px
+		padding-bottom 75px
+		position relative
+		br(0,0,53px,53px)
+		box-shadow 0px 4px 24px rgba($basic-black-color, 0.06)
+		margin-left -20px
+		margin-right -20px
+		z-index 1
+		
+		&--title
+			margin-bottom 33px
+			
+			
+			.sect-title
+				margin-bottom 0
+				margin-right 120px
+				
+		&--information
+			display flex
+			justify-content flex-start
+			
+			.contact__item
+				margin-right 26px
+				margin-bottom 0
+				font-size 12px
+				&:last-child
+					margin-right 0
+				
+		&--tools
+			width 330px
+			&_btns
+				display flex
+				margin-left -6px
+				margin-right -6px
+				&-item
+					width 50%
+					padding 10px 6px 0 6px
+					
+
+	&-params
+		margin-top 23px
+		&__list
+			text-align center
+			display flex
+			justify-content space-between
+			&--item
+				font 14px $Semibold
+				color $alternate-text-color
+				margin-right 15px
+				&:last-child
+					margin-right 0
+				span
+					display inline-block
+					color #A3A3A3
+					margin-right 5px
+					font-family $Med
+	
+
+	&__body
+		padding-top 120px
+		position relative
+		
+	&-information
+		&__wrapper
+			margin 0 auto
+			max-width 1615px
+			
+		&__controls
+			text-align center
+			margin-bottom 55px
+			font-size 0
+			
+		&__item
+			&--block
+				background-color $basic-white-color
+				border 1px solid $border-color
+				margin-bottom 20px
+				padding 60px 70px
+				&:last-child
+					margin-bottom 0
+					
+				&_title
+					color $accent-color
+					margin-bottom 30px
+					font 24px $Bold
+					line-height 29px
+					
+	&-advantages
+		&__row
+			justify-content space-evenly
+			
+	&-advantage
+		font-family $Med
+		text-align center
+		color $alternate-text-color
+		&.is-active
+			color $accent-color
+		&__ic
+			display block
+			margin 0 auto 30px auto
+			width 95px
+			height 75px
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size container
+		&__wrapper
+			padding 0 15px
+			
+	&-characteristics
+		&__row
+			margin-left -30px
+			margin-right -30px
+		&__col
+			padding-left 30px
+			padding-right 30px
+			
+		&__list
+			color $alternate-text-color
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+			p
+				font 16px $Med
+				
+			ul
+				margin-top 10px
+				li
+					position relative
+					font-family $Light
+					line-height 17px
+					margin-bottom 9px
+					padding-left 15px
+					&:before
+						pseudo()
+						position absolute
+						vertical-center()
+						left 0
+						width 5px
+						height 5px
+						border-radius 50%
+						background-color $accent-color
+					&:last-child
+						margin-bottom 0
+
+.car-services
+	margin-top 60px
+	margin-bottom 85px
+	&__row
+		margin-left -10px
+		margin-right -10px
+
+.car-service
+	display flex
+	align-items center
+	justify-content flex-start
+	&__ic
+		flex none
+		background-color $basic-white-color
+		margin-right 20px
+		width 115px
+		height 115px
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size 68px 68px
+		border-radius 50%
+	&__title
+		text-transform uppercase
+		color $alternate-text-color
+		font 17px $Semibold
+		line-height 21px
+		margin-bottom 7px
+	&__wrapper
+		padding-left 10px
+		padding-right 10px
+		
+
+.car-technical-guarantee
+	.permalink__wrapper
+		margin-top 50px
+	&__text
+		position relative
+		text-align center
+		max-width 930px
+		margin 0 auto 70px auto
+		
+	&__package
+		background-color $basic-white-color
+		padding 45px 95px
+		text-align center
+		&--icons
+			text-align center
+			margin-bottom 30px
+		
+		&--icon
+			display inline-block
+			width 55px
+			height 55px
+			margin-right 26px
+			background-position 50% 50%
+			background-repeat no-repeat
+			&:last-child
+				margin-right 0
+				
+		.block-title
+			margin-bottom 20px
+			
+		ul
+			margin-bottom 30px
+			
+			li
+				margin-bottom 13px
+				&:last-child
+					margin-bottom 0
+			
+		.price
+			font 14px $Med
+			color $text-color
+		&--wrapper
+			padding 0 15px
+
+
+		
