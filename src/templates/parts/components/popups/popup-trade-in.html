@@ -1,5 +1,5 @@
 <!-- Trade in popup-->
-<div class="popup js-popup js-trade-in-popup">
+<div class="popup js-popup js-trade-in-popup" >
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -20,13 +20,25 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-33">
 							<div class="form-group__input--wrapper">
-								<select name="car-brand"  class="form-group__input form-group__select">
-									<option value="" disabled selected>Марка</option>
-									<option value="Марка 1">Марка 1</option>
-									<option value="Марка 2">Марка 2</option>
-									<option value="Марка 3">Марка 3</option>
-									<option value="Марка 4">Марка 4</option>
-								</select>
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
+									<span class="form-group__input--label_text">Марка</span>
+								</label>
+
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Марка 1</li>
+										<li>Марка 2</li>
+										<li>Марка 3</li>
+										<li>Марка 4</li>
+										<li>Марка 5</li>
+										<li>Марка 6</li>
+										<li>Марка 7</li>
+										<li>Марка 8</li>
+										<li>Марка 9</li>
+										<li>Марка 10</li>
+									</ul>
+								</div>
 
 								{% include '../interface/arrow.html' %}
 							</div>
@@ -37,60 +49,25 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-33">
 							<div class="form-group__input--wrapper">
-								<select name="year-of-issue"  class="form-group__input form-group__select">
-									<option value="" disabled selected>Год выпуска</option>
-									<option value="Год 1">Год 1</option>
-									<option value="Год 2">Год 2</option>
-									<option value="Год 3">Год 3</option>
-									<option value="Год 4">Год 4</option>
-								</select>
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Год выпуска" class="form-group__input form-group__input--with-label" value="1920" readonly>
+									<span class="form-group__input--label_text">Год выпуска</span>
+								</label>
 
-								{% include '../interface/arrow.html' %}
-							</div>
-						</div>
-						<!-- //Form group -->
-
-						<!-- Form group -->
-						<div class="form-group__input--wrapper_col col-w-33">
-							<div class="form-group__input--wrapper ">
-								<select name="car-state"  class="form-group__input form-group__select">
-									<option value="" disabled selected>Состояние машины</option>
-									<option value="Состояние">Состояние</option>
-									<option value="Состояние">Состояние</option>
-									<option value="Состояние">Состояние</option>
-									<option value="Состояние">Состояние</option>
-								</select>
-
-								{% include '../interface/arrow.html' %}
-							</div>
-						</div>
-						<!-- //Form group -->
-
-						<!-- Form group -->
-						<div class="form-group__input--wrapper_col col-w-33">
-							<div class="form-group__input--wrapper">
-								<select name="car-model"  class="form-group__input form-group__select is-disabled" disabled>
-									<option value="" disabled selected>Модель</option>
-									<option value="Модель 1">Модель 1</option>
-									<option value="Модель 2">Модель 2</option>
-									<option value="Модель 3">Модель 3</option>
-									<option value="Модель 4">Модель 4</option>
-								</select>
-
-								{% include '../interface/arrow.html' %}
-							</div>
-						</div>
-						<!-- //Form group -->
-
-						<!-- Form group -->
-						<div class="form-group__input--wrapper_col col-w-33">
-							<div class="form-group__input--wrapper ">
-								<select name="transmission"  class="form-group__input form-group__select">
-									<option value="" disabled selected>КПП</option>
-									<option value="Ручная коробка">Ручная коробка</option>
-									<option value="Автомат">Автомат</option>
-									<option value="Робот">Робот</option>
-								</select>
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Год 1</li>
+										<li>Год 2</li>
+										<li>Год 3</li>
+										<li>Год 4</li>
+										<li>Год 5</li>
+										<li>Год 6</li>
+										<li>Год 7</li>
+										<li>Год 8</li>
+										<li>Год 9</li>
+										<li>Год 10</li>
+									</ul>
+								</div>
 
 								{% include '../interface/arrow.html' %}
 							</div>
@@ -100,14 +77,109 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-33">
 							<div class="form-group__input--wrapper">
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Состояние машины" class="form-group__input form-group__input--with-label" value="Любое" readonly>
+									<span class="form-group__input--label_text">Состояние машины</span>
+								</label>
 
-								<select name="engine-capacity-min"  class="form-group__input form-group__select">
-									<option value="" disabled selected>Пробег</option>
-									<option value="100 тыс. км">100 тыс. км</option>
-									<option value="150 тыс. км">150 тыс. км</option>
-									<option value="200 тыс. км">200 тыс. км</option>
-									<option value="250 тыс. км">250 тыс. км</option>
-								</select>
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Состояние 1</li>
+										<li>Состояние 2</li>
+										<li>Состояние 3</li>
+										<li>Состояние 4</li>
+										<li>Состояние 5</li>
+										<li>Состояние 6</li>
+										<li>Состояние 7</li>
+										<li>Состояние 8</li>
+										<li>Состояние 9</li>
+										<li>Состояние 10</li>
+									</ul>
+								</div>
+
+								{% include '../interface/arrow.html' %}
+							</div>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper_col col-w-33">
+							<div class="form-group__input--wrapper">
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
+									<span class="form-group__input--label_text">Модель</span>
+								</label>
+
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Модель 1</li>
+										<li>Модель 2</li>
+										<li>Модель 3</li>
+										<li>Модель 4</li>
+										<li>Модель 5</li>
+										<li>Модель 6</li>
+										<li>Модель 7</li>
+										<li>Модель 8</li>
+										<li>Модель 9</li>
+										<li>Модель 10</li>
+									</ul>
+								</div>
+
+								{% include '../interface/arrow.html' %}
+							</div>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper_col col-w-33">
+							<div class="form-group__input--wrapper">
+								<label class="form-group__input--label is-active">
+									<input type="text" name="КПП" class="form-group__input form-group__input--with-label" value="Любая" readonly>
+									<span class="form-group__input--label_text">КПП</span>
+								</label>
+
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>КПП 1</li>
+										<li>КПП 2</li>
+										<li>КПП 3</li>
+										<li>КПП 4</li>
+										<li>КПП 5</li>
+										<li>КПП 6</li>
+										<li>КПП 7</li>
+										<li>КПП 8</li>
+										<li>КПП 9</li>
+										<li>КПП 10</li>
+									</ul>
+								</div>
+
+								{% include '../interface/arrow.html' %}
+							</div>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper_col col-w-33">
+							<div class="form-group__input--wrapper">
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Пробег" class="form-group__input form-group__input--with-label" value="1 тыс. км" readonly>
+									<span class="form-group__input--label_text">Пробег</span>
+								</label>
+
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Пробег 1</li>
+										<li>Пробег 2</li>
+										<li>Пробег 3</li>
+										<li>Пробег 4</li>
+										<li>Пробег 5</li>
+										<li>Пробег 6</li>
+										<li>Пробег 7</li>
+										<li>Пробег 8</li>
+										<li>Пробег 9</li>
+										<li>Пробег 10</li>
+									</ul>
+								</div>
 
 								{% include '../interface/arrow.html' %}
 							</div>
@@ -118,7 +190,7 @@
 					<!-- Auto -->
 					<div class="trade-in-car">
 						<h4 class="block-title">Обмен на</h4>
-						<p class="trade-in-auto__text">Выберите автомобиль из каталога на который хотите совершить обмен</p>
+						<p class="trade-in-car__text">Выберите автомобиль из каталога на который хотите совершить обмен</p>
 						{% include '../car/car-card-mini.html' %}
 					</div>
 					<!-- //Auto -->
@@ -127,13 +199,25 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-25">
 							<div class="form-group__input--wrapper">
-								<select name="city"  class="form-group__input form-group__select">
-									<option value="" disabled selected>Город</option>
-									<option value="Город 1">Город 1</option>
-									<option value="Город 2">Город 2</option>
-									<option value="Город 3">Город 3</option>
-									<option value="Город 4">Город 4</option>
-								</select>
+								<label class="form-group__input--label is-active">
+									<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+									<span class="form-group__input--label_text">Город</span>
+								</label>
+
+								<div class="form-group__input--dropdown">
+									<ul>
+										<li>Город 1</li>
+										<li>Город 2</li>
+										<li>Город 3</li>
+										<li>Город 4</li>
+										<li>Город 5</li>
+										<li>Город 6</li>
+										<li>Город 7</li>
+										<li>Город 8</li>
+										<li>Город 9</li>
+										<li>Город 10</li>
+									</ul>
+								</div>
 
 								{% include '../interface/arrow.html' %}
 							</div>
@@ -143,7 +227,10 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-25">
 							<div class="form-group__input--wrapper">
-								<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+								<label class="form-group__input--label">
+									<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+									<span class="form-group__input--label_text">Ваше имя</span>
+								</label>
 							</div>
 						</div>
 						<!-- //Form group -->
@@ -151,7 +238,10 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-25">
 							<div class="form-group__input--wrapper">
-								<input type="email" name="email" placeholder="Ваш E-mail" class="form-group__input is-disabled" disabled>
+								<label class="form-group__input--label">
+									<input type="email" name="Email" class="form-group__input form-group__input--with-label is-disabled" disabled>
+									<span class="form-group__input--label_text">Ваш E-mail</span>
+								</label>
 							</div>
 						</div>
 						<!-- //Form group -->
@@ -159,7 +249,10 @@
 						<!-- Form group -->
 						<div class="form-group__input--wrapper_col col-w-25">
 							<div class="form-group__input--wrapper">
-								<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+								<label class="form-group__input--label">
+									<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+									<span class="form-group__input--label_text">Ваш телефон</span>
+								</label>
 							</div>
 						</div>
 						<!-- //Form group -->

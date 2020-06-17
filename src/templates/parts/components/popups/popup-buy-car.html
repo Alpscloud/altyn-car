@@ -1,5 +1,5 @@
 <!-- Buy car popup-->
-<div class="popup js-popup js-buy-car-popup">
+<div class="popup js-popup js-buy-car-popup" style="display: block">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -22,37 +22,64 @@
 				<form class="contact-form">
 					<div class="contact-form__inputs">
 						<!-- Form group -->
+						
 						<div class="form-group__input--wrapper">
-							<select name="city"  class="form-group__input form-group__select">
-								<option value="" disabled selected>Город</option>
-								<option value="Город 1">Город 1</option>
-								<option value="Город 2">Город 2</option>
-								<option value="Город 3">Город 3</option>
-								<option value="Город 4">Город 4</option>
-							</select>
+							<label class="form-group__input--label is-active">
+								<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+								<span class="form-group__input--label_text">Город</span>
+							</label>
+
+							<div class="form-group__input--dropdown">
+								<ul>
+									<li>Город 1</li>
+									<li>Город 2</li>
+									<li>Город 3</li>
+									<li>Город 4</li>
+									<li>Город 5</li>
+									<li>Город 6</li>
+									<li>Город 7</li>
+									<li>Город 8</li>
+									<li>Город 9</li>
+									<li>Город 10</li>
+								</ul>
+							</div>
 
 							{% include '../interface/arrow.html' %}
+							
 						</div>
 						<!-- //Form group -->
 
 						<!-- Form group -->
+						
 						<div class="form-group__input--wrapper">
-							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваше имя</span>
+							</label>
 						</div>
+						
 						<!-- //Form group -->
 
 						<!-- Form group -->
-
+						
 						<div class="form-group__input--wrapper">
-							<input type="email" name="email" placeholder="Ваш E-mail" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="email" name="Email" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш E-mail</span>
+							</label>
 						</div>
-
+						
 						<!-- //Form group -->
 
 						<!-- Form group -->
+						
 						<div class="form-group__input--wrapper">
-							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш телефон</span>
+							</label>
 						</div>
+						
 						<!-- //Form group -->
 
 					</div>

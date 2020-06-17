@@ -74,8 +74,8 @@ input[type="search"]::-webkit-search-results-decoration
 				
 			&.is-disabled,
 			&:disabled
-				pointer-events none
-				
+				color $light-text-color
+				cursor not-allowed
 				+ .arrow
 					display none
 					
@@ -96,6 +96,8 @@ input[type="search"]::-webkit-search-results-decoration
 					vertical-center()
 					right 15px
 					pointer-events none
+					
+		
 					
 			&--search
 				padding-left 45px
@@ -180,7 +182,75 @@ input[type="search"]::-webkit-search-results-decoration
 					margin-bottom 0 
 	
 
-	
+
+.form-group
+	&__input
+		&--with-label
+			padding 22px 15px 10px 15px
+			cursor pointer
+		&--label
+			display block
+			position relative
+			&_text
+				display inline-block
+				position absolute
+				font-size 12px
+				color $light-text-color
+				left 15px
+				vertical-center()
+				transition all .17s ease-in-out
+
+							
+			&.is-active
+				span
+					margin-top -14px
+					
+		&--dropdown
+			position absolute
+			top 100%
+			left 0
+			width 100%
+			background-color $basic-white-color
+			max-height 250px
+			overflow-y auto
+			z-index 5
+			box-shadow 0 4px 14px rgba(0,0,0,.08)
+			br(0, 0, 10px, 10px)
+			padding 30px 15px 40px
+			transition all .17s ease-in-out
+			margin-top 10px
+			opacity 0
+			visibility hidden
+			
+			ul
+				display flex
+				flex-direction column
+				align-items flex-start
+				li
+					display inline-block
+					margin-bottom 15px
+					cursor pointer
+					transition all .17s ease-in-out
+					border-bottom 1px solid transparent
+					&:last-child
+						margin-bottom 0
+					&:hover
+						border-color $text-color
+						
+			.form-group__input--wrapper
+				margin-bottom 20px !important
+				&:last-child
+					margin-bottom 0
+						
+		&--wrapper
+			&.is-opened
+				.form-group__input--dropdown
+					opacity 1
+					visibility visible
+					margin-top 0
+					
+				.arrow
+					transform translateY(-50%) rotate(-180deg) 
 
 
 .form-group__checkbox,
@@ -226,6 +296,12 @@ input[type="search"]::-webkit-search-results-decoration
 					&:before
 						border-color $accent-color
 						background-image url('../img/icons/svg/checkbox-ic.svg')
+						
+	&--sm
+		&:before
+			width 24px
+			height 24px
+			background-size 14px 14px
 			
 .form-group__radio
 	&:before

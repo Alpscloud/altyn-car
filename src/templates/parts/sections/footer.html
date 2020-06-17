@@ -13,11 +13,56 @@
 			<div class="row footer__row align-vertical-start align-horisontal-between">
 
 				<div class="footer-contacts">
-					<div class="footer-contacts__city">
-						<div class="user-city">
-							выбор города
+					<!-- User city -->
+					<div class="user-city__wrapper">
+
+						<div class="user-city__block">
+							<span class="user-city__label">Город:</span>
+							<div class="user-city">
+								<span class="user-city__name">Астана</span>
+								{% include '../components/interface/arrow.html' %}
+							</div>
+
+							<!-- Dropdown -->
+							<div class="user-city__dropdown--wrapper">
+								<div class="user-city__dropdown">
+									<p class="user-city__dropdown--text">Выберите город в котором вы находитесь</p>
+									<!-- Form -->
+									<form class="user-city__dropdown--form">
+										<div class="form-group__input--wrapper">
+											<input type="search" name="search" placeholder="Что ищем?" class="form-group__input form-group__input--search">
+
+											<button type="search" class="btn__search btn__search--absolute">
+												<svg viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18.3163 18.0462C18.5946 18.3245 18.5946 18.7756 18.3163 19.0539C18.0381 19.3321 17.5869 19.3321 17.3087 19.0539L13.8887 15.6339C13.6104 15.3556 13.6104 14.9045 13.8887 14.6262C14.1669 14.348 14.6181 14.348 14.8963 14.6262L18.3163 18.0462ZM7.5525 15.8425C3.38137 15.8425 0 12.4612 0 8.29005C0 4.11892 3.38137 0.737549 7.5525 0.737549C11.7236 0.737549 15.105 4.11892 15.105 8.29005C15.105 12.4612 11.7236 15.8425 7.5525 15.8425ZM7.5525 14.4175C10.9366 14.4175 13.68 11.6742 13.68 8.29005C13.68 4.90592 10.9366 2.16255 7.5525 2.16255C4.16838 2.16255 1.425 4.90592 1.425 8.29005C1.425 11.6742 4.16838 14.4175 7.5525 14.4175ZM4.0375 7.72005C4.0375 7.98238 3.82484 8.19505 3.5625 8.19505C3.30016 8.19505 3.0875 7.98238 3.0875 7.72005C3.0875 5.5689 4.83135 3.82505 6.9825 3.82505C7.24483 3.82505 7.4575 4.03771 7.4575 4.30005C7.4575 4.56238 7.24483 4.77505 6.9825 4.77505C5.35602 4.77505 4.0375 6.09357 4.0375 7.72005Z" />
+												</svg>
+											</button>
+										</div>
+									</form>
+									<!-- //Form -->
+
+									<div class="user-city__dropdown--list_wrapper">
+										<ul class="user-city__dropdown--list">
+											<li>Далеко-далеко.</li>
+											<li>Мир.</li>
+											<li>Своих.</li>
+											<li>Она.</li>
+											<li>Ее?</li>
+											<li>Над.</li>
+											<li>Раз.</li>
+											<li>Злых.</li>
+											<li>Силуэт.</li>
+											<li>Все.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- //Dropdown -->
 						</div>
+
 					</div>
+					<!-- //User city -->
+
 					<div class="contacts">
 						<p class="contact__item contact__item--phone"><a href="tel:+85552567524" rel="nofollow">8 (555) 256-75-24 </a></p>
 						<p class="contact__item contact__item--email"><a href="mailto:aaaaltyncar@gmail.com" rel="nofollow">aaaaltyncar@gmail.com</a></p>
@@ -123,3 +168,5 @@
 		<p>2020 "AltynCar" - продажа подержанных автомобилей в Казахстане. Все права защищены. Не является публичной офертой. Copyright &copy; 2020</p>
 	</div>
 </footer>
+
+{% include '../components/svg-filter.html' %}

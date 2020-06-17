@@ -55,6 +55,7 @@
 	display inline-block
 	width 10px
 	height 7px
+	transition all .17s ease-in-out
 	svg
 		svg()
 		fill $alternate-text-color
@@ -197,9 +198,10 @@
 	
 
 .users-count
-	position absolute
-	left -20px
-	top 65px
+	position fixed
+	left 0
+	bottom 60px
+	z-index 10
 	background-color $users-count-bg
 	box-shadow 4px -2px 14px rgba($basic-black-color, 0.1)
 	br(0, 25px, 0, 0)
@@ -212,6 +214,13 @@
 		color $accent-color
 		margin-left 16px
 		font-family $Semibold
+		
+
+// Svg filter
+.svg-filter
+	@extends .visually-hidden
+	svg
+		@extends .visually-hidden
 		
 	
 	

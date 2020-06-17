@@ -39,10 +39,15 @@
 	&__navigation
 		font-size 0
 		.btn__arrow
-			margin-right 60px
+			margin-right 40px
 			&:last-child
 				margin-right 0
-
+				
+		&--md
+			.btn__arrow
+				width 16px
+				height 36px
+		
 .swiper-container
 	*
 		box-sizing border-box
@@ -106,6 +111,14 @@
 			padding-left 20px
 			padding-right 20px
 			
+	.btn__arrow
+		svg
+			fill $basic-white-color
+			
+		&:hover
+			svg
+				fill $accent-color
+			
 	
 	
 .car-card
@@ -134,8 +147,8 @@
 				object-fit cover
 				
 		.btn__arrow
-			width 15px
-			height 33px		
+			width 20px
+			height 57px	
 				
 				
 		
@@ -167,6 +180,7 @@
 			width 715px
 			height auto
 			padding 12.5px
+			padding-bottom 30px
 			&-active
 				.car-main-slider__slide
 					padding-top 0
@@ -175,14 +189,13 @@
 		.btn__arrow
 			position absolute
 			vertical-center()
-			width 31px
-			height 69px
-			// box-shadow 0px 4px 14px rgba(0, 0, 0, 0.35)
+			width 60px
+			height 97px
 			z-index 2
 			&--prev
-				left 40px
+				left 30px
 			&--next
-				right 40px
+				right 30px
 		
 	&__slide
 		padding 6px 0
@@ -195,6 +208,7 @@
 			height 100%
 			overflow hidden
 			bg(50%, 50%)
+			box-shadow 0 7px 15px rgba($basic-black-color,.07)
 			img
 				@extends .visually-hidden
 				

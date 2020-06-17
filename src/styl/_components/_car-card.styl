@@ -16,19 +16,20 @@
 
 	&:hover
 		.car-card__body
-			box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
+			box-shadow 0px 0px 17px rgba($basic-black-color, 0.1)
 			
 	&.is-recommended
 		.car-card__body
 			border 2px solid $accent-color
 	&__body
-		// border 2px solid transparent
+
 		position relative
 		border-radius 10px
 		overflow hidden
 		background-color $basic-white-color
-		// radius-overflow()
+
 		transition box-shadow .17s ease-in-out
+		box-shadow 0 7px 15px rgba($basic-black-color,.07)
 		
 	&__labels
 		position absolute

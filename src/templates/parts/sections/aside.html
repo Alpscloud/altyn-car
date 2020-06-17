@@ -5,14 +5,105 @@
 		<div class="row align-horisontal-start row-inputs">
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-100">
+				
 				<div class="form-group__input--wrapper">
-					<select name="body-type"  class="form-group__input form-group__select">
-						<option value="" disabled selected>Тип кузова</option>
-						<option value="Седан">Седан</option>
-						<option value="Купе">Купе</option>
-						<option value="Хэч-бек">Хэч-бек</option>
-						<option value="Пикап">Пикап</option>
-					</select>
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Тип кузова" class="form-group__input form-group__input--with-label" value="Все типы" readonly>
+						<span class="form-group__input--label_text">Тип кузова</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Седан">
+								<span class="form-group__checkbox form-group__checkbox--sm">Седан</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Внедорожник">
+								<span class="form-group__checkbox form-group__checkbox--sm">Внедорожник</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Хечбэк">
+								<span class="form-group__checkbox form-group__checkbox--sm">Хечбэк</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Универсал">
+								<span class="form-group__checkbox form-group__checkbox--sm">Универсал</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Кроссовер">
+								<span class="form-group__checkbox form-group__checkbox--sm">Кроссовер</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Спорт">
+								<span class="form-group__checkbox form-group__checkbox--sm">Спорт</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Купе">
+								<span class="form-group__checkbox form-group__checkbox--sm">Купе</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Лимузин">
+								<span class="form-group__checkbox form-group__checkbox--sm">Лимузин</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Фургон">
+								<span class="form-group__checkbox form-group__checkbox--sm">Фургон</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+
+						<!-- Checkbox -->
+						<div class="form-group__input--wrapper">
+							<label class="form-group__checkbox--label">
+								<input type="checkbox" name="Минивэн">
+								<span class="form-group__checkbox form-group__checkbox--sm">Минивэн</span>
+							</label>
+						</div>
+						<!-- //Checkbox -->
+					</div>
 
 					{% include '../components/interface/arrow.html' %}
 				</div>
@@ -22,101 +113,177 @@
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-100">
+				
 				<div class="form-group__input--wrapper">
-					<select name="city"  class="form-group__input form-group__select">
-						<option value="" disabled selected>Город</option>
-						<option value="Город 1">Город 1</option>
-						<option value="Город 2">Город 2</option>
-						<option value="Город 3">Город 3</option>
-						<option value="Город 4">Город 4</option>
-					</select>
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+						<span class="form-group__input--label_text">Город</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+						<ul>
+							<li>Город 1</li>
+							<li>Город 2</li>
+							<li>Город 3</li>
+							<li>Город 4</li>
+							<li>Город 5</li>
+							<li>Город 6</li>
+							<li>Город 7</li>
+							<li>Город 8</li>
+							<li>Город 9</li>
+							<li>Город 10</li>
+						</ul>
+					</div>
 
 					{% include '../components/interface/arrow.html' %}
 				</div>
-			</div>
 
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				<div class="form-group__input--wrapper">
-					<select name="car-brand"  class="form-group__input form-group__select">
-						<option value="" disabled selected>Марка</option>
-						<option value="Марка 1">Марка 1</option>
-						<option value="Марка 2">Марка 2</option>
-						<option value="Марка 3">Марка 3</option>
-						<option value="Марка 4">Марка 4</option>
-					</select>
-
-					{% include '../components/interface/arrow.html' %}
-				</div>
 			</div>
 			<!-- //Form group -->
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50">
+				
 				<div class="form-group__input--wrapper">
-					<select name="car-model"  class="form-group__input form-group__select is-disabled" disabled>
-						<option value="" disabled selected>Модель</option>
-						<option value="Модель 1">Модель 1</option>
-						<option value="Модель 2">Модель 2</option>
-						<option value="Модель 3">Модель 3</option>
-						<option value="Модель 4">Модель 4</option>
-					</select>
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
+						<span class="form-group__input--label_text">Марка</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+						<ul>
+							<li>Марка 1</li>
+							<li>Марка 2</li>
+							<li>Марка 3</li>
+							<li>Марка 4</li>
+							<li>Марка 5</li>
+							<li>Марка 6</li>
+							<li>Марка 7</li>
+							<li>Марка 8</li>
+							<li>Марка 9</li>
+							<li>Марка 10</li>
+						</ul>
+					</div>
 
 					{% include '../components/interface/arrow.html' %}
 				</div>
+
 			</div>
 			<!-- //Form group -->
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50">
+				
 				<div class="form-group__input--wrapper">
-					<select name="year-of-issue"  class="form-group__input form-group__select">
-						<option value="" disabled selected>Год выпуска, от</option>
-						<option value="Год 1">Год 1</option>
-						<option value="Год 2">Год 2</option>
-						<option value="Год 3">Год 3</option>
-						<option value="Год 4">Год 4</option>
-					</select>
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
+						<span class="form-group__input--label_text">Модель</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+						<ul>
+							<li>Модель 1</li>
+							<li>Модель 2</li>
+							<li>Модель 3</li>
+							<li>Модель 4</li>
+							<li>Модель 5</li>
+							<li>Модель 6</li>
+							<li>Модель 7</li>
+							<li>Модель 8</li>
+							<li>Модель 9</li>
+							<li>Модель 10</li>
+						</ul>
+					</div>
 
 					{% include '../components/interface/arrow.html' %}
 				</div>
+
 			</div>
 			<!-- //Form group -->
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50">
+				
 				<div class="form-group__input--wrapper">
-					<select name="year-of-issue-until"  class="form-group__input form-group__select">
-						<option value="" disabled selected>Год выпуска, до</option>
-						<option value="Год 1">Год 1</option>
-						<option value="Год 2">Год 2</option>
-						<option value="Год 3">Год 3</option>
-						<option value="Год 4">Год 4</option>
-					</select>
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Год выпуска, от" class="form-group__input form-group__input--with-label"  value="Все года" readonly>
+						<span class="form-group__input--label_text">Год выпуска, от</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+						<ul>
+							<li>Год 1</li>
+							<li>Год 2</li>
+							<li>Год 3</li>
+							<li>Год 4</li>
+							<li>Год 5</li>
+							<li>Год 6</li>
+							<li>Год 7</li>
+							<li>Год 8</li>
+							<li>Год 9</li>
+							<li>Год 10</li>
+						</ul>
+					</div>
 
 					{% include '../components/interface/arrow.html' %}
 				</div>
+
+			</div>
+			<!-- //Form group -->
+
+			<!-- Form group -->
+			<div class="form-group__input--wrapper_col col-w-50">
+				
+				<div class="form-group__input--wrapper">
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Год выпуска, до" class="form-group__input form-group__input--with-label" value="Все года" readonly>
+						<span class="form-group__input--label_text">Год выпуска, до</span>
+					</label>
+
+					<div class="form-group__input--dropdown">
+						<ul>
+							<li>Год 1</li>
+							<li>Год 2</li>
+							<li>Год 3</li>
+							<li>Год 4</li>
+							<li>Год 5</li>
+							<li>Год 6</li>
+							<li>Год 7</li>
+							<li>Год 8</li>
+							<li>Год 9</li>
+							<li>Год 10</li>
+						</ul>
+					</div>
+
+					{% include '../components/interface/arrow.html' %}
+				</div>
+
 			</div>
 			<!-- //Form group -->
 		</div>
 
 		<div class="row align-horisontal-start row-inputs js-range-inputs-parent">
+
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+				
 				<div class="form-group__input--wrapper">
-					<span class="form-group__input--price_mark">Цена, от</span>
-					<input name="price-min" type="text" class="form-group__input form-group__input--price js-range-input-val-min">
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Цена, от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
+						<span class="form-group__input--label_text">Цена, от</span>
+					</label>
 				</div>
 			</div>
 			<!-- //Form group -->
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+				
 				<div class="form-group__input--wrapper">
-					<span class="form-group__input--price_mark">Цена, до</span>
-					<input name="price-max" type="text" class="form-group__input form-group__input--price js-range-input-val-max">
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Цена, до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="100000" readonly>
+						<span class="form-group__input--label_text">Цена, до</span>
+					</label>
 				</div>
 			</div>
 			<!-- //Form group -->
@@ -133,7 +300,7 @@
 			<div class="form-group__input--wrapper_col col-w-100">
 				<div class="form-group__input--wrapper">
 					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="altyncar-guarantee">
+						<input type="checkbox" name="Авто с гарантией AltynCar Garant">
 						<span class="form-group__checkbox">Авто с гарантией AltynCar Garant</span>
 					</label>
 				</div>
@@ -144,7 +311,7 @@
 			<div class="form-group__input--wrapper_col col-w-50">
 				<div class="form-group__input--wrapper">
 					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="car-discount">
+						<input type="checkbox" name="Авто со скидкой">
 						<span class="form-group__checkbox">Авто со скидкой</span>
 					</label>
 				</div>
@@ -155,7 +322,7 @@
 			<div class="form-group__input--wrapper_col col-w-50">
 				<div class="form-group__input--wrapper">
 					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="car-new-items">
+						<input type="checkbox" name="Новые поступления">
 						<span class="form-group__checkbox">Новые поступления</span>
 					</label>
 				</div>
@@ -166,7 +333,7 @@
 			<div class="form-group__input--wrapper_col col-w-50">
 				<div class="form-group__input--wrapper">
 					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="car-buy-crediting">
+						<input type="checkbox" name="Покупка в кредит">
 						<span class="form-group__checkbox">Покупка в кредит</span>
 					</label>
 				</div>
@@ -177,7 +344,7 @@
 			<div class="form-group__input--wrapper_col col-w-50">
 				<div class="form-group__input--wrapper">
 					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="car-buy-without-prepayment">
+						<input type="checkbox" name="Без первоначального взноса">
 						<span class="form-group__checkbox">Без первоначального взноса</span>
 					</label>
 				</div>
@@ -191,18 +358,24 @@
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+				
 				<div class="form-group__input--wrapper">
-					<span class="form-group__input--price_mark">От</span>
-					<input name="prepayment-price-min" type="text" class="form-group__input form-group__input--price form-group__input--price_sm-gutter js-range-input-val-min">
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Превоначальный взнос от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
+						<span class="form-group__input--label_text">От</span>
+					</label>
 				</div>
 			</div>
 			<!-- //Form group -->
 
 			<!-- Form group -->
 			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+				
 				<div class="form-group__input--wrapper">
-					<span class="form-group__input--price_mark">До</span>
-					<input name="prepayment-price-max" type="text" class="form-group__input form-group__input--price form-group__input--price_sm-gutter js-range-input-val-max">
+					<label class="form-group__input--label is-active">
+						<input type="text" name="Превоначальный взнос до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="0" readonly>
+						<span class="form-group__input--label_text">До</span>
+					</label>
 				</div>
 			</div>
 			<!-- //Form group -->

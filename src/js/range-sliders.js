@@ -79,4 +79,61 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 	}
+
+	// Crediting
+	var creditTermRange = document.querySelector('.js-credit-term-range');
+	var creditTermInput = document.querySelector('.js-credit-term-input');
+
+
+	noUiSlider.create(creditTermRange, {
+		start: [1],
+		step: 1,
+		connect: 'lower',
+		range: {
+			'min': [1],
+			'max': [36]
+		},
+		format: wNumb({
+			decimals: 3,
+			thousand: '.',
+			suffix: ' (US $)'
+		})
+	});
+
+	creditTermRange.noUiSlider.on('update', function (values, handle) {
+		creditTermInput.value = values[handle];
+	});
+
+	creditTermInput.addEventListener('change', function () {
+		creditTermRange.noUiSlider.set(this.value);
+	});
+
+	var creditPayRange = document.querySelector('.js-credit-pay-range');
+	var creditPayInput = document.querySelector('.js-credit-pay-input');
+
+
+	noUiSlider.create(creditPayRange, {
+		start: [5000],
+		step: 5000,
+		connect: 'lower',
+		range: {
+			'min': [5000],
+			'max': [50000]
+		},
+		format: wNumb({
+			decimals: 3,
+			thousand: '.',
+			suffix: ' (US $)'
+		})
+	});
+
+	creditPayRange.noUiSlider.on('update', function (values, handle) {
+		creditPayInput.value = values[handle];
+	});
+
+	creditPayInput.addEventListener('change', function () {
+		creditPayRange.noUiSlider.set(this.value);
+	});
+
+	
 });
