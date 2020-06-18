@@ -1,0 +1,127 @@
+<!-- Vacancy form popup-->
+<div class="popup js-popup js-vacancy-form-popup" style="display: block;">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			{% include 'close-popup-btn.html' %}
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Менеджер по продажам автомобилей с пробегом (Trade-in)</h2>
+
+				<div class="vacancy-popup">
+					<div class="vacancy-popup-content">
+						<div class="vacancy__salary text-center">
+							<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+							<p class="light-text-color">отдел маркетинга</p>
+							<p class="accent-color f-f-medium">Алматы</p>
+						</div>
+					</div>
+
+
+					<form class="resume-form">
+
+						<div class="row align-horisontal-between row-inputs">
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="text" name="Имя" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваше имя</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="email" name="Email" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваш E-mail</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="tel" name="Phone" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваш телефон</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+						</div>
+
+						<div class="row align-horisontal-between row-inputs">
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label is-active">
+										<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+										<span class="form-group__input--label_text">Город</span>
+									</label>
+
+									<div class="form-group__input--dropdown">
+										<ul>
+											<li>Город 1</li>
+											<li>Город 2</li>
+											<li>Город 3</li>
+											<li>Город 4</li>
+											<li>Город 5</li>
+											<li>Город 6</li>
+											<li>Город 7</li>
+											<li>Город 8</li>
+											<li>Город 9</li>
+											<li>Город 10</li>
+										</ul>
+									</div>
+
+									{% include '../interface/arrow.html' %}
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label is-active">
+										<input type="text" name="Отдел" class="form-group__input form-group__input--with-label" value="Отдел маркетинга" readonly>
+										<span class="form-group__input--label_text">Отдел</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label form-group__input-file--label form-group__input form-group__input--with-label">
+										<input type="file" name="files" multiple="" class="form-group__input-file" data-multiple-caption="Выбрано: {count} файла(ов)">
+										<span class="form-group__input--label_text">Загрузить резюме</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+						</div>
+
+						<div class="text-center">
+							<button class="btn btn-wide-lg" type="submit">ОТКЛИКНУТЬСЯ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<!-- //Popup content-->
+	</div>
+
+</div>
+<!-- //Vacancy form popup -->

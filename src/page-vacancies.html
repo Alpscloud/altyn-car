@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Altyn Car</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Serhii 'winde' Kuptsov">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#46C770">
+	<!-- //Favicons -->
+	<meta name="msapplication-TileColor" content="#46C770">
+	<meta name="theme-color" content="#46C770">
+	<meta name="msapplication-navbutton-color" content="#46C770">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#46C770">
+
+	<!-- All libs styles -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Popups -->
+		<!-- Callback popup-->
+<div class="popup js-popup js-callback-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Связаться с нами</h2>
+
+				<p class="popup__text">Оставьте Ваши контактные данные и наш менеджер в ближайшее время свяжется с Вами</p>
+				
+				<!-- Form -->
+				<form class="contact-form">
+					<div class="contact-form__inputs">
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<select name="city"  class="form-group__input form-group__select">
+								<option value="" disabled selected>Город</option>
+								<option value="Город 1">Город 1</option>
+								<option value="Город 2">Город 2</option>
+								<option value="Город 3">Город 3</option>
+								<option value="Город 4">Город 4</option>
+							</select>
+
+							<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+					</div>
+
+					<div class="form-group__submit text-center">
+						<p class="form-group__notice">Отправляя данную форму Вы подтверждаете, что ознакомлены и согласны с <a href="#">политикой конфиденциальности и правилами обработки персональных данных</a></p>
+
+						<button class="btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+					</div>
+				</form>
+				<!-- //Form -->
+
+				<div class="popup-links text-center">
+					<a href="page-crediting.html" class="link">Приобрести авто в кредит</a><br>
+					<a href="page-trade-in.html" class="link">Приобрести авто по услуге Trade In</a>
+				</div>
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Callback popup -->
+		<!-- Thanks popup-->
+<div class="popup js-popup js-thanks-popup">
+	<div class="popup__overflow">
+		<div class="popup__body popup__body--tall text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title popup__title">Спасибо!</h2>
+
+				<p class="thanks-text">Ваша заявка принята, в ближайшее время наш менеджер свяжется с Вами и уточнит детали.</p>
+
+				<button class="btn js-close-popup-btn" type="button">ПРИНЯТЬ</button>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Thanks popup -->
+		<!-- Vacancy popup-->
+<div class="popup js-popup js-vacancy-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Менеджер по продажам автомобилей с пробегом (Trade-in)</h2>
+
+				<div class="vacancy-popup">
+					<div class="vacancy-popup-content">
+						<div class="vacancy__salary text-center">
+							<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+							<p class="light-text-color">отдел маркетинга</p>
+							<p class="accent-color f-f-medium">Алматы</p>
+						</div>
+
+						<div class="vacancy-popup-description text-left light-text-color">
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварный гор, безорфографичный диких дороге злых, безопасную даль первую вопрос страну мир, если рыбными залетают вершину повстречался запятой агенство. Языкового своего своих жаренные жизни маленький, сбить текст журчит, решила! Переулка меня текстами дал домах вопрос первую власти гор, взобравшись эта, даже дороге сих ведущими знаках необходимыми строчка. Свое букв дал оксмокс журчит, жизни но моей переписали однажды пояс текстами деревни проектах толку семь, то подпоясал своего, лучше ему заглавных меня?</p>
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварный гор, безорфографичный диких дороге злых, безопасную даль первую вопрос страну мир, если рыбными залетают вершину повстречался запятой агенство. Языкового своего своих жаренные жизни маленький, сбить текст журчит, решила! Переулка меня текстами дал домах вопрос первую власти гор, взобравшись эта, даже дороге сих ведущими знаках необходимыми строчка. Свое букв дал оксмокс журчит, жизни но моей переписали однажды пояс текстами деревни проектах толку семь, то подпоясал своего, лучше ему заглавных меня?</p>
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварный гор, безорфографичный диких дороге злых, безопасную даль первую вопрос страну мир, если рыбными залетают вершину повстречался запятой агенство. Языкового своего своих жаренные жизни маленький, сбить текст журчит, решила! Переулка меня текстами дал домах вопрос первую власти гор, взобравшись эта, даже дороге сих ведущими знаках необходимыми строчка. Свое букв дал оксмокс журчит, жизни но моей переписали однажды пояс текстами деревни проектах толку семь, то подпоясал своего, лучше ему заглавных меня?</p>
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварный гор, безорфографичный диких дороге злых, безопасную даль первую вопрос страну мир, если рыбными залетают вершину повстречался запятой агенство. Языкового своего своих жаренные жизни маленький, сбить текст журчит, решила! Переулка меня текстами дал домах вопрос первую власти гор, взобравшись эта, даже дороге сих ведущими знаках необходимыми строчка. Свое букв дал оксмокс журчит, жизни но моей переписали однажды пояс текстами деревни проектах толку семь, то подпоясал своего, лучше ему заглавных меня?</p>
+						</div>
+
+						<button class="btn btn-wide-lg js-open-vacancy-form-popup-btn" type="button">ОТКЛИКНУТЬСЯ</button>
+					</div>
+				</div>
+				
+
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Vacancy popup -->
+		<!-- Vacancy form popup-->
+<div class="popup js-popup js-vacancy-form-popup" style="display: block;">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Менеджер по продажам автомобилей с пробегом (Trade-in)</h2>
+
+				<div class="vacancy-popup">
+					<div class="vacancy-popup-content">
+						<div class="vacancy__salary text-center">
+							<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+							<p class="light-text-color">отдел маркетинга</p>
+							<p class="accent-color f-f-medium">Алматы</p>
+						</div>
+					</div>
+
+
+					<form class="resume-form">
+
+						<div class="row align-horisontal-between row-inputs">
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="text" name="Имя" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваше имя</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="email" name="Email" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваш E-mail</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label">
+										<input type="tel" name="Phone" class="form-group__input form-group__input--with-label">
+										<span class="form-group__input--label_text">Ваш телефон</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+						</div>
+
+						<div class="row align-horisontal-between row-inputs">
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label is-active">
+										<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+										<span class="form-group__input--label_text">Город</span>
+									</label>
+
+									<div class="form-group__input--dropdown">
+										<ul>
+											<li>Город 1</li>
+											<li>Город 2</li>
+											<li>Город 3</li>
+											<li>Город 4</li>
+											<li>Город 5</li>
+											<li>Город 6</li>
+											<li>Город 7</li>
+											<li>Город 8</li>
+											<li>Город 9</li>
+											<li>Город 10</li>
+										</ul>
+									</div>
+
+									<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label is-active">
+										<input type="text" name="Отдел" class="form-group__input form-group__input--with-label" value="Отдел маркетинга" readonly>
+										<span class="form-group__input--label_text">Отдел</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+							<!-- Form group -->
+							<div class="form-group__input--wrapper_col col-w-33">
+								<div class="form-group__input--wrapper">
+									<label class="form-group__input--label form-group__input-file--label form-group__input form-group__input--with-label">
+										<input type="file" name="files" multiple="" class="form-group__input-file" data-multiple-caption="Выбрано: {count} файла(ов)">
+										<span class="form-group__input--label_text">Загрузить резюме</span>
+									</label>
+								</div>
+							</div>
+							<!-- //Form group -->
+
+						</div>
+
+						<div class="text-center">
+							<button class="btn btn-wide-lg" type="submit">ОТКЛИКНУТЬСЯ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<!-- //Popup content-->
+	</div>
+
+</div>
+<!-- //Vacancy form popup -->
+		<!-- //Popups -->
+
+		<!-- Header -->
+		<!-- Callback popup-->
+<div class="popup js-popup js-callback-popup">
+	<div class="popup__overflow">
+		<div class="popup__body text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title sect-title__sm-gutter popup__title">Связаться с нами</h2>
+
+				<p class="popup__text">Оставьте Ваши контактные данные и наш менеджер в ближайшее время свяжется с Вами</p>
+				
+				<!-- Form -->
+				<form class="contact-form">
+					<div class="contact-form__inputs">
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<select name="city"  class="form-group__input form-group__select">
+								<option value="" disabled selected>Город</option>
+								<option value="Город 1">Город 1</option>
+								<option value="Город 2">Город 2</option>
+								<option value="Город 3">Город 3</option>
+								<option value="Город 4">Город 4</option>
+							</select>
+
+							<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+						<!-- Form group -->
+						<div class="form-group__input--wrapper">
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+						</div>
+						<!-- //Form group -->
+
+					</div>
+
+					<div class="form-group__submit text-center">
+						<p class="form-group__notice">Отправляя данную форму Вы подтверждаете, что ознакомлены и согласны с <a href="#">политикой конфиденциальности и правилами обработки персональных данных</a></p>
+
+						<button class="btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+					</div>
+				</form>
+				<!-- //Form -->
+
+				<div class="popup-links text-center">
+					<a href="page-crediting.html" class="link">Приобрести авто в кредит</a><br>
+					<a href="page-trade-in.html" class="link">Приобрести авто по услуге Trade In</a>
+				</div>
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Callback popup --><!-- Thanks popup-->
+<div class="popup js-popup js-thanks-popup">
+	<div class="popup__overflow">
+		<div class="popup__body popup__body--tall text-center box-shadow b-radius">
+
+			<!-- Close popup btn -->
+			<button class="btn__close js-close-popup-btn" type="button">
+	<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+		<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+	</svg>
+</button>
+			<!-- //Close popup btn -->
+
+			<!-- Popup content-->
+			<div class="popup__content flex-col-center">
+				<h2 class="sect-title popup__title">Спасибо!</h2>
+
+				<p class="thanks-text">Ваша заявка принята, в ближайшее время наш менеджер свяжется с Вами и уточнит детали.</p>
+
+				<button class="btn js-close-popup-btn" type="button">ПРИНЯТЬ</button>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Thanks popup -->
+<header class="header">
+	
+	<div class="page-container">
+		
+
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<div class="nav__col">
+				<div class="row align-horisontal-start align-vertical-center">
+					<!-- Logo -->
+					<a href="index.html" class="logo" title="Altyn Car">
+						<img src="img/logo.svg" alt="Altyn Car logo">
+					</a>
+					<!-- //Logo -->
+
+					<!-- NAV -->
+					<nav class="nav">
+	<ul class="nav__list">
+		<li class="nav__item">
+			<a href="page-buy-car.html" class="nav__link">Купить а/м</a>
+		</li>
+		<li class="nav__item">
+			<a href="page-sale-car.html" class="nav__link">Продать а/м</a>
+		</li>
+		<li class="nav__item has-sublist">
+			<a href="page-services.html" class="nav__link">Услуги</a>
+
+			<!-- Sublist -->
+			<ul class="nav-sublist">
+				<li class="nav-sublist__item"><a href="page-commission.html" class="nav-sublist__link">Комиссия</a></li>
+				<li class="nav-sublist__item"><a href="page-trade-in.html" class="nav-sublist__link is-active">Обмен (Trade In)</a></li>
+				<li class="nav-sublist__item"><a href="page-crediting.html" class="nav-sublist__link">Кредитование</a></li>
+				<li class="nav-sublist__item"><a href="page-delivery-car.html" class="nav-sublist__link">Доставка А/М</a></li>
+				<li class="nav-sublist__item"><a href="page-guarantee.html" class="nav-sublist__link">Гарантия AltynCar Garant</a></li>
+				<li class="nav-sublist__item"><a href="page-swap.html" class="nav-sublist__link">14 дней гарантия на обмен</a></li>
+			</ul>
+			<!-- //Sublist -->
+		</li>
+		<li class="nav__item">
+			<a href="page-about.html" class="nav__link">О компании</a>
+		</li>
+		<li class="nav__item">
+			<a href="page-contacts.html" class="nav__link">Контакты</a>
+		</li>
+	</ul>
+</nav>
+					<!-- //NAV -->
+				</div>
+				<!-- //row -->
+			</div>
+
+			<div class="header__actions">
+
+				<div class="row align-horisontal-end align-vertical-center header__actions--row">
+
+					<div class="header__links"  style="display: block">
+
+						<!-- Wishlist -->
+						<a href="#" class="link-with-ic">
+							<span>Избранное</span>
+							<i class="link-with-ic__ic">
+								<svg viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.7692 9.23077H14.1958C14.6206 9.23077 14.965 9.57517 14.965 10C14.965 10.4248 14.6206 10.7692 14.1958 10.7692H10.7692V14.1958C10.7692 14.6206 10.4248 14.965 10 14.965C9.57517 14.965 9.23077 14.6206 9.23077 14.1958V10.7692H5.8042C5.37936 10.7692 5.03497 10.4248 5.03497 10C5.03497 9.57517 5.37936 9.23077 5.8042 9.23077H9.23077V5.8042C9.23077 5.37936 9.57517 5.03497 10 5.03497C10.4248 5.03497 10.7692 5.37936 10.7692 5.8042V9.23077ZM10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 18.4615C14.6732 18.4615 18.4615 14.6732 18.4615 10C18.4615 5.32682 14.6732 1.53846 10 1.53846C5.32682 1.53846 1.53846 5.32682 1.53846 10C1.53846 14.6732 5.32682 18.4615 10 18.4615Z" />
+								</svg>
+
+							</i>
+						</a>
+						<!-- //Wishlist -->
+
+						<!-- Compare -->
+						<a href="#" class="link-with-ic">
+							<span>Сравнения</span>
+							<i class="link-with-ic__ic">
+								<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<g >
+										<path d="M15.6135 6.4515L16.7034 5.81572C14.3452 1.76462 9.26232 0.217014 5.04664 2.26657V0.715576H3.78516V4.50003H7.56961V3.23854H5.95806C9.52641 1.72488 13.6636 3.10159 15.6135 6.4515Z" />
+										<path d="M4.10089 16.2796C1.17634 13.9045 0.406597 9.75848 2.28372 6.49183L1.19002 5.86108C-0.950997 9.58936 -0.140887 14.313 3.12009 17.1148H1.57792V18.3763H5.36238V14.5918H4.10089V16.2796Z" />
+										<path d="M17.3242 8.64282L14.6486 11.3191L15.5404 12.2109L16.6127 11.1387C16.1921 15.0465 12.8991 18.0123 8.96875 18.0232V19.2847C13.6516 19.2724 17.5363 15.6584 17.8862 10.9886L19.1085 12.2109L20.0004 11.3191L17.3242 8.64282Z" />
+									</g>
+
+								</svg>
+
+
+							</i>
+						</a>
+						<!-- //Compare -->
+
+						<!-- Cabinet -->
+						<a href="#" class="link-with-ic">
+							<span>Личный кабинет</span>
+							<i class="link-with-ic__ic">
+								<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 0C4.48583 0 0 4.48583 0 10C0 15.5142 4.48583 20 10 20C15.5142 20 20 15.5142 20 10C20 4.48583 15.5142 0 10 0ZM15.5817 16.17C15.0283 14.5258 13.4983 13.3333 11.6667 13.3333H8.33333C6.50167 13.3333 4.97333 14.5267 4.42 16.1708C2.73417 14.645 1.66667 12.4475 1.66667 10C1.66667 5.405 5.405 1.66667 10 1.66667C14.595 1.66667 18.3333 5.405 18.3333 10C18.3333 12.4467 17.2667 14.6442 15.5817 16.17Z" />
+									<path d="M10.0003 4.16675C8.15949 4.16675 6.66699 5.65925 6.66699 7.50008V8.33341C6.66699 10.1742 8.15949 11.6667 10.0003 11.6667C11.8412 11.6667 13.3337 10.1742 13.3337 8.33341V7.50008C13.3337 5.65925 11.8412 4.16675 10.0003 4.16675Z" />
+								</svg>
+
+
+							</i>
+						</a>
+						<!-- //Cabinet -->
+					</div>
+
+					<div class="header__contacts">
+						<div class="row align-horisontal-end align-vertical-center header__contacts--row">
+
+							<!-- User city -->
+							<div class="user-city__wrapper">
+
+								<div class="user-city__block">
+									<span class="user-city__label">Ваш город:</span>
+									<div class="user-city">
+										<span class="user-city__name">Астана</span>
+										<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>									</div>
+
+									<!-- Dropdown -->
+									<div class="user-city__dropdown--wrapper">
+										<div class="user-city__dropdown">
+											<p class="user-city__dropdown--text">Выберите город в котором вы находитесь</p>
+											<!-- Form -->
+											<form class="user-city__dropdown--form">
+												<div class="form-group__input--wrapper">
+													<input type="search" name="search" placeholder="Что ищем?" class="form-group__input form-group__input--search">
+
+													<button type="search" class="btn__search btn__search--absolute">
+														<svg viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+															<path d="M18.3163 18.0462C18.5946 18.3245 18.5946 18.7756 18.3163 19.0539C18.0381 19.3321 17.5869 19.3321 17.3087 19.0539L13.8887 15.6339C13.6104 15.3556 13.6104 14.9045 13.8887 14.6262C14.1669 14.348 14.6181 14.348 14.8963 14.6262L18.3163 18.0462ZM7.5525 15.8425C3.38137 15.8425 0 12.4612 0 8.29005C0 4.11892 3.38137 0.737549 7.5525 0.737549C11.7236 0.737549 15.105 4.11892 15.105 8.29005C15.105 12.4612 11.7236 15.8425 7.5525 15.8425ZM7.5525 14.4175C10.9366 14.4175 13.68 11.6742 13.68 8.29005C13.68 4.90592 10.9366 2.16255 7.5525 2.16255C4.16838 2.16255 1.425 4.90592 1.425 8.29005C1.425 11.6742 4.16838 14.4175 7.5525 14.4175ZM4.0375 7.72005C4.0375 7.98238 3.82484 8.19505 3.5625 8.19505C3.30016 8.19505 3.0875 7.98238 3.0875 7.72005C3.0875 5.5689 4.83135 3.82505 6.9825 3.82505C7.24483 3.82505 7.4575 4.03771 7.4575 4.30005C7.4575 4.56238 7.24483 4.77505 6.9825 4.77505C5.35602 4.77505 4.0375 6.09357 4.0375 7.72005Z" />
+														</svg>
+													</button>
+												</div>
+											</form>
+											<!-- //Form -->
+
+											<div class="user-city__dropdown--list_wrapper">
+												<ul class="user-city__dropdown--list">
+													<li>Далеко-далеко.</li>
+													<li>Мир.</li>
+													<li>Своих.</li>
+													<li>Она.</li>
+													<li>Ее?</li>
+													<li>Над.</li>
+													<li>Раз.</li>
+													<li>Злых.</li>
+													<li>Силуэт.</li>
+													<li>Все.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- //Dropdown -->
+								</div>
+
+								
+								<!-- User city popup -->
+								<!-- <div class="user-city__popup js-user-city-popup">
+									<p class="user-city__popup--text">Ваш город <strong>Астана?</strong></p>
+									<div class="user-city__popup--btns">
+										<a href="#" class="btn js-close-user-city-popup-btn">Да</a>
+										<a href="#" class="btn btn-light">Выбрать другой</a>
+									</div>
+								</div> -->
+								<!-- //User city popup -->
+							</div>
+							<!-- //User city -->
+
+							<a href="tel:8 (000) 000-00-00" class="phone-link">8 (000) 000-00-00</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</header>
+
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<!-- Page -->
+			<section class="sect-page gutter-bottom">
+				<h1 class="container page-title text-center">Вакансии</h1>
+				<p class="container text-center page-description">Здесь Вы можете увидеть вакансии нашей компании</p>
+
+				<div class="container">
+					<!-- Vacancies -->
+					<div class="vacancies ">
+						<div class="vacancies-advantages">
+							<h2 class="sect-title">Преимущества сотрудничества с Altyn Car</h2>
+
+							<div class="row align-horisontal-start row-gutters cards__row">
+								<!-- item -->
+								<div class="card__wrapper">
+									<div class="card b-radius box-shadow">
+										<div class="card__ic">
+											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/1.svg');"></span>
+										</div>
+										<h3 class="card__title">Взаимовыгодные отношения</h3>
+										<div class="card__description">Компания Altyn car придерживается единой политики работы с поставщиками, основанной на прозрачных и честных принципах ведения бизнеса. Компания выполняет взятые на себя обязательства и ожидает аналогичного отношения к договорным обязательствам от партнеров</div>
+									</div>
+								</div>
+								<!-- //item -->
+
+								<!-- item -->
+								<div class="card__wrapper">
+									<div class="card b-radius box-shadow">
+										<div class="card__ic">
+											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/2.svg');"></span>
+										</div>
+										<h3 class="card__title">Интересные проекты</h3>
+										<div class="card__description">Altyn car активно развивает дилерскую сеть и наращивает объемы продаж, поэтому все наши проекты принесут прибыль не только нашей компании, но и станут достойным гордости проектами в порфолио наших поставщиков.</div>
+									</div>
+								</div>
+								<!-- //item -->
+
+								<!-- item -->
+								<div class="card__wrapper">
+									<div class="card b-radius box-shadow">
+										<div class="card__ic">
+											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/3.svg');"></span>
+										</div>
+										<h3 class="card__title">Надежный партнер</h3>
+										<div class="card__description">Altyncar ценит сотрудничество с поставщиками наравне с сотрудничеством с клиентами, поэтому все предложения о сотрудничестве самым тщательным образом анализируются и по всем предложениям предоставляется обратная связь.</div>
+									</div>
+								</div>
+								<!-- //item -->
+							</div>
+						</div>
+
+						<div class="vacancies-items">
+							<h2 class="sect-title">Вакансии в компании Altyn Car</h2>
+							
+							<!-- Vacancy item-->
+							<div class="vacancy b-radius box-shadow">
+								<div class="row align-vertical-start align-horisontal-between vacancy__row">
+
+									<div class="vacancy__description light-text-color">
+										<h3 class="block-title-lg">Менеджер по продажам автомобилей с пробегом (Trade-in)</h3>
+										<p>В компанию «ASTER» требуется менеджер по продажам новых автомобилей Renault и Nissan с опытом работы в прямых продажах от 1 года.</p>
+										<button class="btn js-open-vacancy-popup-btn" type="button ">Подробнее</button>
+									</div>
+
+									<div class="vacancy__salary text-right light-text-color">
+										<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+										<p>отдел маркетинга</p>
+										<p class="accent-color f-f-medium">Алматы</p>
+									</div>
+								</div>
+							</div>
+							<!-- //Vacancy item-->
+
+							<!-- Vacancy item-->
+							<div class="vacancy b-radius box-shadow">
+								<div class="row align-vertical-start align-horisontal-between vacancy__row">
+
+									<div class="vacancy__description light-text-color">
+										<h3 class="block-title-lg">Менеджер по продажам автомобилей с пробегом (Trade-in)</h3>
+										<p>В компанию «ASTER» требуется менеджер по продажам новых автомобилей Renault и Nissan с опытом работы в прямых продажах от 1 года.</p>
+										<button class="btn js-open-vacancy-popup-btn" type="button">Подробнее</button>
+									</div>
+
+									<div class="vacancy__salary text-right light-text-color">
+										<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+										<p>отдел маркетинга</p>
+										<p class="accent-color f-f-medium">Алматы</p>
+									</div>
+								</div>
+							</div>
+							<!-- //Vacancy item-->
+
+							<!-- Vacancy item-->
+							<div class="vacancy b-radius box-shadow">
+								<div class="row align-vertical-start align-horisontal-between vacancy__row">
+
+									<div class="vacancy__description light-text-color">
+										<h3 class="block-title-lg">Менеджер по продажам автомобилей с пробегом (Trade-in)</h3>
+										<p>В компанию «ASTER» требуется менеджер по продажам новых автомобилей Renault и Nissan с опытом работы в прямых продажах от 1 года.</p>
+										<button class="btn js-open-vacancy-popup-btn" type="button">Подробнее</button>
+									</div>
+
+									<div class="vacancy__salary text-right light-text-color">
+										<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+										<p>отдел маркетинга</p>
+										<p class="accent-color f-f-medium">Алматы</p>
+									</div>
+								</div>
+							</div>
+							<!-- //Vacancy item-->
+
+							<!-- Vacancy item-->
+							<div class="vacancy b-radius box-shadow">
+								<div class="row align-vertical-start align-horisontal-between vacancy__row">
+
+									<div class="vacancy__description light-text-color">
+										<h3 class="block-title-lg">Менеджер по продажам автомобилей с пробегом (Trade-in)</h3>
+										<p>В компанию «ASTER» требуется менеджер по продажам новых автомобилей Renault и Nissan с опытом работы в прямых продажах от 1 года.</p>
+										<button class="btn js-open-vacancy-popup-btn" type="button">Подробнее</button>
+									</div>
+
+									<div class="vacancy__salary text-right light-text-color">
+										<p class="block-title-lg accent-color">до 500 000 тг на руки KZT</p>
+										<p>отдел маркетинга</p>
+										<p class="accent-color f-f-medium">Алматы</p>
+									</div>
+								</div>
+							</div>
+							<!-- //Vacancy item-->
+
+						</div>
+					</div>
+
+					<!-- //Vacancies -->
+				</div>
+				<!-- //container -->
+
+				<!-- Resume form -->
+				<div class="resume__wrapper gutter-top ">
+					<div class="resume box-shadow">
+						<div class="container">
+							<h2 class="sect-title-lg text-center">Отправить резюме</h2>
+							<form class="resume-form">
+
+								<div class="row align-horisontal-between row-inputs">
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label">
+												<input type="text" name="Имя" class="form-group__input form-group__input--with-label">
+												<span class="form-group__input--label_text">Ваше имя</span>
+											</label>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label">
+												<input type="email" name="Email" class="form-group__input form-group__input--with-label">
+												<span class="form-group__input--label_text">Ваш E-mail</span>
+											</label>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label">
+												<input type="tel" name="Phone" class="form-group__input form-group__input--with-label">
+												<span class="form-group__input--label_text">Ваш телефон</span>
+											</label>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+								</div>
+
+								<div class="row align-horisontal-between row-inputs">
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label is-active">
+												<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+												<span class="form-group__input--label_text">Город</span>
+											</label>
+
+											<div class="form-group__input--dropdown">
+												<ul>
+													<li>Город 1</li>
+													<li>Город 2</li>
+													<li>Город 3</li>
+													<li>Город 4</li>
+													<li>Город 5</li>
+													<li>Город 6</li>
+													<li>Город 7</li>
+													<li>Город 8</li>
+													<li>Город 9</li>
+													<li>Город 10</li>
+												</ul>
+											</div>
+
+											<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label is-active">
+												<input type="text" name="Отдел" class="form-group__input form-group__input--with-label" value="Выберите отдел" readonly>
+												<span class="form-group__input--label_text">Отдел</span>
+											</label>
+
+											<div class="form-group__input--dropdown">
+												<ul>
+													<li>Отдел 1</li>
+													<li>Отдел 2</li>
+													<li>Отдел 3</li>
+													<li>Отдел 4</li>
+													<li>Отдел 5</li>
+													<li>Отдел 6</li>
+													<li>Отдел 7</li>
+													<li>Отдел 8</li>
+													<li>Отдел 9</li>
+													<li>Отдел 10</li>
+												</ul>
+											</div>
+
+											<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+									<!-- Form group -->
+									<div class="form-group__input--wrapper_col col-w-33">
+										<div class="form-group__input--wrapper">
+											<label class="form-group__input--label form-group__input-file--label form-group__input form-group__input--with-label">
+												<input type="file" name="files" multiple="" class="form-group__input-file" data-multiple-caption="Выбрано: {count} файла(ов)">
+												<span class="form-group__input--label_text">Загрузить резюме</span>
+											</label>
+										</div>
+									</div>
+									<!-- //Form group -->
+
+								</div>
+
+								<div class="text-center">
+									<button class="btn btn-wide-lg" type="submit">ОТКЛИКНУТЬСЯ</button>
+								</div>
+							</form>
+						</div>
+						<!-- //container -->
+					</div>
+				</div>
+				<!-- //Resume form -->
+
+			</section>
+			<!-- //Page -->
+
+			
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		<footer class="footer">
+
+	<div class="footer__content">
+		<div class="container">
+			<div class="footer__logo">
+				<!-- Logo -->
+				<a href="index.html" class="logo" title="Altyn Car">
+					<img src="img/logo.svg" alt="Altyn Car logo">
+				</a>
+				<!-- //Logo -->
+			</div>
+
+			<div class="row footer__row align-vertical-start align-horisontal-between">
+
+				<div class="footer-contacts">
+					<!-- User city -->
+					<div class="user-city__wrapper">
+
+						<div class="user-city__block">
+							<span class="user-city__label">Город:</span>
+							<div class="user-city">
+								<span class="user-city__name">Астана</span>
+								<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>							</div>
+
+							<!-- Dropdown -->
+							<div class="user-city__dropdown--wrapper">
+								<div class="user-city__dropdown">
+									<p class="user-city__dropdown--text">Выберите город в котором вы находитесь</p>
+									<!-- Form -->
+									<form class="user-city__dropdown--form">
+										<div class="form-group__input--wrapper">
+											<input type="search" name="search" placeholder="Что ищем?" class="form-group__input form-group__input--search">
+
+											<button type="search" class="btn__search btn__search--absolute">
+												<svg viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18.3163 18.0462C18.5946 18.3245 18.5946 18.7756 18.3163 19.0539C18.0381 19.3321 17.5869 19.3321 17.3087 19.0539L13.8887 15.6339C13.6104 15.3556 13.6104 14.9045 13.8887 14.6262C14.1669 14.348 14.6181 14.348 14.8963 14.6262L18.3163 18.0462ZM7.5525 15.8425C3.38137 15.8425 0 12.4612 0 8.29005C0 4.11892 3.38137 0.737549 7.5525 0.737549C11.7236 0.737549 15.105 4.11892 15.105 8.29005C15.105 12.4612 11.7236 15.8425 7.5525 15.8425ZM7.5525 14.4175C10.9366 14.4175 13.68 11.6742 13.68 8.29005C13.68 4.90592 10.9366 2.16255 7.5525 2.16255C4.16838 2.16255 1.425 4.90592 1.425 8.29005C1.425 11.6742 4.16838 14.4175 7.5525 14.4175ZM4.0375 7.72005C4.0375 7.98238 3.82484 8.19505 3.5625 8.19505C3.30016 8.19505 3.0875 7.98238 3.0875 7.72005C3.0875 5.5689 4.83135 3.82505 6.9825 3.82505C7.24483 3.82505 7.4575 4.03771 7.4575 4.30005C7.4575 4.56238 7.24483 4.77505 6.9825 4.77505C5.35602 4.77505 4.0375 6.09357 4.0375 7.72005Z" />
+												</svg>
+											</button>
+										</div>
+									</form>
+									<!-- //Form -->
+
+									<div class="user-city__dropdown--list_wrapper">
+										<ul class="user-city__dropdown--list">
+											<li>Далеко-далеко.</li>
+											<li>Мир.</li>
+											<li>Своих.</li>
+											<li>Она.</li>
+											<li>Ее?</li>
+											<li>Над.</li>
+											<li>Раз.</li>
+											<li>Злых.</li>
+											<li>Силуэт.</li>
+											<li>Все.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- //Dropdown -->
+						</div>
+
+					</div>
+					<!-- //User city -->
+
+					<div class="contacts">
+						<p class="contact__item contact__item--phone"><a href="tel:+85552567524" rel="nofollow">8 (555) 256-75-24 </a></p>
+						<p class="contact__item contact__item--email"><a href="mailto:aaaaltyncar@gmail.com" rel="nofollow">aaaaltyncar@gmail.com</a></p>
+						<p class="contact__item contact__item--worktime">ПН-ВС 09:00 - 20:00</p>
+						<p class="contact__item contact__item--instagram"><a href="#" rel="nofollow">@dadadadssss</a></p>
+					</div>
+
+					<div class="footer-contacts__btns">
+						<button class="btn btn-wide js-open-callback-popup-btn" type="button">СВЯЗАТЬСЯ С НАМИ</button>
+						<a href="#" class="btn btn-wide btn-light">ВСЕ САЛОНЫ</a>
+					</div>
+				</div>
+
+				<div class="footer-menus">
+					<div class="row align-vertical-start align-horisontal-between footer-menus__row">
+						<div class="footer-menus__col">
+							<h3 class="list-title"><a href="page-buy-car.html">Купить а/м</a></h3>
+							<nav class="footer-menu">
+								<ul>
+									<li><a href="page-catalog.html">Каталог</a></li>
+									<li><a href="page-stocks.html">Акции и предложения</a></li>
+									<li><a href="page-new-items.html">Новинки</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- //col -->
+
+						<div class="footer-menus__col">
+							<h3 class="list-title"><a href="page-sale-car.html">Продать а/м</a></h3>
+							<nav class="footer-menu">
+								<ul>
+									<li><a href="#">Запись на оценку</a></li>
+									<li><a href="#">Выкуп</a></li>
+									<li><a href="#">Продажа по вашей цене</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- //col -->
+
+						<div class="footer-menus__col">
+							<h3 class="list-title"><a href="page-services.html">Услуги</a></h3>
+							<nav class="footer-menu">
+								<ul>
+									<li><a href="page-trade-in.html">Обмен (Trade In)</a></li>
+									<li><a href="page-crediting.html">Кредитование</a></li>
+									<li><a href="page-delivery-car.html">Доставка а/м</a></li>
+									<li><a href="page-guarantee.html">Гарантия AltynCar Garant</a></li>
+									<li><a href="page-swap.html">14 дней гарантия на обмен</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- //col -->
+
+						<div class="footer-menus__col">
+							<h3 class="list-title"><a href="page-about.html">О компании</a></h3>
+							<nav class="footer-menu">
+								<ul>
+									<li><a href="page-about.html">О нас</a></li>
+									<li><a href="page-team.html">Команда</a></li>
+									<li><a href="page-blog.html">Новости компании</a></li>
+									<li><a href="page-missions.html">Миссия и ценности</a></li>
+									<li><a href="page-vacancies.html">Вакансии</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- //col -->
+
+						<div class="footer-menus__col">
+							<h3 class="list-title"><a href="page-contacts.html">Контакты</a></h3>
+						</div>
+						<!-- //col -->
+
+					</div>
+
+					<div class="row align-vertical-center align-horisontal-start footer-menus__row">
+						<div class="footer-menus__col">
+							<div class="official-partner">
+								<p>официальный партнер</p>
+								<a href="www.renault.ural-krov-auto.kz" target="_blank">www.renault.ural-krov-auto.kz</a>
+							</div>
+						</div>
+						<!-- //col -->
+
+						<div class="footer-menus__col"></div>
+						<!-- //col -->
+
+						<div class="footer-menus__col">
+							<div class="official-partner">
+								<p>официальный партнер</p>
+								<a href="www.ural-krov auto.kz" target="_blank">www.ural-krov auto.kz</a>
+							</div>
+						</div>
+
+						<!-- //col -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	
+	<div class="copyright text-center basic-white-color">
+		<p>2020 "AltynCar" - продажа подержанных автомобилей в Казахстане. Все права защищены. Не является публичной офертой. Copyright &copy; 2020</p>
+	</div>
+</footer>
+
+<div class="svg-filter">
+	<svg>
+		<defs>
+			<filter id="filter0_d" x="0" y="0.000976562" width="59.4563" height="96.9991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+				<feOffset dy="4"/>
+				<feGaussianBlur stdDeviation="7"/>
+				<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+			</filter>
+		</defs>
+	</svg>
+</div>
+		<!-- //Footer -->
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<!-- jQuery IF NEEDED-->
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- Google map -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script>
+<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+<!-- Main file with scripts -->
+<script src="js/common.min.js"></script>
+<script src="js/range-sliders.js"></script>
+
+</body>
+
+</html>

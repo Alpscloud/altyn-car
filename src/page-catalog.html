@@ -1005,7 +1005,7 @@
 <!-- //Callback popup --><!-- Thanks popup-->
 <div class="popup js-popup js-thanks-popup">
 	<div class="popup__overflow">
-		<div class="popup__body text-center box-shadow b-radius">
+		<div class="popup__body popup__body--tall text-center box-shadow b-radius">
 
 			<!-- Close popup btn -->
 			<button class="btn__close js-close-popup-btn" type="button">
@@ -1017,7 +1017,7 @@
 
 			<!-- Popup content-->
 			<div class="popup__content flex-col-center">
-				<h2 class="sect-title sect-title__sm-gutter popup__title">Спасибо!</h2>
+				<h2 class="sect-title popup__title">Спасибо!</h2>
 
 				<p class="thanks-text">Ваша заявка принята, в ближайшее время наш менеджер свяжется с Вами и уточнит детали.</p>
 
@@ -1212,497 +1212,506 @@
 
 		<!-- //Header -->
 
-	
+
 
 		<!-- Main -->
 		<main class="main">
 
-			<section class="sect__catalog gutter-bottom">
+			<section class="sect__catalog ">
 				<h1 class="w3c">Каталог автомобилей</h1>
 
 				<div class="page-container">
 
+					<!-- Open aside filters btn -->
+					<a href="#catalog" class="btn__toggle-filter js-open-aside-filters-btn js-smooth-scroll-link">Открыть фильтр</a>
+					<!-- //Open aside filters btn -->
+
 					<!-- Catalog -->
-					<div class="catalog">
+					<div class="catalog" id="catalog">
 
-						<!-- Open aside filters btn -->
-						<button class="btn__toggle js-open-aside-filters-btn" type="button">Открыть фильтр</button>
-						<!-- //Open aside filters btn -->
+						
+						<div class="catalog__wrapper">
 
-						<!-- Aside -->
-						<aside class="aside b-radius js-aside-filters">
-	<h2 class="sect-title text-center">Каталог автомобилей</h2>
 
-	<form class="filter-form">
-		<div class="row align-horisontal-start row-inputs">
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-100">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Тип кузова" class="form-group__input form-group__input--with-label" value="Все типы" readonly>
-						<span class="form-group__input--label_text">Тип кузова</span>
-					</label>
+							<!-- Aside -->
+							<div class="aside__col">
+	<aside class="aside b-radius js-aside-filters">
+		<h2 class="sect-title text-center">Каталог автомобилей</h2>
 
-					<div class="form-group__input--dropdown">
+		<form class="filter-form">
+			<div class="row align-horisontal-start row-inputs">
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-100">
 
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Седан">
-								<span class="form-group__checkbox form-group__checkbox--sm">Седан</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Тип кузова" class="form-group__input form-group__input--with-label" value="Все типы" readonly>
+							<span class="form-group__input--label_text">Тип кузова</span>
+						</label>
 
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Внедорожник">
-								<span class="form-group__checkbox form-group__checkbox--sm">Внедорожник</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
+						<div class="form-group__input--dropdown">
 
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Хечбэк">
-								<span class="form-group__checkbox form-group__checkbox--sm">Хечбэк</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Универсал">
-								<span class="form-group__checkbox form-group__checkbox--sm">Универсал</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Кроссовер">
-								<span class="form-group__checkbox form-group__checkbox--sm">Кроссовер</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Спорт">
-								<span class="form-group__checkbox form-group__checkbox--sm">Спорт</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Купе">
-								<span class="form-group__checkbox form-group__checkbox--sm">Купе</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Лимузин">
-								<span class="form-group__checkbox form-group__checkbox--sm">Лимузин</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Фургон">
-								<span class="form-group__checkbox form-group__checkbox--sm">Фургон</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-
-						<!-- Checkbox -->
-						<div class="form-group__input--wrapper">
-							<label class="form-group__checkbox--label">
-								<input type="checkbox" name="Минивэн">
-								<span class="form-group__checkbox form-group__checkbox--sm">Минивэн</span>
-							</label>
-						</div>
-						<!-- //Checkbox -->
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-100">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
-						<span class="form-group__input--label_text">Город</span>
-					</label>
-
-					<div class="form-group__input--dropdown">
-						<ul>
-							<li>Город 1</li>
-							<li>Город 2</li>
-							<li>Город 3</li>
-							<li>Город 4</li>
-							<li>Город 5</li>
-							<li>Город 6</li>
-							<li>Город 7</li>
-							<li>Город 8</li>
-							<li>Город 9</li>
-							<li>Город 10</li>
-						</ul>
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
-						<span class="form-group__input--label_text">Марка</span>
-					</label>
-
-					<div class="form-group__input--dropdown">
-						<ul>
-							<li>Марка 1</li>
-							<li>Марка 2</li>
-							<li>Марка 3</li>
-							<li>Марка 4</li>
-							<li>Марка 5</li>
-							<li>Марка 6</li>
-							<li>Марка 7</li>
-							<li>Марка 8</li>
-							<li>Марка 9</li>
-							<li>Марка 10</li>
-						</ul>
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
-						<span class="form-group__input--label_text">Модель</span>
-					</label>
-
-					<div class="form-group__input--dropdown">
-						<ul>
-							<li>Модель 1</li>
-							<li>Модель 2</li>
-							<li>Модель 3</li>
-							<li>Модель 4</li>
-							<li>Модель 5</li>
-							<li>Модель 6</li>
-							<li>Модель 7</li>
-							<li>Модель 8</li>
-							<li>Модель 9</li>
-							<li>Модель 10</li>
-						</ul>
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Год выпуска, от" class="form-group__input form-group__input--with-label"  value="Все года" readonly>
-						<span class="form-group__input--label_text">Год выпуска, от</span>
-					</label>
-
-					<div class="form-group__input--dropdown">
-						<ul>
-							<li>Год 1</li>
-							<li>Год 2</li>
-							<li>Год 3</li>
-							<li>Год 4</li>
-							<li>Год 5</li>
-							<li>Год 6</li>
-							<li>Год 7</li>
-							<li>Год 8</li>
-							<li>Год 9</li>
-							<li>Год 10</li>
-						</ul>
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Год выпуска, до" class="form-group__input form-group__input--with-label" value="Все года" readonly>
-						<span class="form-group__input--label_text">Год выпуска, до</span>
-					</label>
-
-					<div class="form-group__input--dropdown">
-						<ul>
-							<li>Год 1</li>
-							<li>Год 2</li>
-							<li>Год 3</li>
-							<li>Год 4</li>
-							<li>Год 5</li>
-							<li>Год 6</li>
-							<li>Год 7</li>
-							<li>Год 8</li>
-							<li>Год 9</li>
-							<li>Год 10</li>
-						</ul>
-					</div>
-
-					<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-				</div>
-
-			</div>
-			<!-- //Form group -->
-		</div>
-
-		<div class="row align-horisontal-start row-inputs js-range-inputs-parent">
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Цена, от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
-						<span class="form-group__input--label_text">Цена, от</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Цена, до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="100000" readonly>
-						<span class="form-group__input--label_text">Цена, до</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Price range -->
-			<div class="form-group__price-range--wrapper">
-				<div class="form-group__price-range js-range-input"></div>
-			</div>
-			<!-- //Price range -->
-		</div>
-
-		<div class="row align-horisontal-start row-inputs row-checkboxes no-gutter-bottom">
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-100">
-				<div class="form-group__input--wrapper">
-					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="Авто с гарантией AltynCar Garant">
-						<span class="form-group__checkbox">Авто с гарантией AltynCar Garant</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				<div class="form-group__input--wrapper">
-					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="Авто со скидкой">
-						<span class="form-group__checkbox">Авто со скидкой</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				<div class="form-group__input--wrapper">
-					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="Новые поступления">
-						<span class="form-group__checkbox">Новые поступления</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				<div class="form-group__input--wrapper">
-					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="Покупка в кредит">
-						<span class="form-group__checkbox">Покупка в кредит</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50">
-				<div class="form-group__input--wrapper">
-					<label class="form-group__checkbox--label">
-						<input type="checkbox" name="Без первоначального взноса">
-						<span class="form-group__checkbox">Без первоначального взноса</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-		</div>
-
-		<div class="row align-horisontal-start row-inputs js-range-inputs-parent">
-			<h4 class="form-group__title">Превоначальный взнос</h4>
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Превоначальный взнос от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
-						<span class="form-group__input--label_text">От</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Form group -->
-			<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
-				
-				<div class="form-group__input--wrapper">
-					<label class="form-group__input--label is-active">
-						<input type="text" name="Превоначальный взнос до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="0" readonly>
-						<span class="form-group__input--label_text">До</span>
-					</label>
-				</div>
-			</div>
-			<!-- //Form group -->
-
-			<!-- Price range -->
-			<div class="form-group__price-range--wrapper">
-				<div class="form-group__price-range js-range-input"></div>
-			</div>
-			<!-- //Price range -->
-		</div>
-
-		<div class="filter-form__btns">
-			<button class="btn btn-wide js-open-advanced-filter-popup-btn" type="button">Больше фильтров</button>
-			<button class="btn btn-faded btn-wide js-hide-aside-filters-btn" type="button">Скрыть фильтр</button>
-		</div>
-
-	</form>
-</aside>
-						<!-- //Aside -->
-
-						<!-- Sorting -->
-						<div class="sorting">
-							<div class="row align-horisontal-end sorting__row">
-
-								<div class="sorting__item">
-									<div class="form-group__input--wrapper">
-										<select name="dates"  class="form-group__input form-group__select">
-											<option value="" disabled selected>По дате</option>
-											<option value="Сначала новые">Сначала новые</option>
-											<option value="Сначала старые">Сначала старые</option>
-										</select>
-
-										<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-									</div>
-								</div>
-
-								<div class="sorting__item">
-									<div class="form-group__input--wrapper">
-										<select name="salons"  class="form-group__input form-group__select">
-											<option value="" disabled selected>Все салоны</option>
-											<option value="Салон 1">Салон 1</option>
-											<option value="Салон 2">Салон 2</option>
-											<option value="Салон 3">Салон 3</option>
-										</select>
-
-										<span class="arrow">
-	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
-	</svg>
-</span>
-									</div>
-								</div>
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Седан">
+									<span class="form-group__checkbox form-group__checkbox--sm">Седан</span>
+								</label>
 							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Внедорожник">
+									<span class="form-group__checkbox form-group__checkbox--sm">Внедорожник</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Хечбэк">
+									<span class="form-group__checkbox form-group__checkbox--sm">Хечбэк</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Универсал">
+									<span class="form-group__checkbox form-group__checkbox--sm">Универсал</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Кроссовер">
+									<span class="form-group__checkbox form-group__checkbox--sm">Кроссовер</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Спорт">
+									<span class="form-group__checkbox form-group__checkbox--sm">Спорт</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Купе">
+									<span class="form-group__checkbox form-group__checkbox--sm">Купе</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Лимузин">
+									<span class="form-group__checkbox form-group__checkbox--sm">Лимузин</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Фургон">
+									<span class="form-group__checkbox form-group__checkbox--sm">Фургон</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
+
+							<!-- Checkbox -->
+							<div class="form-group__input--wrapper">
+								<label class="form-group__checkbox--label">
+									<input type="checkbox" name="Минивэн">
+									<span class="form-group__checkbox form-group__checkbox--sm">Минивэн</span>
+								</label>
+							</div>
+							<!-- //Checkbox -->
 						</div>
-						<!-- //Sorting -->
 
-						<div class="row align-vertical-start align-horisontal-end catalog__row">
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-100">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+							<span class="form-group__input--label_text">Город</span>
+						</label>
+
+						<div class="form-group__input--dropdown">
+							<ul>
+								<li>Город 1</li>
+								<li>Город 2</li>
+								<li>Город 3</li>
+								<li>Город 4</li>
+								<li>Город 5</li>
+								<li>Город 6</li>
+								<li>Город 7</li>
+								<li>Город 8</li>
+								<li>Город 9</li>
+								<li>Город 10</li>
+							</ul>
+						</div>
+
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
+							<span class="form-group__input--label_text">Марка</span>
+						</label>
+
+						<div class="form-group__input--dropdown">
+							<ul>
+								<li>Марка 1</li>
+								<li>Марка 2</li>
+								<li>Марка 3</li>
+								<li>Марка 4</li>
+								<li>Марка 5</li>
+								<li>Марка 6</li>
+								<li>Марка 7</li>
+								<li>Марка 8</li>
+								<li>Марка 9</li>
+								<li>Марка 10</li>
+							</ul>
+						</div>
+
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
+							<span class="form-group__input--label_text">Модель</span>
+						</label>
+
+						<div class="form-group__input--dropdown">
+							<ul>
+								<li>Модель 1</li>
+								<li>Модель 2</li>
+								<li>Модель 3</li>
+								<li>Модель 4</li>
+								<li>Модель 5</li>
+								<li>Модель 6</li>
+								<li>Модель 7</li>
+								<li>Модель 8</li>
+								<li>Модель 9</li>
+								<li>Модель 10</li>
+							</ul>
+						</div>
+
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Год выпуска, от" class="form-group__input form-group__input--with-label"  value="Все года" readonly>
+							<span class="form-group__input--label_text">Год выпуска, от</span>
+						</label>
+
+						<div class="form-group__input--dropdown">
+							<ul>
+								<li>Год 1</li>
+								<li>Год 2</li>
+								<li>Год 3</li>
+								<li>Год 4</li>
+								<li>Год 5</li>
+								<li>Год 6</li>
+								<li>Год 7</li>
+								<li>Год 8</li>
+								<li>Год 9</li>
+								<li>Год 10</li>
+							</ul>
+						</div>
+
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Год выпуска, до" class="form-group__input form-group__input--with-label" value="Все года" readonly>
+							<span class="form-group__input--label_text">Год выпуска, до</span>
+						</label>
+
+						<div class="form-group__input--dropdown">
+							<ul>
+								<li>Год 1</li>
+								<li>Год 2</li>
+								<li>Год 3</li>
+								<li>Год 4</li>
+								<li>Год 5</li>
+								<li>Год 6</li>
+								<li>Год 7</li>
+								<li>Год 8</li>
+								<li>Год 9</li>
+								<li>Год 10</li>
+							</ul>
+						</div>
+
+						<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+					</div>
+
+				</div>
+				<!-- //Form group -->
+			</div>
+
+			<div class="row align-horisontal-start row-inputs js-range-inputs-parent">
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Цена, от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
+							<span class="form-group__input--label_text">Цена, от</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Цена, до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="100000" readonly>
+							<span class="form-group__input--label_text">Цена, до</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Price range -->
+				<div class="form-group__price-range--wrapper">
+					<div class="form-group__price-range js-range-input"></div>
+				</div>
+				<!-- //Price range -->
+			</div>
+
+			<div class="row align-horisontal-start row-inputs row-checkboxes no-gutter-bottom">
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-100">
+					<div class="form-group__input--wrapper">
+						<label class="form-group__checkbox--label">
+							<input type="checkbox" name="Авто с гарантией AltynCar Garant">
+							<span class="form-group__checkbox">Авто с гарантией AltynCar Garant</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+					<div class="form-group__input--wrapper">
+						<label class="form-group__checkbox--label">
+							<input type="checkbox" name="Авто со скидкой">
+							<span class="form-group__checkbox">Авто со скидкой</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+					<div class="form-group__input--wrapper">
+						<label class="form-group__checkbox--label">
+							<input type="checkbox" name="Новые поступления">
+							<span class="form-group__checkbox">Новые поступления</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+					<div class="form-group__input--wrapper">
+						<label class="form-group__checkbox--label">
+							<input type="checkbox" name="Покупка в кредит">
+							<span class="form-group__checkbox">Покупка в кредит</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50">
+					<div class="form-group__input--wrapper">
+						<label class="form-group__checkbox--label">
+							<input type="checkbox" name="Без первоначального взноса">
+							<span class="form-group__checkbox">Без первоначального взноса</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+			</div>
+
+			<div class="row align-horisontal-start row-inputs js-range-inputs-parent">
+				<h4 class="form-group__title">Превоначальный взнос</h4>
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Превоначальный взнос от" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-min"  value="0" readonly>
+							<span class="form-group__input--label_text">От</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Form group -->
+				<div class="form-group__input--wrapper_col col-w-50 no-gutter-bottom">
+
+					<div class="form-group__input--wrapper">
+						<label class="form-group__input--label is-active">
+							<input type="text" name="Превоначальный взнос до" class="form-group__input form-group__input--price form-group__input--with-label js-range-input-val-max"  value="0" readonly>
+							<span class="form-group__input--label_text">До</span>
+						</label>
+					</div>
+				</div>
+				<!-- //Form group -->
+
+				<!-- Price range -->
+				<div class="form-group__price-range--wrapper">
+					<div class="form-group__price-range js-range-input"></div>
+				</div>
+				<!-- //Price range -->
+			</div>
+
+			<div class="filter-form__btns">
+				<button class="btn btn-wide js-open-advanced-filter-popup-btn" type="button">Больше фильтров</button>
+				<button class="btn btn-faded btn-wide js-hide-aside-filters-btn" type="button">Скрыть фильтр</button>
+			</div>
+
+		</form>
+	</aside>
+</div>
+							<!-- //Aside -->
+
+							<div class="catalog__content">
+
+
+								<!-- Sorting -->
+								<div class="sorting">
+									<div class="row align-horisontal-end sorting__row">
+
+										<div class="sorting__item">
+											<div class="form-group__input--wrapper">
+												<select name="dates"  class="form-group__input form-group__select">
+													<option value="" disabled selected>По дате</option>
+													<option value="Сначала новые">Сначала новые</option>
+													<option value="Сначала старые">Сначала старые</option>
+												</select>
+
+												<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+											</div>
+										</div>
+
+										<div class="sorting__item">
+											<div class="form-group__input--wrapper">
+												<select name="salons"  class="form-group__input form-group__select">
+													<option value="" disabled selected>Все салоны</option>
+													<option value="Салон 1">Салон 1</option>
+													<option value="Салон 2">Салон 2</option>
+													<option value="Салон 3">Салон 3</option>
+												</select>
+
+												<span class="arrow">
+	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.240743 1.65079L4.06652 6.1142C4.42595 6.53353 5.05724 6.58209 5.47657 6.22267C5.51545 6.18934 5.55171 6.15308 5.58504 6.1142L9.41082 1.65079C9.77024 1.23147 9.72168 0.600166 9.30235 0.240743C9.12111 0.0853922 8.89027 0 8.65156 0L1 0C0.447715 0 0 0.447715 0 1C0 1.23871 0.0853922 1.46955 0.240743 1.65079Z" />
+	</svg>
+</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Sorting -->
+
+								<div class="row align-vertical-start align-horisontal-end catalog__row">
 
 
 
-							<!-- Cars -->
-							<div class="cars__wrapper">
+									<!-- Cars -->
+									<div class="cars__wrapper">
 
 
 
-								<div class="row align-horisontal-start cars__row row-gutters">
-									<div class="car-card__wrapper">
+										<div class="row align-horisontal-start cars__row row-gutters">
+											<div class="car-card__wrapper">
 	<div class="car-card is-recommended">
 
 		<!-- Car labels -->
@@ -1816,7 +1825,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -1919,7 +1928,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2022,7 +2031,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2125,7 +2134,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2228,7 +2237,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2331,7 +2340,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card is-recommended">
 
 		<!-- Car labels -->
@@ -2445,7 +2454,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2548,7 +2557,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2651,15 +2660,15 @@
 		</div>
 	</div>
 </div>
+										</div>
+
+									</div>
+									<!-- //Cars -->
 								</div>
 
-							</div>
-							<!-- //Cars -->
-						</div>
 
-
-						<!-- Sect offer -->
-						<section class="sect__offer gutters">
+								<!-- Sect offer -->
+								<section class="sect__offer gutters">
 	<h2 class="w3c">&nbsp;</h2>
 	
 	<div class="container">
@@ -2679,15 +2688,15 @@
 	<!-- //container -->
 
 </section>
-						<!-- //Sect offer -->
+								<!-- //Sect offer -->
 
-						<div class="row align-vertical-start align-horisontal-end  catalog__row">
+								<div class="row align-vertical-start align-horisontal-end  catalog__row">
 
-							<!-- Cars -->
-							<div class="cars__wrapper">
+									<!-- Cars -->
+									<div class="cars__wrapper">
 
-								<div class="row align-horisontal-start cars__row row-gutters">
-									<div class="car-card__wrapper">
+										<div class="row align-horisontal-start cars__row row-gutters">
+											<div class="car-card__wrapper">
 	<div class="car-card is-recommended">
 
 		<!-- Car labels -->
@@ -2801,7 +2810,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -2904,7 +2913,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3007,7 +3016,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3110,7 +3119,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3213,7 +3222,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3316,7 +3325,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card is-recommended">
 
 		<!-- Car labels -->
@@ -3430,7 +3439,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3533,7 +3542,7 @@
 		</div>
 	</div>
 </div>
-									<div class="car-card__wrapper">
+											<div class="car-card__wrapper">
 	<div class="car-card ">
 
 		<div class="car-card__body ">
@@ -3636,56 +3645,61 @@
 		</div>
 	</div>
 </div>
+										</div>
+
+
+
+
+									</div>
+									<!-- //Cars -->
+
 								</div>
-
 
 								<!-- Pagination -->
 								<div class="pagination">
-									<ul class="pagination__list">
-										<!-- Prev -->
-										<li class="pagination__item">
-											<a href="#" class="pagination__link pagination__link--arrow pagination__link--arrow_prev">
-												<i class="pagination__link--arrow_ic">
-													<svg  viewBox="0 0 11 24"  xmlns="http://www.w3.org/2000/svg">
-														<path d="M2.0854 12L10.6885 1.7559C11.0258 1.35422 11.0258 0.702965 10.6885 0.301283C10.3511 -0.100399 9.8042 -0.100399 9.46687 0.301283L0.253001 11.2727C-0.0843343 11.6744 -0.0843342 12.3256 0.253001 12.7273L9.46687 23.6987C9.8042 24.1004 10.3511 24.1004 10.6885 23.6987C11.0258 23.2971 11.0258 22.6458 10.6885 22.2441L2.0854 12Z"/>
-													</svg>
+	<ul class="pagination__list">
+		<!-- Prev -->
+		<li class="pagination__item">
+			<a href="#" class="pagination__link pagination__link--arrow pagination__link--arrow_prev">
+				<i class="pagination__link--arrow_ic">
+					<svg  viewBox="0 0 11 24"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.0854 12L10.6885 1.7559C11.0258 1.35422 11.0258 0.702965 10.6885 0.301283C10.3511 -0.100399 9.8042 -0.100399 9.46687 0.301283L0.253001 11.2727C-0.0843343 11.6744 -0.0843342 12.3256 0.253001 12.7273L9.46687 23.6987C9.8042 24.1004 10.3511 24.1004 10.6885 23.6987C11.0258 23.2971 11.0258 22.6458 10.6885 22.2441L2.0854 12Z"/>
+					</svg>
 
-												</i>
+				</i>
 
-												<span>Пред.</span>
-											</a>
-										</li>
-										<!-- //Prev -->
+				<span>Пред.</span>
+			</a>
+		</li>
+		<!-- //Prev -->
 
-										<li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
-										<li class="pagination__item"><span class="pagination__link">...</span></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">24,</a></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">25,</a></li>
-										<li class="pagination__item"><span class="pagination__link is-active">26,</span></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">27,</a></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">28</a></li>
-										<li class="pagination__item"><span class="pagination__link">...</span></li>
-										<li class="pagination__item"><a href="#" class="pagination__link">86</a></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+		<li class="pagination__item"><span class="pagination__link">...</span></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">24,</a></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">25,</a></li>
+		<li class="pagination__item"><span class="pagination__link is-active">26,</span></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">27,</a></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">28</a></li>
+		<li class="pagination__item"><span class="pagination__link">...</span></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">86</a></li>
 
-										<!-- Next -->
-										<li class="pagination__item">
-											<a href="#" class="pagination__link pagination__link--arrow pagination__link--arrow_next">
-												<i class="pagination__link--arrow_ic">
-													<svg  viewBox="0 0 11 24"  xmlns="http://www.w3.org/2000/svg">
-														<path d="M8.85601 12L0.252943 1.7559C-0.0843925 1.35422 -0.0843924 0.702965 0.252943 0.301283C0.590278 -0.100399 1.1372 -0.100399 1.47454 0.301283L10.6884 11.2727C11.0257 11.6744 11.0257 12.3256 10.6884 12.7273L1.47454 23.6987C1.1372 24.1004 0.590277 24.1004 0.252942 23.6987C-0.0843935 23.2971 -0.0843934 22.6458 0.252942 22.2441L8.85601 12Z" />
-													</svg>
+		<!-- Next -->
+		<li class="pagination__item">
+			<a href="#" class="pagination__link pagination__link--arrow pagination__link--arrow_next">
+				<i class="pagination__link--arrow_ic">
+					<svg  viewBox="0 0 11 24"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.85601 12L0.252943 1.7559C-0.0843925 1.35422 -0.0843924 0.702965 0.252943 0.301283C0.590278 -0.100399 1.1372 -0.100399 1.47454 0.301283L10.6884 11.2727C11.0257 11.6744 11.0257 12.3256 10.6884 12.7273L1.47454 23.6987C1.1372 24.1004 0.590277 24.1004 0.252942 23.6987C-0.0843935 23.2971 -0.0843934 22.6458 0.252942 22.2441L8.85601 12Z" />
+					</svg>
 
-												</i>
-												<span>След.</span>
-											</a>
-										</li>
-										<!-- //Next -->
-									</ul>
-								</div>
+				</i>
+				<span>След.</span>
+			</a>
+		</li>
+		<!-- //Next -->
+	</ul>
+</div>
 								<!-- //Pagination -->
-
 							</div>
-							<!-- //Cars -->
 
 						</div>
 
@@ -3700,7 +3714,7 @@
 			</section>
 
 			<!-- Section recommended -->
-			<section class="sect__recommended gutter-bottom">
+			<section class="sect__recommended gutters">
 				<h2 class="w3c">&nbsp;</h2>
 
 				<div class="page-container">
@@ -3708,7 +3722,7 @@
 						<h3 class="sect-title">Рекомендованные автомобили</h3>
 
 						<!-- Slider controls -->
-						<div class="slider__navigation">
+						<div class="slider__navigation slider__navigation--md">
 							<button class="btn__arrow js-recommended-slider-btn-prev" type="button">
 								<svg  viewBox="0 0 17 37" xmlns="http://www.w3.org/2000/svg">
 									<path d="M3.12865 18.0032L16.0355 33.372C16.5416 33.9747 16.5416 34.9517 16.0355 35.5543C15.5294 36.157 14.7089 36.157 14.2028 35.5543L0.379569 19.0943C-0.126523 18.4917 -0.126523 17.5146 0.379569 16.912L14.2028 0.451972C14.7089 -0.150657 15.5294 -0.150657 16.0355 0.451972C16.5416 1.0546 16.5416 2.03166 16.0355 2.63428L3.12865 18.0032Z"/>
@@ -4556,6 +4570,8 @@
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 <script src="js/range-sliders.js"></script>
+
+
 
 </body>
 

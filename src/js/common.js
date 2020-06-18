@@ -1,3 +1,40 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+	var fileInputs = document.querySelectorAll( '.form-group__input-file' );
+
+
+	Array.prototype.forEach.call( fileInputs, function( input ) {
+		var label    = input.parentElement,
+		labelVal = label.innerHTML;
+
+		input.addEventListener('change', function(e) {
+			var fileName = '',
+			nextElem = label.querySelector('.form-group__input--label_text');
+
+			if(nextElem.classList.contains('is-active')) {
+				nextElem.classList.remove('is-active');
+			}
+
+			if( this.files && this.files.length > 1 ) {
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			}
+			else {
+				fileName = e.target.value.split( '\\' ).pop();
+			}
+
+			if( fileName ) {	
+				nextElem.innerHTML = fileName;
+				nextElem.classList.add('is-active');
+			} else {
+
+				label.innerHTML = labelVal;
+			}
+		});
+	});
+
+});
+
+
 $(document).ready(function() {
 	//  ========= Variables =========
 	var body = $('body'),
@@ -56,6 +93,12 @@ $(document).ready(function() {
 	$('.js-open-buy-car-popup-btn').on('click',function(e) {
 		e.preventDefault();
 		$('.js-buy-car-popup').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+	$('.js-open-vacancy-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-vacancy-popup').fadeIn(300);
 		$('html').addClass('is-fixed');
 	});
 
@@ -252,21 +295,59 @@ $(document).ready(function() {
 	});
 
 	// Catalog filters
+	// $('.js-hide-aside-filters-btn').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	$('.js-aside-filters').addClass('is-toggled');
+	// 	$('.cars__wrapper').addClass('is-toggled');
+
+	// 	$('.js-open-aside-filters-btn').addClass('is-active');
+	// });
+
+	// $('.js-open-aside-filters-btn').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	$('.js-aside-filters').removeClass('is-toggled');
+	// 	$('.cars__wrapper').removeClass('is-toggled');
+
+	// 	$(this).removeClass('is-active');
+	// });
 	$('.js-hide-aside-filters-btn').on('click', function(e) {
 		e.preventDefault();
-		$('.js-aside-filters').addClass('is-toggled');
-		$('.cars__wrapper').addClass('is-toggled');
+		$('.catalog').addClass('is-toggled');
 
 		$('.js-open-aside-filters-btn').addClass('is-active');
 	});
 
 	$('.js-open-aside-filters-btn').on('click', function(e) {
 		e.preventDefault();
-		$('.js-aside-filters').removeClass('is-toggled');
-		$('.cars__wrapper').removeClass('is-toggled');
+		$('.catalog').removeClass('is-toggled');
 
 		$(this).removeClass('is-active');
 	});
+
+	// $(document).ready(function() {
+	// 	$('.catalog__content, .aside__col').theiaStickySidebar({
+	// 		containerSelector: '.catalog__wrapper'
+	// 	});
+	// });
+
+	// var $window = $(window);
+ //  var $sidebar = $(".sidebar");
+ //  var $sidebarTop = $sidebar.offset().top;
+ //  var $sidebarHeight = $sidebar.height();
+ //  var $footer = $('.sect__recommended');
+ //  var $footerTop = $footer.offset().top;
+ 
+ //  $window.scroll(function(event) {
+ //    $sidebar.addClass("fixed");
+ //    var $scrollTop = $window.scrollTop();
+ //    var $topPosition = Math.max(0, $sidebarTop - $scrollTop);
+     
+ //    if ($scrollTop + $sidebarHeight > $footerTop) {
+ //      var $topPosition = Math.min($topPosition, $footerTop - $scrollTop - $sidebarHeight);
+ //    }
+ 
+ //    $sidebar.css("top", $topPosition);
+ //  });
 
 	// Fancybox
 	$('[data-fancybox]').fancybox({

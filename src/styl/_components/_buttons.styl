@@ -35,6 +35,9 @@
 		padding-left 10px
 		padding-right 10px
 		width 100%	
+		&-lg
+			padding-left 120px
+			padding-right 120px
 		
 	&-short
 		padding-left 37.5px
@@ -70,17 +73,18 @@
 			svg
 				fill $light-color
 				
-	&__toggle
+	&__toggle-filter
 		box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
 		background-color $accent-color
 		padding 15px 50px 15px 25px
 		br(0,10px,10px,0)
-		position absolute
-		left -20px
-		top 30px
+		position fixed
+		left 0
+		top 135px
 		font 14px $Med
 		color $basic-white-color
 		display none
+		z-index 10
 		&.is-active
 			display block
 		

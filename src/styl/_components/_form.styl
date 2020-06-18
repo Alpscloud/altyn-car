@@ -47,6 +47,8 @@ input[type="search"]::-webkit-search-results-decoration
 			font 14px $Reg
 			color $alternate-text-color
 			padding 15px
+			min-height 50px
+			transition all .17s ease-in-out
 			&:focus,
 			&:hover
 				border-color $accent-color
@@ -87,6 +89,10 @@ input[type="search"]::-webkit-search-results-decoration
 					color $grey-text-color
 				&:-ms-input-placeholder
 					color $grey-text-color
+					
+			&--accent
+				font 14px $Bold
+				color $accent-color
 				
 			&--wrapper
 				position relative
@@ -149,38 +155,65 @@ input[type="search"]::-webkit-search-results-decoration
 				max-width 350px
 				padding 0 7.5px
 				
-		&__price-range
-			height 4px
-			background-color #ECEBED
-			border-radius 2px
-			border none
+.form-group__price-range
+	height 4px
+	background-color #ECEBED
+	border-radius 2px
+	border none
+	box-shadow none
+	.noUi
+		&-connect
+			background-color $accent-color
+		&-handle
+			border 2px solid $basic-white-color
+			border-radius 50%
+			width 32px
+			height 32px
+			background-color $accent-color
 			box-shadow none
+			top -14px
+			right -16px
+			&:focus,
+			&:hover
+				outline none
+			&:before,
+			&:after
+				display none
+				
+		&-tooltip
+			border none
+			font 14px $Bold
+			padding 0
+			color $accent-color
+			margin-bottom 5px
+	&--wrapper
+		width 100%
+		padding 0 20px
+		margin-top 30px
+		&.no-bottom-gutter
+			margin-bottom 0 
 			
-			.noUi
-				&-connect
-					background-color $accent-color
-				&-handle
-					border 2px solid $basic-white-color
-					border-radius 50%
-					width 32px
-					height 32px
-					background-color $accent-color
-					box-shadow none
-					top -14px
-					right -16px
-					&:focus,
-					&:hover
-						outline none
-					&:before,
-					&:after
-						display none
-			&--wrapper
-				width 100%
-				padding 0 20px
-				margin-top 30px
-				&.no-bottom-gutter
-					margin-bottom 0 
+.tooltip-with-sign
+	.noUi-tooltip
+		&:after
+			content '\20B8'
+			display inline-block
+			margin-left 3px
+
+.form-group__input
+	&--credit
 	
+		&_term
+			padding-left 55px
+		&_pay
+			padding-left 122px	
+			
+		&_label
+			position absolute
+			left 15px
+			vertical-center()
+			color $alternate-text-color
+			display inline-block
 
 
 .form-group
@@ -191,6 +224,7 @@ input[type="search"]::-webkit-search-results-decoration
 		&--label
 			display block
 			position relative
+			
 			&_text
 				display inline-block
 				position absolute
@@ -203,7 +237,7 @@ input[type="search"]::-webkit-search-results-decoration
 							
 			&.is-active
 				span
-					margin-top -14px
+					margin-top -12px
 					
 		&--dropdown
 			position absolute
@@ -252,6 +286,18 @@ input[type="search"]::-webkit-search-results-decoration
 				.arrow
 					transform translateY(-50%) rotate(-180deg) 
 
+.form-group__input-file
+	display none
+	&--label
+		cursor pointer
+		&:before
+			pseudo()
+			position absolute
+			vertical-center()
+			right 15px
+			width 23px
+			height 23px
+			background url('../img/icons/svg/attach.svg') 50% 50% no-repeat / 23px 23px
 
 .form-group__checkbox,
 .form-group__radio

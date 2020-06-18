@@ -1,0 +1,61 @@
+.card
+	display block
+	height 100%
+	background-color $basic-white-color
+	border-radius 20px
+	padding 30px
+	min-height 250px
+	font 14px $Reg
+	color $light-text-color
+	transition all .17s ease-in-out
+	&__title
+		font 18px $Semibold
+		color $text-color
+		margin-bottom 10px
+		display block
+	&__ic
+		display block
+		width 72px
+		height 72px
+		margin-bottom 30px
+		position relative
+		span
+			display block
+			width 72px
+			height 72px
+			background-position 50% 50%
+			background-size contain
+			background-repeat no-repeat
+			transition opacity .17s ease-in-out
+			position absolute
+			position-center()
+		&--static
+			opacity 1
+		&--hover
+			opacity 0
+			z-index 2
+			
+	&__wrapper
+		padding 15px
+		width 33.33333%
+			
+	&:hover
+		box-shadow 0px 0px 20px rgba($basic-black-color, 0.15)
+
+
+.service-card
+	
+	&:hover
+		.card__ic
+			&--static
+				opacity 0
+			&--hover
+				opacity 1
+				
+	&__wrapper
+		flex 1 0 25%
+		max-width 33.3333%
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3)
+			flex 1 0 33.3333%

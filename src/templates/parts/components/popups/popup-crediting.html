@@ -1,5 +1,5 @@
 <!-- Trade in popup-->
-<div class="popup js-popup js-crediting-popup" style="display: block;">
+<div class="popup js-popup js-crediting-popup">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -25,7 +25,8 @@
 								<!-- Form group -->
 								<div class="form-group__input--wrapper_col col-w-33">
 									<div class="form-group__input--wrapper">
-										<input type="text" name="Кредитный срок" class="form-group__input js-credit-term-input">
+										<input type="text" name="Кредитный срок" class="form-group__input form-group__input--accent form-group__input--credit_term js-credit-term-input">
+										<span class="form-group__input--credit_label">Срок:</span>
 									</div>
 								</div>
 								<!-- //Form group -->
@@ -43,7 +44,8 @@
 								<!-- Form group -->
 								<div class="form-group__input--wrapper_col col-w-33">
 									<div class="form-group__input--wrapper">
-										<input type="text" name="Кредитный взнос" class="form-group__input js-credit-pay-input">
+										<input type="text" name="Кредитный взнос" class="form-group__input form-group__input--accent form-group__input--credit_pay js-credit-pay-input">
+										<span class="form-group__input--credit_label">Первый взнос, &#8376;:</span>
 									</div>
 								</div>
 								<!-- //Form group -->
@@ -51,7 +53,7 @@
 								<!-- Price range -->
 								<div class="form-group__input--wrapper_col col-w-66">
 									<div class="form-group__price-range--wrapper">
-										<div class="form-group__price-range js-credit-pay-range"></div>
+										<div class="form-group__price-range js-credit-pay-range tooltip-with-sign"></div>
 									</div>
 								</div>
 								<!-- //Price range -->

@@ -1,18 +1,15 @@
 .aside
-	width 100%
-	max-width 450px
 	padding 50px 30px 40px 30px
 	box-shadow inset 3px 0px 14px rgba($basic-black-color, 0.1)
 	background-color $basic-white-color
-	margin-right 30px
-	position absolute
-	top 0
-	left 0
-	will-change transform
-	transition transform .2s ease-in-out
+	position relative
+	&__col
+		width 460px
+		margin-right 30px
+		margin-left -20px
 	
-	&.is-toggled
-		transform translateX(-110%)
+
+
 		
 	
 	

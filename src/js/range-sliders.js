@@ -86,17 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	noUiSlider.create(creditTermRange, {
-		start: [1],
+		start: [6],
 		step: 1,
 		connect: 'lower',
 		range: {
 			'min': [1],
 			'max': [36]
 		},
+		tooltips: [true],
 		format: wNumb({
-			decimals: 3,
-			thousand: '.',
-			suffix: ' (US $)'
+			decimals: 0,
+			thousand: '',
+			suffix: ' Месяца(ев)'
 		})
 	});
 
@@ -113,17 +114,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	noUiSlider.create(creditPayRange, {
-		start: [5000],
+		start: [15000],
 		step: 5000,
 		connect: 'lower',
 		range: {
 			'min': [5000],
 			'max': [50000]
 		},
+		tooltips: [true],
 		format: wNumb({
-			decimals: 3,
-			thousand: '.',
-			suffix: ' (US $)'
+			decimals: 0,
+			thousand: '',
+			suffix: ''
 		})
 	});
 

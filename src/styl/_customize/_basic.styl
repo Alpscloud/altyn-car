@@ -126,20 +126,45 @@ img
 				
 		&__sm-gutter
 			margin-bottom 15px
+			
+				
+		&-lg
+			font 30px $Bold
+			color $alternate-text-color
+			line-height 29px
+			margin-bottom 25px
 	&-text
 		font-size 14px
 		color $light-text-color
 		margin-bottom 65px
+
 		
-.page-title
-	font 52px $Heavy
-	color $alternate-text-color
-	line-height 100%
+.page
+	&-title
+		font 52px $Heavy
+		color $alternate-text-color
+		line-height 100%
+	&-description
+		margin-bottom 70px
+		max-width 700px
+		
+	&-block-gutter-sm
+		padding-bottom 65px
 	
 .block-title
 	font 18px $Semibold
 	color $alternate-text-color
 	line-height 21px
+	&-lg
+		font 21px $Bold
+		line-height 25px
+		color $text-color
+		margin-bottom 20px
+	
+.sect-page
+	padding-top 45px
+	.page-title
+		margin-bottom 30px
 	
 .text-center
 	text-align center
@@ -161,6 +186,12 @@ img
 
 .light-text-color
 	color $light-text-color
+	
+.secondary-color
+	color $secondary-color
+	
+.f-f-medium
+	font-family $Med
 	
 .content-img
 	display block
