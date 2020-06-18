@@ -102,6 +102,13 @@ $(document).ready(function() {
 		$('html').addClass('is-fixed');
 	});
 
+	$('.js-open-vacancy-form-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-vacancy-popup').fadeOut(300);
+		$('.js-vacancy-form-popup').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
 	$('.form-group__input').on('blur', function(e) {
 		var value = $(this).val();
 		var wrapper = $(this).parents('.form-group__input--wrapper');
@@ -169,6 +176,60 @@ $(document).ready(function() {
 		}
 
 	});
+
+	// Parallax
+	//Parallax	
+	var xScrollPos, yScrollPos,
+		aboutUsParams = $('.our-param__value'),
+		logoImg = $('.mission__img');
+
+	function scrollLoop(e) {
+		xScrollPos = window.scrollX;
+		yScrollPos = window.scrollY;
+
+		if(aboutUsParams.length > 0) {
+			setTranslate(0, yScrollPos * -0.025, aboutUsParams);
+		}
+
+		if(logoImg.length > 0) {
+			setTranslate('-50%', yScrollPos * -0.1, logoImg);
+		}
+
+		requestAnimationFrame(scrollLoop);
+	}
+
+	function setTranslate(xPos, yPos, elem) {
+
+		if(!elem) {return};
+		elem.css({
+			'transform' : 'translate3d(' + xPos + ', ' + yPos + 'px, 0)'
+		});
+	}
+
+	var show = true;
+		$(window).on('scroll load resize', function () {
+			if($('.our-params').length > 0) {
+				if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+				var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+				var e_top = $('.our-params').offset().top; // Расстояние от блока со счетчиками до верха всего документа
+				var w_height = $(window).height(); // Высота окна браузера
+				var d_height = $(document).height(); // Высота всего документа
+				var e_height = $('.our-params').outerHeight(); // Полная высота блока со счетчиками
+				if (w_top + 700 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+						$('.our-param__value').css('opacity', '1');
+						$('.our-param__value span').spincrement({
+								thousandSeparator: "",
+								from: 0,
+								duration: 3000
+						});
+
+						show = false;
+				}
+			}
+		});
+
+
+	window.addEventListener("DOMContentLoaded", scrollLoop, false);
 
 	// Sliders
 	var promoSlider = new Swiper('.js-promo-slider', {
@@ -257,6 +318,19 @@ $(document).ready(function() {
 			nextEl: '.js-car-main-slider-btn-next',
 		},
 
+	});
+
+	var partnersSlider = new Swiper('.js-partners-slider', {
+		loop: true,
+		slidesPerView: 6,
+		spaceBetween: 25,
+		autoplay: {
+			delay: 8000,
+		},
+		navigation: {
+			prevEl: '.js-partners-slider-btn-prev',
+			nextEl: '.js-partners-slider-btn-next',
+		},
 	});
 
 

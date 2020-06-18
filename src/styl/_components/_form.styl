@@ -154,7 +154,12 @@ input[type="search"]::-webkit-search-results-decoration
 				flex 1
 				max-width 350px
 				padding 0 7.5px
-				
+
+// Textarea
+.form-group__textarea
+	min-height 175px
+
+// Custom range
 .form-group__price-range
 	height 4px
 	background-color #ECEBED
@@ -215,12 +220,13 @@ input[type="search"]::-webkit-search-results-decoration
 			color $alternate-text-color
 			display inline-block
 
-
+// Float labels
 .form-group
 	&__input
 		&--with-label
 			padding 22px 15px 10px 15px
 			cursor pointer
+		
 		&--label
 			display block
 			position relative
@@ -285,7 +291,16 @@ input[type="search"]::-webkit-search-results-decoration
 					
 				.arrow
 					transform translateY(-50%) rotate(-180deg) 
-
+					
+	&__textarea
+		&--label
+			.form-group__input--label_text
+				transform none
+				top 20px
+				
+textarea.form-group__input--with-label
+	padding-top 25px
+// Input file
 .form-group__input-file
 	display none
 	&--label
@@ -299,6 +314,8 @@ input[type="search"]::-webkit-search-results-decoration
 			height 23px
 			background url('../img/icons/svg/attach.svg') 50% 50% no-repeat / 23px 23px
 
+
+// Checboxes/radios
 .form-group__checkbox,
 .form-group__radio
 	position relative
@@ -459,6 +476,28 @@ input[type="search"]::-webkit-search-results-decoration
 			margin-bottom 35px
 			.form-group__input--wrapper
 				margin-bottom 0
+				
+
+// Contact form
+.contact-form
+	&__wrapper
+		background-color $basic-white-color
+		border-radius 6px
+		padding 25px 90px 50px 90px
+		margin-top 100px
+	.row-inputs
+		margin-left -11px
+		margin-right -11px
+	.form-group
+		&__input--wrapper_col
+			margin-bottom 30px
+			padding-left 11px
+			padding-right 11px
+		&__submit
+			margin-top 0
+	&__text
+		margin-bottom 35px
+		font-size 12px
 
 
 
