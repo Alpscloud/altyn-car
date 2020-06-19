@@ -145,8 +145,8 @@ img
 		color $alternate-text-color
 		line-height 100%
 	&-description
-		margin-bottom 70px
-		max-width 700px
+		margin-bottom 50px
+		max-width 720px
 		
 	&-block-gutter-sm
 		padding-bottom 65px
@@ -256,6 +256,63 @@ img
 		margin-bottom 15px
 		&:last-child
 			margin-bottom 0
+			
+	h1,h2,h3,h4,h5,h6
+		color $alternate-text-color
+		&:last-child
+			margin-bottom 0
+			
+	h1
+		font 52px $Heavy
+		line-height 100%
+		margin-bottom 30px
+		
+	h2
+		font 24px $Bold
+		line-height 29px
+		margin-bottom 20px
+		
+	h3,h4,h5
+		font 18px $Semibold
+		margin-bottom 20px
+		
+	h6
+		font 16px $Semibold
+		margin-bottom 10px
+		
+	b, strong
+		font-family $Bold
+		
+	ul, ol
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+			
+	li
+		position relative
+		display block
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+			
+	ul
+		li
+			&:before
+				content '-'
+				display inline-block
+				margin-right 4px
+				
+	ol
+		counter-reset list
+		li
+			&:before
+				counter-increment list
+				content counter(list) ")"
+				display inline-block
+				margin-right 4px
+				
+		
+		
 			
 .block-shadow
 	background-color $basic-white-color

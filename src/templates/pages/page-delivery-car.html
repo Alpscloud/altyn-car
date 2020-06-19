@@ -1,0 +1,331 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Popups -->
+		{% include '../parts/components/popups/popup-callback.html' %}
+		{% include '../parts/components/popups/popup-thanks.html' %}
+		{% include '../parts/components/popups/popup-vacancy.html' %}
+		{% include '../parts/components/popups/popup-vacancy-form.html' %}
+		<!-- //Popups -->
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<!-- Page -->
+			<section class="sect-page gutter-bottom">
+				<h1 class="container page-title text-center">Доставим автомобиль быстро и с гарантией</h1>
+				<p class="container text-center page-description">Выбор наших автомобилей не ограничен площадкой в Вашем городе — мы можем привезти любой понравившееся авто с другого города из нашего филиала.</p>
+
+				<div class="container">
+					<div class="contact-form__wrapper box-shadow">
+						<h3 class="sect-title accent-color">Доставим автомобиль быстро и с гарантией.</h3>
+						<p class="contact-form__text">Задайте свой вопрос по программе технической гарантии на автомобили с пробегом “AltynCar Garant”, оставьте свои контактные данные и мы с вами обязательно свяжемся.</p>
+
+						<form class="contact-form">
+							<div class="row align-horisontal-between row-inputs">
+								<!-- Form group -->
+								<div class="form-group__input--wrapper_col col-w-25">
+									<div class="form-group__input--wrapper">
+										<label class="form-group__input--label is-active">
+											<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+											<span class="form-group__input--label_text">Город</span>
+										</label>
+
+										<div class="form-group__input--dropdown">
+											<ul>
+												<li>Город 1</li>
+												<li>Город 2</li>
+												<li>Город 3</li>
+												<li>Город 4</li>
+												<li>Город 5</li>
+												<li>Город 6</li>
+												<li>Город 7</li>
+												<li>Город 8</li>
+												<li>Город 9</li>
+												<li>Город 10</li>
+											</ul>
+										</div>
+
+										{% include '../parts/components/interface/arrow.html' %}
+									</div>
+								</div>
+								<!-- //Form group -->
+								<!-- Form group -->
+								<div class="form-group__input--wrapper_col col-w-25">
+									<div class="form-group__input--wrapper">
+										<label class="form-group__input--label">
+											<input type="text" name="Имя" class="form-group__input form-group__input--with-label">
+											<span class="form-group__input--label_text">Ваше имя</span>
+										</label>
+									</div>
+								</div>
+								<!-- //Form group -->
+
+								<!-- Form group -->
+								<div class="form-group__input--wrapper_col col-w-25">
+									<div class="form-group__input--wrapper">
+										<label class="form-group__input--label">
+											<input type="email" name="Email" class="form-group__input form-group__input--with-label">
+											<span class="form-group__input--label_text">Ваш E-mail</span>
+										</label>
+									</div>
+								</div>
+								<!-- //Form group -->
+
+								<!-- Form group -->
+								<div class="form-group__input--wrapper_col col-w-25">
+									<div class="form-group__input--wrapper">
+										<label class="form-group__input--label">
+											<input type="tel" name="Phone" class="form-group__input form-group__input--with-label">
+											<span class="form-group__input--label_text">Ваш телефон</span>
+										</label>
+									</div>
+								</div>
+								<!-- //Form group -->
+
+								<!-- Form group -->
+								<div class="form-group__input--wrapper_col col-w-100">
+									<div class="form-group__input--wrapper">
+										<label class="form-group__input--label form-group__textarea--label">
+											<textarea name="Вопрос" class="form-group__input form-group__textarea form-group__input--with-label"></textarea>
+											<span class="form-group__input--label_text">Вы можете задать любой вопрос по данной услуге</span>
+										</label>
+									</div>
+								</div>
+								<!-- //Form group -->
+
+							</div>
+
+							<div class="form-group__submit text-center">
+								<p class="form-group__notice">Отправляя данную форму Вы подтверждаете, что ознакомлены и согласны с <a href="#">политикой конфиденциальности и правилами обработки персональных данных</a></p>
+
+								<button class="btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- //container -->
+
+				<!-- Section about-us -->
+				<section class="sect__description gutters">
+					<h2 class="w3c">&nbsp;</h2>
+
+					<div class="page-container">
+						<div class="row align-horisontal-end align-vertical-center description-block__row">
+
+							<!-- Content -->
+							<div class="description-block__content description-block__content--right">
+								<div class="content light-text-color">
+									<h2>Доставим автомобиль быстро и с гарантией.</h2>
+									<h3>Вам не придется тратить свое время и деньги на дорогу туда и обратно.</h3>
+									<p>Доставка автомобиля AltynCar из нашего салона, находящегося в другом городе в город заказчика, осуществляется специализированным транспортом.</p>
+									<p>После доставки вашего автомобиля, наш менеджер уведомит вас о прибытии, и попросит вас приехать в автосалон для оформления сделки.</p>
+									<p>Основным условием доставки автомобиля является внесение задатка за автомобиль не менее 10% от стоимости авто.</p>
+									<p>В случае если вы передумали приобретать доставленный автомобиль, мы вернем вам предоплату за вычетом наших затрат на доставку.</p>
+								</div>
+
+							</div>
+							<!-- //Content -->
+
+							<!-- Slider -->
+							<div class="description-block__slider single-slider">
+								<div class="swiper-container js-description-block-slider">
+									<div class="swiper-wrapper">
+										<!-- Slide -->
+										<div class="swiper-slide">
+											<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+												<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
+											</div>
+										</div>
+										<!-- //Slide -->
+
+										<!-- Slide -->
+										<div class="swiper-slide">
+											<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+												<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
+											</div>
+										</div>
+										<!-- //Slide -->
+
+										<!-- Slide -->
+										<div class="swiper-slide">
+											<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+												<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
+											</div>
+										</div>
+										<!-- //Slide -->
+									</div>
+								</div>
+
+								<!-- Pagination -->
+								<div class="slider__pagination js-description-block-slider-pagination"></div>
+								<!-- //Pagination -->
+
+								<!-- Navigation -->
+								<div class="slider__navigation">
+									<button class="btn__arrow btn__arrow--prev js-description-block-slider-btn-prev" type="button">
+										{% include '../parts/components/interface/btn-arrow-left-svg.html' %}
+									</button>
+
+									<button class="btn__arrow btn__arrow--next js-description-block-slider-btn-next" type="button">
+										{% include '../parts/components/interface/btn-arrow-right-svg.html' %}
+									</button>
+								</div>
+								<!-- //Navigation -->
+							</div>
+							<!-- //Slider -->
+
+						</div>
+					</div>
+
+
+				</section>
+				<!-- //Section about-us -->
+
+				<!-- Offer -->
+				{% include '../parts/sections/section-offer.html' %}
+				<!-- //Offer -->
+
+				<!-- Section faq -->
+				<section class="sect__faq gutters">
+					<h2 class="sect-title container text-center">Вопрос-ответ</h2>
+
+					<div class="container">
+						<div class="faqs">
+							<!-- Faq -->
+							<div class="faq box-shadow">
+								<div class="faq__question">
+									<div class="row align-vertical-center align-horisontal-between">
+										<h3 class="faq__question--title">Зачем мне платить за доставку, если я могу пригнать а/м сам бесплатно?</h3>
+
+										{% include '../parts/components/interface/arrow.html' %}
+									</div>
+								</div>
+
+								<div class="faq__answer">
+									<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если заманивший рукопись всеми языкового дороге великий своих имеет ему!</p>
+								</div>
+							</div>
+							<!-- //Faq -->
+
+							<!-- Faq -->
+							<div class="faq box-shadow">
+								<div class="faq__question">
+									<div class="row align-vertical-center align-horisontal-between">
+										<h3 class="faq__question--title">Вы можете доставить автомобиль из города, где нет ваших филиалов?</h3>
+
+										{% include '../parts/components/interface/arrow.html' %}
+									</div>
+								</div>
+
+								<div class="faq__answer">
+									<p>К сожалению, нет. Мы делаем доставку только тех автомобилей, которые продаем с нашей площадки.</p>
+								</div>
+							</div>
+							<!-- //Faq -->
+
+							<!-- Faq -->
+							<div class="faq box-shadow">
+								<div class="faq__question">
+									<div class="row align-vertical-center align-horisontal-between">
+										<h3 class="faq__question--title">Если доставленный автомобиль меня не устроит, я могу отказаться от его приобретения?</h3>
+
+										{% include '../parts/components/interface/arrow.html' %}
+									</div>
+								</div>
+
+								<div class="faq__answer">
+									<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если заманивший рукопись всеми языкового дороге великий своих имеет ему!</p>
+								</div>
+							</div>
+							<!-- //Faq -->
+
+							<!-- Faq -->
+							<div class="faq box-shadow">
+								<div class="faq__question">
+									<div class="row align-vertical-center align-horisontal-between">
+										<h3 class="faq__question--title">Могу ли я оформить кредит на автомобиль в другом городе?</h3>
+
+										{% include '../parts/components/interface/arrow.html' %}
+									</div>
+								</div>
+
+								<div class="faq__answer">
+									<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если заманивший рукопись всеми языкового дороге великий своих имеет ему!</p>
+								</div>
+							</div>
+							<!-- //Faq -->
+						</div>
+					</div>
+					<!-- //container -->
+				</section>
+				<!-- //Section faq -->
+
+				<!-- Section stocks -->
+				<section class="sect__stocks gutter-bottom">
+					<h2 class="w3c">&nbsp;</h2>
+
+					<div class="container">
+						<div class="sect-title__row row align-horisontal-start align-vertical-center row-nowrap">
+							<h3 class="sect-title">Акции и горячие предложения</h3>
+
+							<!-- Slider controls -->
+							<div class="slider__navigation slider__navigation--md">
+								<button class="btn__arrow js-cars-slider-btn-prev" type="button">
+									<svg  viewBox="0 0 17 37" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.12865 18.0032L16.0355 33.372C16.5416 33.9747 16.5416 34.9517 16.0355 35.5543C15.5294 36.157 14.7089 36.157 14.2028 35.5543L0.379569 19.0943C-0.126523 18.4917 -0.126523 17.5146 0.379569 16.912L14.2028 0.451972C14.7089 -0.150657 15.5294 -0.150657 16.0355 0.451972C16.5416 1.0546 16.5416 2.03166 16.0355 2.63428L3.12865 18.0032Z"/>
+									</svg>
+								</button>
+
+								<button class="btn__arrow js-cars-slider-btn-next" type="button">
+									<svg viewBox="0 0 17 37"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.8714 18.0036L0.964474 2.63468C0.458382 2.03205 0.458382 1.05499 0.964474 0.452364C1.47057 -0.150267 2.2911 -0.150267 2.79719 0.452364L16.6204 16.9124C17.1265 17.515 17.1265 18.4921 16.6204 19.0947L2.79719 35.5547C2.2911 36.1574 1.47056 36.1574 0.964472 35.5547C0.45838 34.9521 0.45838 33.9751 0.964472 33.3724L13.8714 18.0036Z" />
+									</svg>
+								</button>
+
+							</div>
+							<!-- //Slider controls -->
+						</div>
+
+						<!-- Slider -->
+						{% include '../parts/components/interface/cars-slider.html' %}
+						<!-- //Slider -->
+
+						<div class="permalink__wrapper text-center">
+							<a href="page-catalog.html" class="btn">Все автомобили</a>
+						</div>
+					</div>
+
+
+				</section>
+				<!-- //Section stocks -->
+
+
+
+			</section>
+			<!-- //Page -->
+
+			
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

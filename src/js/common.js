@@ -292,16 +292,16 @@ $(document).ready(function() {
 		}
 	});
 
-	var aboutUsSlider = new Swiper('.js-about-us-slider', {
+	var descriptionBlockSlider = new Swiper('.js-description-block-slider', {
 		loop: true,
 		spaceBetween: 0,
 		pagination: {
-			el: '.js-about-us-slider-pagination',
+			el: '.js-description-block-slider-pagination',
 			clickable: true
 		},
 		navigation: {
-			prevEl: '.js-about-us-slider-btn-prev',
-			nextEl: '.js-about-us-slider-btn-next',
+			prevEl: '.js-description-block-slider-btn-prev',
+			nextEl: '.js-description-block-slider-btn-next',
 		},
 		autoplay: {
 			delay: 8000,
@@ -331,6 +331,28 @@ $(document).ready(function() {
 			prevEl: '.js-partners-slider-btn-prev',
 			nextEl: '.js-partners-slider-btn-next',
 		},
+	});
+
+	// Faqs
+	$('.faq__question').on('click', function(e) {
+		e.preventDefault();
+
+		var faq = $(this).parents('.faq');
+		var faqAnswer = $(this).next('.faq__answer');
+
+		if(faq.hasClass('is-toggled')) {
+			faq.removeClass('is-toggled');
+			$('.faq').removeClass('is-toggled');
+			$('.faq__answer').stop().slideUp(150);
+			faqAnswer.stop().slideUp(150);
+		} else {
+			$('.faq').removeClass('is-toggled');
+			$('.faq__answer').stop().slideUp(150);
+			faq.addClass('is-toggled');
+
+			faqAnswer.stop().slideDown(150);
+			
+		}
 	});
 
 

@@ -82,60 +82,71 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Crediting
 	var creditTermRange = document.querySelector('.js-credit-term-range');
-	var creditTermInput = document.querySelector('.js-credit-term-input');
+
+	if(creditTermRange) {
 
 
-	noUiSlider.create(creditTermRange, {
-		start: [6],
-		step: 1,
-		connect: 'lower',
-		range: {
-			'min': [1],
-			'max': [36]
-		},
-		tooltips: [true],
-		format: wNumb({
-			decimals: 0,
-			thousand: '',
-			suffix: ' Месяца(ев)'
-		})
-	});
+		var creditTermInput = document.querySelector('.js-credit-term-input');
 
-	creditTermRange.noUiSlider.on('update', function (values, handle) {
-		creditTermInput.value = values[handle];
-	});
 
-	creditTermInput.addEventListener('change', function () {
-		creditTermRange.noUiSlider.set(this.value);
-	});
+		noUiSlider.create(creditTermRange, {
+			start: [6],
+			step: 1,
+			connect: 'lower',
+			range: {
+				'min': [1],
+				'max': [36]
+			},
+			tooltips: [true],
+			format: wNumb({
+				decimals: 0,
+				thousand: '',
+				suffix: ' Месяца(ев)'
+			})
+		});
+
+		creditTermRange.noUiSlider.on('update', function (values, handle) {
+			creditTermInput.value = values[handle];
+		});
+
+		creditTermInput.addEventListener('change', function () {
+			creditTermRange.noUiSlider.set(this.value);
+		});
+
+	}
 
 	var creditPayRange = document.querySelector('.js-credit-pay-range');
-	var creditPayInput = document.querySelector('.js-credit-pay-input');
+
+	if(creditPayRange) {
+
+		var creditPayInput = document.querySelector('.js-credit-pay-input');
 
 
-	noUiSlider.create(creditPayRange, {
-		start: [15000],
-		step: 5000,
-		connect: 'lower',
-		range: {
-			'min': [5000],
-			'max': [50000]
-		},
-		tooltips: [true],
-		format: wNumb({
-			decimals: 0,
-			thousand: '',
-			suffix: ''
-		})
-	});
+		noUiSlider.create(creditPayRange, {
+			start: [15000],
+			step: 5000,
+			connect: 'lower',
+			range: {
+				'min': [5000],
+				'max': [50000]
+			},
+			tooltips: [true],
+			format: wNumb({
+				decimals: 0,
+				thousand: '',
+				suffix: ''
+			})
+		});
 
-	creditPayRange.noUiSlider.on('update', function (values, handle) {
-		creditPayInput.value = values[handle];
-	});
+		creditPayRange.noUiSlider.on('update', function (values, handle) {
+			creditPayInput.value = values[handle];
+		});
 
-	creditPayInput.addEventListener('change', function () {
-		creditPayRange.noUiSlider.set(this.value);
-	});
+		creditPayInput.addEventListener('change', function () {
+			creditPayRange.noUiSlider.set(this.value);
+		});
+
+	}
 
 	
 });

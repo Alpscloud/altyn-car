@@ -256,11 +256,26 @@
 					<!-- NAV -->
 					<nav class="nav">
 	<ul class="nav__list">
-		<li class="nav__item">
-			<a href="page-buy-car.html" class="nav__link">Купить а/м</a>
+		<li class="nav__item has-sublist">
+			<a href="page-catalog.html" class="nav__link">Купить а/м</a>
+
+			<!-- Sublist -->
+			<ul class="nav-sublist">
+				<li class="nav-sublist__item"><a href="page-catalog.html" class="nav-sublist__link">Каталог</a></li>
+				<li class="nav-sublist__item"><a href="#" class="nav-sublist__link ">Акции и предложения</a></li>
+				<li class="nav-sublist__item"><a href="#" class="nav-sublist__link">Новинки</a></li>
+			</ul>
+			<!-- //Sublist -->
 		</li>
-		<li class="nav__item">
+		<li class="nav__item has-sublist">
 			<a href="page-sale-car.html" class="nav__link">Продать а/м</a>
+
+			<!-- Sublist -->
+			<ul class="nav-sublist">
+				<li class="nav-sublist__item"><a href="page-record-for-car-assessment.html" class="nav-sublist__link">Запись на оценку</a></li>
+				<li class="nav-sublist__item"><a href="page-buyout.html" class="nav-sublist__link ">Выкуп</a></li>
+			</ul>
+			<!-- //Sublist -->
 		</li>
 		<li class="nav__item has-sublist">
 			<a href="page-services.html" class="nav__link">Услуги</a>
@@ -276,8 +291,18 @@
 			</ul>
 			<!-- //Sublist -->
 		</li>
-		<li class="nav__item">
+		<li class="nav__item has-sublist">
 			<a href="page-about.html" class="nav__link">О компании</a>
+
+			<!-- Sublist -->
+			<ul class="nav-sublist">
+				<li class="nav-sublist__item"><a href="page-about.html" class="nav-sublist__link">О нас</a></li>
+				<li class="nav-sublist__item"><a href="#" class="nav-sublist__link">Команда</a></li>
+				<li class="nav-sublist__item"><a href="#" class="nav-sublist__link">Новости компании</a></li>
+				<li class="nav-sublist__item"><a href="page-about.html" class="nav-sublist__link">Миссии и ценности</a></li>
+				<li class="nav-sublist__item"><a href="page-vacancies.html" class="nav-sublist__link">Вакансии</a></li>
+			</ul>
+			<!-- //Sublist -->
 		</li>
 		<li class="nav__item">
 			<a href="page-contacts.html" class="nav__link">Контакты</a>
@@ -1316,15 +1341,15 @@
 				<h2 class="w3c">&nbsp;</h2>
 
 				<div class="page-container">
-					<div class="row align-horisontal-start align-vertical-center about-us__row">
+					<div class="row align-horisontal-start align-vertical-center description-block__row">
 
 						<!-- Slider -->
-						<div class="about-us__slider single-slider">
-							<div class="swiper-container js-about-us-slider">
+						<div class="description-block__slider single-slider">
+							<div class="swiper-container js-description-block-slider">
 								<div class="swiper-wrapper">
 									<!-- Slide -->
 									<div class="swiper-slide">
-										<div class="about-us__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+										<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
 											<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
 										</div>
 									</div>
@@ -1332,7 +1357,7 @@
 
 									<!-- Slide -->
 									<div class="swiper-slide">
-										<div class="about-us__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+										<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
 											<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
 										</div>
 									</div>
@@ -1340,7 +1365,7 @@
 
 									<!-- Slide -->
 									<div class="swiper-slide">
-										<div class="about-us__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
+										<div class="description-block__slider--slide bg b-radius box-shadow" style="background-image: url('img/backgrounds/promo-bg.jpg');">
 											<img src="img/backgrounds/promo-bg.jpg" alt="Тайтл">
 										</div>
 									</div>
@@ -1349,19 +1374,19 @@
 							</div>
 
 							<!-- Pagination -->
-							<div class="slider__pagination js-about-us-slider-pagination"></div>
+							<div class="slider__pagination js-description-block-slider-pagination"></div>
 							<!-- //Pagination -->
 
 							<!-- Navigation -->
 							<div class="slider__navigation">
-								<button class="btn__arrow btn__arrow--prev js-about-us-slider-btn-prev" type="button">
+								<button class="btn__arrow btn__arrow--prev js-description-block-slider-btn-prev" type="button">
 										<svg viewBox="0 0 60 97" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d)">
 			<path d="M19.9954 44.4995L44.729 73.951C45.6988 75.1058 45.6988 76.9781 44.729 78.1329C43.7591 79.2878 42.1867 79.2878 41.2169 78.1329L14.7274 46.5905C13.7575 45.4357 13.7575 43.5634 14.7274 42.4085L41.2169 10.8661C42.1867 9.71129 43.7591 9.71129 44.729 10.8661C45.6988 12.0209 45.6988 13.8933 44.729 15.0481L19.9954 44.4995Z"/>
 		</g>
 	</svg>								</button>
 
-								<button class="btn__arrow btn__arrow--next js-about-us-slider-btn-next" type="button">
+								<button class="btn__arrow btn__arrow--next js-description-block-slider-btn-next" type="button">
 										<svg viewBox="0 0 60 97" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d)">
 			<path d="M39.4616 44.5005L14.7281 15.049C13.7583 13.8942 13.7583 12.0219 14.7281 10.8671C15.6979 9.71223 17.2703 9.71223 18.2401 10.8671L44.7297 42.4095C45.6995 43.5643 45.6995 45.4366 44.7297 46.5915L18.2401 78.1339C17.2703 79.2887 15.6979 79.2887 14.7281 78.1339C13.7583 76.9791 13.7583 75.1067 14.7281 73.9519L39.4616 44.5005Z" />
@@ -1373,9 +1398,9 @@
 						<!-- //Slider -->
 						
 						<!-- Content -->
-						<div class="about-us__content">
-							<h3 class="sect-title">О компании</h3>
+						<div class="description-block__content">
 							<div class="content light-text-color">
+								<h2>О компании</h2>
 								<p>Компания AltynCar входит в состав группы компаний Урал-Кров-Авто Плюс которая имеет историю успешного роста и развития более 25 лет, зарекомендовала себя надежным и постоянным поставщиком только проверенных автомобилей.</p>
 								<p>AltynCar – на сегодняшний день является лидером деятельности по покупке, продаже подержанных автомобилей в Западном Казахстане. На 2020 год можно уверенно  говорить о несомненно заслуженном доверии среди покупателей автомобилей с пробегом и компания по истине дорожит своим именем и репутацией, поэтому продает только проверенные автомобили с пробегом, с предоставлением всех необходимых документов, сопровождаем на всех этапах проведения услуг. </p>
 							</div>
