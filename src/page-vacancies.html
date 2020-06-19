@@ -43,7 +43,7 @@
 
 		<!-- Popups -->
 		<!-- Callback popup-->
-<div class="popup js-popup js-callback-popup">
+<div class="popup popup-callback js-popup js-callback-popup">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -66,13 +66,25 @@
 					<div class="contact-form__inputs">
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<select name="city"  class="form-group__input form-group__select">
-								<option value="" disabled selected>Город</option>
-								<option value="Город 1">Город 1</option>
-								<option value="Город 2">Город 2</option>
-								<option value="Город 3">Город 3</option>
-								<option value="Город 4">Город 4</option>
-							</select>
+							<label class="form-group__input--label is-active">
+								<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+								<span class="form-group__input--label_text">Город</span>
+							</label>
+
+							<div class="form-group__input--dropdown">
+								<ul>
+									<li>Город 1</li>
+									<li>Город 2</li>
+									<li>Город 3</li>
+									<li>Город 4</li>
+									<li>Город 5</li>
+									<li>Город 6</li>
+									<li>Город 7</li>
+									<li>Город 8</li>
+									<li>Город 9</li>
+									<li>Город 10</li>
+								</ul>
+							</div>
 
 							<span class="arrow">
 	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
@@ -84,13 +96,19 @@
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваше имя</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш телефон</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
@@ -324,7 +342,7 @@
 
 		<!-- Header -->
 		<!-- Callback popup-->
-<div class="popup js-popup js-callback-popup">
+<div class="popup popup-callback js-popup js-callback-popup">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -347,13 +365,25 @@
 					<div class="contact-form__inputs">
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<select name="city"  class="form-group__input form-group__select">
-								<option value="" disabled selected>Город</option>
-								<option value="Город 1">Город 1</option>
-								<option value="Город 2">Город 2</option>
-								<option value="Город 3">Город 3</option>
-								<option value="Город 4">Город 4</option>
-							</select>
+							<label class="form-group__input--label is-active">
+								<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+								<span class="form-group__input--label_text">Город</span>
+							</label>
+
+							<div class="form-group__input--dropdown">
+								<ul>
+									<li>Город 1</li>
+									<li>Город 2</li>
+									<li>Город 3</li>
+									<li>Город 4</li>
+									<li>Город 5</li>
+									<li>Город 6</li>
+									<li>Город 7</li>
+									<li>Город 8</li>
+									<li>Город 9</li>
+									<li>Город 10</li>
+								</ul>
+							</div>
 
 							<span class="arrow">
 	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
@@ -365,13 +395,19 @@
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваше имя</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш телефон</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
@@ -602,13 +638,13 @@
 
 								
 								<!-- User city popup -->
-								<!-- <div class="user-city__popup js-user-city-popup">
+								<div class="user-city__popup js-user-city-popup">
 									<p class="user-city__popup--text">Ваш город <strong>Астана?</strong></p>
 									<div class="user-city__popup--btns">
 										<a href="#" class="btn js-close-user-city-popup-btn">Да</a>
 										<a href="#" class="btn btn-light">Выбрать другой</a>
 									</div>
-								</div> -->
+								</div>
 								<!-- //User city popup -->
 							</div>
 							<!-- //User city -->
@@ -651,7 +687,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/1.svg');"></span>
 										</div>
 										<h3 class="card__title">Взаимовыгодные отношения</h3>
-										<div class="card__description">Компания Altyn car придерживается единой политики работы с поставщиками, основанной на прозрачных и честных принципах ведения бизнеса. Компания выполняет взятые на себя обязательства и ожидает аналогичного отношения к договорным обязательствам от партнеров</div>
+										<div class="card__description"><p>Компания Altyn car придерживается единой политики работы с поставщиками, основанной на прозрачных и честных принципах ведения бизнеса. Компания выполняет взятые на себя обязательства и ожидает аналогичного отношения к договорным обязательствам от партнеров</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -663,7 +699,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/2.svg');"></span>
 										</div>
 										<h3 class="card__title">Интересные проекты</h3>
-										<div class="card__description">Altyn car активно развивает дилерскую сеть и наращивает объемы продаж, поэтому все наши проекты принесут прибыль не только нашей компании, но и станут достойным гордости проектами в порфолио наших поставщиков.</div>
+										<div class="card__description"><p>Altyn car активно развивает дилерскую сеть и наращивает объемы продаж, поэтому все наши проекты принесут прибыль не только нашей компании, но и станут достойным гордости проектами в порфолио наших поставщиков.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -675,7 +711,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/vacancies-advantages/3.svg');"></span>
 										</div>
 										<h3 class="card__title">Надежный партнер</h3>
-										<div class="card__description">Altyncar ценит сотрудничество с поставщиками наравне с сотрудничеством с клиентами, поэтому все предложения о сотрудничестве самым тщательным образом анализируются и по всем предложениям предоставляется обратная связь.</div>
+										<div class="card__description"><p>Altyncar ценит сотрудничество с поставщиками наравне с сотрудничеством с клиентами, поэтому все предложения о сотрудничестве самым тщательным образом анализируются и по всем предложениям предоставляется обратная связь.</p></div>
 									</div>
 								</div>
 								<!-- //item -->

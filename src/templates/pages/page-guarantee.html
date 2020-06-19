@@ -214,7 +214,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/6.svg');"></span>
 										</div>
 										<h3 class="card__title">Защита и гарантии</h3>
-										<p class="card__description">С программой технической гарантии «AltynCar Garant» вы защищены от непредвиденных расходов на ремонт вашего авто с пробегом. С нашей программой вы исключаете риск дорогостоящего ремонта приобретенного автомобиля. Ваш автомобиль будет обслуживаться профессиональными сотрудниками СТО AltynCar.</p>
+										<div class="card__description"><p>С программой технической гарантии «AltynCar Garant» вы защищены от непредвиденных расходов на ремонт вашего авто с пробегом. С нашей программой вы исключаете риск дорогостоящего ремонта приобретенного автомобиля. Ваш автомобиль будет обслуживаться профессиональными сотрудниками СТО AltynCar.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -226,7 +226,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/16.svg');"></span>
 										</div>
 										<h3 class="card__title">Гибкость программы</h3>
-										<p class="card__description">Программа технической гарантии на авто с пробегом «AltynCar Garant» имеет большое количество вариантов. Вы можете выбрать тот, что максимально подходит именно для Вас.</p>
+										<div class="card__description"><p>Программа технической гарантии на авто с пробегом «AltynCar Garant» имеет большое количество вариантов. Вы можете выбрать тот, что максимально подходит именно для Вас.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -238,7 +238,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/13.svg');"></span>
 										</div>
 										<h3 class="card__title">Продается вместе с авто</h3>
-										<p class="card__description">Если вы решите продать свой автомобиль, то все права и возможности по программе технической гарантии AltynCar Garant, будут переданы новому владельцу авто. А это значит вы сможете продать ваш автомобиль дороже.</p>
+										<div class="card__description"><p>Если вы решите продать свой автомобиль, то все права и возможности по программе технической гарантии AltynCar Garant, будут переданы новому владельцу авто. А это значит вы сможете продать ваш автомобиль дороже.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -259,9 +259,9 @@
 							<h3 class="sect-title">Стоимость программы при покупке автомобиля с пробегом</h3>
 
 							<div class="guarantee-cost">
-								<div class="guarantee-cost__form--wrapper">
-									<p>Выберите автомобиль <span class="accent-color js-show-guarantee-result-btn">Посмотреть результат</span></p>
-									<form class="guarantee-cost__form contact-form">
+								<div class="guarantee-cost__form--wrapper js-visible-block">
+									<p>Выберите автомобиль <span class="accent-color js-show-hidden-result-btn">Посмотреть результат</span></p>
+									<form class="contact-form">
 										<div class="row align-horisontal-between row-inputs">
 											<!-- Form group -->
 											<div class="form-group__input--wrapper_col col-w-50">
@@ -313,7 +313,7 @@
 									</form>
 								</div>
 
-								<div class="guarantee-cost__results" style="display: none;">
+								<div class="guarantee-cost__results js-hidden-results-block" style="display: none;">
 									{% include '../parts/components/car/car-card-mini.html' %}
 
 									<div class="car-technical-guarantee__packages">

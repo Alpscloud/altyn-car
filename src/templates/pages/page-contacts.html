@@ -32,12 +32,25 @@
 							<div class="contacts-city">
 								<div class="h3 sect-title accent-color">Автосалон</div>
 								<div class="form-group__input--wrapper">
-									<select name="city"  class="form-group__input form-group__select">
-										<option value="Автосалон - г. Актобе" selected>Автосалон - г. Актобе</option>
-										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
-										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
-										<option value="Автосалон - г. Актобе">Автосалон - г. Актобе</option>
-									</select>
+									<label class="form-group__input--label is-active">
+										<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Автосалон - г. Актобе" readonly>
+										<span class="form-group__input--label_text">Город</span>
+									</label>
+
+									<div class="form-group__input--dropdown">
+										<ul>
+											<li>Город 1</li>
+											<li>Город 2</li>
+											<li>Город 3</li>
+											<li>Город 4</li>
+											<li>Город 5</li>
+											<li>Город 6</li>
+											<li>Город 7</li>
+											<li>Город 8</li>
+											<li>Город 9</li>
+											<li>Город 10</li>
+										</ul>
+									</div>
 
 									{% include '../parts/components/interface/arrow.html' %}
 								</div>

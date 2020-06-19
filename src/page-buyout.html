@@ -43,7 +43,7 @@
 
 		<!-- Popups -->
 		<!-- Callback popup-->
-<div class="popup js-popup js-callback-popup">
+<div class="popup popup-callback js-popup js-callback-popup">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -66,13 +66,25 @@
 					<div class="contact-form__inputs">
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<select name="city"  class="form-group__input form-group__select">
-								<option value="" disabled selected>Город</option>
-								<option value="Город 1">Город 1</option>
-								<option value="Город 2">Город 2</option>
-								<option value="Город 3">Город 3</option>
-								<option value="Город 4">Город 4</option>
-							</select>
+							<label class="form-group__input--label is-active">
+								<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+								<span class="form-group__input--label_text">Город</span>
+							</label>
+
+							<div class="form-group__input--dropdown">
+								<ul>
+									<li>Город 1</li>
+									<li>Город 2</li>
+									<li>Город 3</li>
+									<li>Город 4</li>
+									<li>Город 5</li>
+									<li>Город 6</li>
+									<li>Город 7</li>
+									<li>Город 8</li>
+									<li>Город 9</li>
+									<li>Город 10</li>
+								</ul>
+							</div>
 
 							<span class="arrow">
 	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
@@ -84,13 +96,19 @@
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваше имя</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш телефон</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
@@ -145,7 +163,7 @@
 
 		<!-- Header -->
 		<!-- Callback popup-->
-<div class="popup js-popup js-callback-popup">
+<div class="popup popup-callback js-popup js-callback-popup">
 	<div class="popup__overflow">
 		<div class="popup__body text-center box-shadow b-radius">
 
@@ -168,13 +186,25 @@
 					<div class="contact-form__inputs">
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<select name="city"  class="form-group__input form-group__select">
-								<option value="" disabled selected>Город</option>
-								<option value="Город 1">Город 1</option>
-								<option value="Город 2">Город 2</option>
-								<option value="Город 3">Город 3</option>
-								<option value="Город 4">Город 4</option>
-							</select>
+							<label class="form-group__input--label is-active">
+								<input type="text" name="Город" class="form-group__input form-group__input--with-label" value="Выберите город" readonly>
+								<span class="form-group__input--label_text">Город</span>
+							</label>
+
+							<div class="form-group__input--dropdown">
+								<ul>
+									<li>Город 1</li>
+									<li>Город 2</li>
+									<li>Город 3</li>
+									<li>Город 4</li>
+									<li>Город 5</li>
+									<li>Город 6</li>
+									<li>Город 7</li>
+									<li>Город 8</li>
+									<li>Город 9</li>
+									<li>Город 10</li>
+								</ul>
+							</div>
 
 							<span class="arrow">
 	<svg viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
@@ -186,13 +216,19 @@
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="text" name="name" placeholder="Ваше имя" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="text" name="Имя" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваше имя</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
 						<!-- Form group -->
 						<div class="form-group__input--wrapper">
-							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-group__input is-disabled" disabled>
+							<label class="form-group__input--label">
+								<input type="tel" name="Phone" class="form-group__input form-group__input--with-label is-disabled" disabled>
+								<span class="form-group__input--label_text">Ваш телефон</span>
+							</label>
 						</div>
 						<!-- //Form group -->
 
@@ -423,13 +459,13 @@
 
 								
 								<!-- User city popup -->
-								<!-- <div class="user-city__popup js-user-city-popup">
+								<div class="user-city__popup js-user-city-popup">
 									<p class="user-city__popup--text">Ваш город <strong>Астана?</strong></p>
 									<div class="user-city__popup--btns">
 										<a href="#" class="btn js-close-user-city-popup-btn">Да</a>
 										<a href="#" class="btn btn-light">Выбрать другой</a>
 									</div>
-								</div> -->
+								</div>
 								<!-- //User city popup -->
 							</div>
 							<!-- //User city -->
@@ -863,7 +899,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/5.svg');"></span>
 										</div>
 										<h3 class="card__title">Выкуп кредитных автомобилей</h3>
-										<p class="card__description">Можем выкупить автомобиль, находящийся в залоге у банка.</p>
+										<div class="card__description"><p>Можем выкупить автомобиль, находящийся в залоге у банка.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -875,7 +911,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/6.svg');"></span>
 										</div>
 										<h3 class="card__title">Безопасность сделки</h3>
-										<p class="card__description">Продавая свой автомобиль нам, вы можете быть уверены в том, что вас не обманут. Оценка проводится по выгодной для вас стоимости. Денежные средства за ваш а/м вы получите в полном объеме. Вам не нужно бояться мошеннических схем.</p>
+										<div class="card__description"><p>Продавая свой автомобиль нам, вы можете быть уверены в том, что вас не обманут. Оценка проводится по выгодной для вас стоимости. Денежные средства за ваш а/м вы получите в полном объеме. Вам не нужно бояться мошеннических схем.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -887,7 +923,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/7.svg');"></span>
 										</div>
 										<h3 class="card__title">Обмен/Trade-in</h3>
-										<p class="card__description">В нашем автосалоне вы также можете осуществить обмен авто с доплатой в Казахстане, в случае если продаваемый вами автомобиль дороже покупаемого, по специальным условиям сделки.</p>
+										<div class="card__description"><p>В нашем автосалоне вы также можете осуществить обмен авто с доплатой в Казахстане, в случае если продаваемый вами автомобиль дороже покупаемого, по специальным условиям сделки.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -899,7 +935,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/8.svg');"></span>
 										</div>
 										<h3 class="card__title">Никаких ограничений!</h3>
-										<p class="card__description">Оцениваем любые марки и модели без ограничений по модели, пробегу, цвету.</p>
+										<div class="card__description"><p>Оцениваем любые марки и модели без ограничений по модели, пробегу, цвету.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -911,7 +947,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/10.svg');"></span>
 										</div>
 										<h3 class="card__title">Выгодно</h3>
-										<p class="card__description">Выкупаем ваш автомобиль по выгодной рыночной стоимости в своем регионе, экономя при этом ваше время и деньги.</p>
+										<div class="card__description"><p>Выкупаем ваш автомобиль по выгодной рыночной стоимости в своем регионе, экономя при этом ваше время и деньги.</p></div>
 									</div>
 								</div>
 								<!-- //item -->
@@ -923,7 +959,7 @@
 											<span class="card__ic--static" style="background-image: url('img/icons/svg/advantages/10.svg');"></span>
 										</div>
 										<h3 class="card__title">Продажа по вашей цене</h3>
-										<p class="card__description">Если вас не устроит наше предложение по стоимости автомобиля, мы можем предложить вам нашу услугу по комиссионной продаже.</p>
+										<div class="card__description"><p>Если вас не устроит наше предложение по стоимости автомобиля, мы можем предложить вам нашу услугу по комиссионной продаже.</p></div>
 									</div>
 								</div>
 								<!-- //item -->

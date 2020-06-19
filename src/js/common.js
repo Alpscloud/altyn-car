@@ -232,11 +232,11 @@ $(document).ready(function() {
 	window.addEventListener("DOMContentLoaded", scrollLoop, false);
 
 	// Guarantee
-	$('.js-show-guarantee-result-btn').on('click', function(e) {
+	$('.js-show-hidden-result-btn').on('click', function(e) {
 		e.preventDefault();
 
-		$('.guarantee-cost__form--wrapper').hide(200);
-		$('.guarantee-cost__results').show(200);
+		$('.js-visible-block').hide(200);
+		$('.js-hidden-results-block').show(200);
 	});
 
 	// Sliders
