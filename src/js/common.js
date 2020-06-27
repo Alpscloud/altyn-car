@@ -140,6 +140,13 @@ $(document).ready(function() {
 	// });
 
 
+	$('.js-close-user-city-dropdown-btn').on('click',function(e) {
+		e.preventDefault();
+		$(this).parents('.js-user-city-dropdown').fadeOut(300);
+		$('html').removeClass('is-fixed');
+	});
+
+
 
 	$('.js-close-popup-btn').on('click',function(e) {
 		e.preventDefault();
@@ -151,14 +158,54 @@ $(document).ready(function() {
 		e.stopPropagation();
 
 		var content = $(this).find('.popup__body');
+		var dropdownContent = $(this).find('.user-city__dropdown');
 
 		if(!content.is(e.target) && content.has(e.target).length === 0) {
 			$('html').removeClass('is-fixed');
 			$('.js-popup').fadeOut(300);
 		}
 
+		if(!dropdownContent.is(e.target) && dropdownContent.has(e.target).length === 0) {
+			$('html').removeClass('is-fixed');
+			$('.js-user-city-dropdown').fadeOut(300);
+		}
 
 
+
+	});
+
+	if(html < 1260) {
+		$('.user-city__block').on('click', function(e) {
+			e.preventDefault();
+
+			$(this).find('.user-city__dropdown--wrapper').fadeIn(300);
+			$('html').addClass('is-fixed');
+		});
+	}
+
+	$('.nav__item .arrow').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+
+		$(this).parents('.nav__item').find('.nav-sublist').stop().slideToggle(150);
+	});
+
+
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).addClass('is-active');
+		$('html').addClass('is-fixed');
+		$('.js-mobile-menu').addClass('is-opened');
+	});
+
+	$('.js-close-mobile-menu-btn, .header-actions__overflow').on('click', function(e) {
+		e.preventDefault();
+
+		$('.js-open-mobile-menu-btn').removeClass('is-active');
+		$('html').removeClass('is-fixed');
+		$('.js-mobile-menu').removeClass('is-opened');
 	});
 	// ========= =========== =========== ===========
 
@@ -178,33 +225,63 @@ $(document).ready(function() {
 	});
 
 	// Parallax
-	//Parallax	
-	var xScrollPos, yScrollPos,
-		aboutUsParams = $('.our-param__value'),
-		logoImg = $('.mission__img');
 
-	function scrollLoop(e) {
-		xScrollPos = window.scrollX;
-		yScrollPos = window.scrollY;
+	function parallax(item){
+		var scrolled = $(window).scrollTop();
+		var speed = $(item).attr('data-parallax-speed');
+		var direction = $(item).attr('data-parallax-direction');
 
-		if(aboutUsParams.length > 0) {
-			setTranslate(0, yScrollPos * -0.025, aboutUsParams);
+
+
+		if(direction === 'horisontal-right') {
+			$(item).css({
+				'transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-webkit-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-o-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-moz-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)'
+				
+			});
+		} else if(direction === 'horisontal-left') {
+			$(item).css({
+				'transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-webkit-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-o-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-moz-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)'
+				
+			});
+		} else if(direction === 'vertical-top') {
+			$(item).css({
+				'transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-moz-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-ms-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-o-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-webkit-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)'
+			});
+		} else if(direction === 'vertical-bottom') {
+			$(item).css({
+				'transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-moz-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-ms-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-o-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-webkit-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)'
+			});
 		}
+		
 
-		if(logoImg.length > 0) {
-			setTranslate('-50%', yScrollPos * -0.1, logoImg);
-		}
-
-		requestAnimationFrame(scrollLoop);
 	}
 
-	function setTranslate(xPos, yPos, elem) {
 
-		if(!elem) {return};
-		elem.css({
-			'transform' : 'translate3d(' + xPos + ', ' + yPos + 'px, 0)'
+	$(window).on('scroll', function(e) {
+		var scroll = $(this).scrollTop();
+
+		$('.js-item-parallax').each(function() {
+			
+			parallax($(this));
+			
 		});
-	}
+
+		
+	});
 
 	var show = true;
 		$(window).on('scroll load resize', function () {
@@ -229,7 +306,7 @@ $(document).ready(function() {
 		});
 
 
-	window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
 
 	// Guarantee
 	$('.js-show-hidden-result-btn').on('click', function(e) {

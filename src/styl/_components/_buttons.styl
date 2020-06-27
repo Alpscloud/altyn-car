@@ -170,28 +170,35 @@
 	
 
 	&__hamburger
-		display inline-block
+		display none
 		flex none
-		width 50px
-		height 50px
-		border-radius 50%
-		background-color $accent-color
+		width 35px
+		height 25px
 		position relative
 		transition background-color .17s ease-in-out
 		margin-left 15px
 		&--line
-			width 27px
-			height 2px
+			width 35px
+			height 3px
 			background-color $basic-black-color
 			display block
-			margin 6px auto
 			transition all 0.3s ease-in-out	
+			border-radius 30px
+			position absolute
+			&:nth-child(1)
+				top 0
+				left 0
+			&:nth-child(2)
+				position-center()
+			&:nth-child(3)
+				bottom 0
+				left 0
 		&.is-active
 			.btn__hamburger--line
 				&:nth-child(1)
-					transform translateY(8px) rotate(45deg)
+					transform translateY(11px) rotate(45deg)
 				&:nth-child(2)
 					opacity 0	
 				&:nth-child(3)
-					transform translateY(-8px) rotate(-45deg)
+					transform translateY(-11px) rotate(-45deg)
 		

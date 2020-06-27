@@ -44,30 +44,48 @@
 								<div class="sorting">
 									<div class="row align-horisontal-end sorting__row">
 
+										<!-- Form group -->
 										<div class="sorting__item">
 											<div class="form-group__input--wrapper">
-												<select name="dates"  class="form-group__input form-group__select">
-													<option value="" disabled selected>По дате</option>
-													<option value="Сначала новые">Сначала новые</option>
-													<option value="Сначала старые">Сначала старые</option>
-												</select>
+												<label class="form-group__input--label is-active">
+													<input type="text" name="Сортировка по дате" class="form-group__input form-group__input--with-label" value="По дате" readonly>
+													<span class="form-group__input--label_text">Сортировать</span>
+												</label>
+
+												<div class="form-group__input--dropdown">
+													<ul>
+														<li>Дата 1</li>
+														<li>Дата 2</li>
+													</ul>
+												</div>
 
 												{% include '../parts/components/interface/arrow.html' %}
 											</div>
 										</div>
+										<!-- //Form group -->
 
+										<!-- Form group -->
 										<div class="sorting__item">
 											<div class="form-group__input--wrapper">
-												<select name="salons"  class="form-group__input form-group__select">
-													<option value="" disabled selected>Все салоны</option>
-													<option value="Салон 1">Салон 1</option>
-													<option value="Салон 2">Салон 2</option>
-													<option value="Салон 3">Салон 3</option>
-												</select>
+												<label class="form-group__input--label is-active">
+													<input type="text" name="Сортировка по салонам" class="form-group__input form-group__input--with-label" value="Все салоны" readonly>
+													<span class="form-group__input--label_text">Сортировать</span>
+												</label>
+
+												<div class="form-group__input--dropdown">
+													<ul>
+														<li>Салон 1</li>
+														<li>Салон 2</li>
+														<li>Салон 3</li>
+														<li>Салон 4</li>
+													</ul>
+												</div>
 
 												{% include '../parts/components/interface/arrow.html' %}
 											</div>
 										</div>
+										<!-- //Form group -->
+
 									</div>
 								</div>
 								<!-- //Sorting -->
@@ -89,6 +107,9 @@
 											{% include '../parts/components/car/car-card.html' %}
 											{% include '../parts/components/car/car-card.html' %}
 											{% include '../parts/components/car/car-card-labels-recommended.html' %}
+											{% include '../parts/components/car/car-card.html' %}
+											{% include '../parts/components/car/car-card.html' %}
+											{% include '../parts/components/car/car-card.html' %}
 											{% include '../parts/components/car/car-card.html' %}
 											{% include '../parts/components/car/car-card.html' %}
 										</div>

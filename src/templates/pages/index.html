@@ -31,8 +31,8 @@
 											<p class="promo-slide__text">Сейчас на выбор <strong>2 546</strong> авто</p>
 
 											<div class="promo-slide__btns">
-												<a href="page-buy-car.html" class="btn">Купить авто</a>
-												<a href="page-sale-car.html" class="btn btn-light">Продать авто</a>
+												<a href="page-catalog.html" class="btn">Купить авто</a>
+												<a href="page-catalog.html" class="btn btn-light">Продать авто</a>
 											</div>
 										</div>
 									</div>
@@ -49,8 +49,8 @@
 											<p class="promo-slide__text">Сейчас на выбор <strong>2 546</strong> авто</p>
 
 											<div class="promo-slide__btns">
-												<a href="page-buy-car.html" class="btn">Купить авто</a>
-												<a href="page-sale-car.html" class="btn btn-light">Продать авто</a>
+												<a href="page-catalog.html" class="btn">Купить авто</a>
+												<a href="page-catalog.html" class="btn btn-light">Продать авто</a>
 											</div>
 										</div>
 									</div>
@@ -84,25 +84,67 @@
 							<div class="search-tabs__content--item js-tab-content">
 								<!-- Search form -->
 								<form  class="search-form">
-									<div class="row align-horisontal-start form-group__inputs--row">
-										<div class="form-group__input--wrapper col-w-33">
-											<label class="form-group__input--label is-active">
-												<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
-												<span class="form-group__input--label_text">Выберите марку</span>
-											</label>
-											{% include '../parts/components/interface/arrow.html' %}
+									<div class="row align-horisontal-start row-inputs">
+										<div class="form-group__input--wrapper_col col-w-33">
+											<div class="form-group__input--wrapper">
+
+												<label class="form-group__input--label is-active">
+													<input type="text" name="Марка" class="form-group__input form-group__input--with-label" value="Все марки" readonly>
+													<span class="form-group__input--label_text">Выберите марку</span>
+												</label>
+
+												<div class="form-group__input--dropdown">
+													<ul>
+														<li>Марка 1</li>
+														<li>Марка 2</li>
+														<li>Марка 3</li>
+														<li>Марка 4</li>
+														<li>Марка 5</li>
+														<li>Марка 6</li>
+														<li>Марка 7</li>
+														<li>Марка 8</li>
+														<li>Марка 9</li>
+														<li>Марка 10</li>
+													</ul>
+												</div>
+
+												{% include '../parts/components/interface/arrow.html' %}
+
+											</div>
 										</div>
 
-										<div class="form-group__input--wrapper col-w-33">
-											<label class="form-group__input--label is-active">
-												<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
-												<span class="form-group__input--label_text">Выберите модель</span>
-											</label>
-											{% include '../parts/components/interface/arrow.html' %}
-										</div>
 
-										<div class="form-group__input--wrapper col-w-33">
-											<button class="btn" type="submit">Подобрать</button>
+										<div class="form-group__input--wrapper_col col-w-33">
+											<div class="form-group__input--wrapper">
+
+												<label class="form-group__input--label is-active">
+													<input type="text" name="Модель" class="form-group__input form-group__input--with-label is-disabled" disabled value="Все модели" readonly>
+													<span class="form-group__input--label_text">Выберите модель</span>
+												</label>
+
+												<div class="form-group__input--dropdown">
+													<ul>
+														<li>Модель 1</li>
+														<li>Модель 2</li>
+														<li>Модель 3</li>
+														<li>Модель 4</li>
+														<li>Модель 5</li>
+														<li>Модель 6</li>
+														<li>Модель 7</li>
+														<li>Модель 8</li>
+														<li>Модель 9</li>
+														<li>Модель 10</li>
+													</ul>
+												</div>
+
+												{% include '../parts/components/interface/arrow.html' %}
+
+											</div>
+										</div>
+										<div class="form-group__input--wrapper_col col-w-33">
+											<div class="form-group__input--wrapper ">
+												<button class="btn" type="submit">Подобрать</button>
+											</div>
 										</div>
 									</div>
 								</form>
@@ -245,6 +287,7 @@
 									</span>
 									<span class="card__title">Каталог автомобилей</span>
 									<span class="card__description">Галлерея автомобилей в наличии</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
@@ -258,19 +301,21 @@
 									</span>
 									<span class="card__title">Обмен (Trade-in)</span>
 									<span class="card__description">Выгодный обмен автомобиля с персональными условиями</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
 
 							<!-- Service item -->
 							<div class="service-card__wrapper card__wrapper">
-								<a href="page-online.html" class="service-card card b-radius box-shadow">
+								<a href="page-buyout.html" class="service-card card b-radius box-shadow">
 									<span class="card__ic">
 										<span class="card__ic--static" style="background-image: url('img/icons/svg/services/3.svg');"></span>
 										<span class="card__ic--hover" style="background-image: url('img/icons/svg/services/3-hover.svg');"></span>
 									</span>
 									<span class="card__title">Выкуп (Online оценка)</span>
 									<span class="card__description">Онлайн оценка вашего а/м не выходя из дома</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
@@ -284,6 +329,7 @@
 									</span>
 									<span class="card__title">Кредитование</span>
 									<span class="card__description">Выгодные кредитные условия для наших клиентов</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
@@ -297,6 +343,7 @@
 									</span>
 									<span class="card__title">Доставка а/м</span>
 									<span class="card__description">Доставим Ваш автомобиль после покупки</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
@@ -310,6 +357,7 @@
 									</span>
 									<span class="card__title">Гарантия AltynCar Garant</span>
 									<span class="card__description">Программа продления технической гарантии AltynCar Garant на срок до 12 месяцев!</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->
@@ -323,6 +371,7 @@
 									</span>
 									<span class="card__title">14 дней гарантия на обмен</span>
 									<span class="card__description">Программа “Гарантия обмена купленного автомобиля AltynCar в первые 14 дней”</span>
+									<span class="link">Подробнее</span>
 								</a>
 							</div>
 							<!-- //Service item -->

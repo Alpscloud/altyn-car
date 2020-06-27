@@ -24,36 +24,51 @@
 							</div>
 
 							<!-- Dropdown -->
-							<div class="user-city__dropdown--wrapper">
-								<div class="user-city__dropdown">
-									<p class="user-city__dropdown--text">Выберите город в котором вы находитесь</p>
-									<!-- Form -->
-									<form class="user-city__dropdown--form">
-										<div class="form-group__input--wrapper">
-											<input type="search" name="search" placeholder="Что ищем?" class="form-group__input form-group__input--search">
+							<div class="user-city__dropdown--wrapper js-user-city-dropdown">
+								<div class="user-city__popup--overflow popup__overflow">
+									<!-- Logo -->
+									<a href="index.html" class="logo" title="Altyn Car">
+										<img src="img/logo.svg" alt="Altyn Car logo">
+									</a>
+									<!-- //Logo -->
 
-											<button type="search" class="btn__search btn__search--absolute">
-												<svg viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
-													<path d="M18.3163 18.0462C18.5946 18.3245 18.5946 18.7756 18.3163 19.0539C18.0381 19.3321 17.5869 19.3321 17.3087 19.0539L13.8887 15.6339C13.6104 15.3556 13.6104 14.9045 13.8887 14.6262C14.1669 14.348 14.6181 14.348 14.8963 14.6262L18.3163 18.0462ZM7.5525 15.8425C3.38137 15.8425 0 12.4612 0 8.29005C0 4.11892 3.38137 0.737549 7.5525 0.737549C11.7236 0.737549 15.105 4.11892 15.105 8.29005C15.105 12.4612 11.7236 15.8425 7.5525 15.8425ZM7.5525 14.4175C10.9366 14.4175 13.68 11.6742 13.68 8.29005C13.68 4.90592 10.9366 2.16255 7.5525 2.16255C4.16838 2.16255 1.425 4.90592 1.425 8.29005C1.425 11.6742 4.16838 14.4175 7.5525 14.4175ZM4.0375 7.72005C4.0375 7.98238 3.82484 8.19505 3.5625 8.19505C3.30016 8.19505 3.0875 7.98238 3.0875 7.72005C3.0875 5.5689 4.83135 3.82505 6.9825 3.82505C7.24483 3.82505 7.4575 4.03771 7.4575 4.30005C7.4575 4.56238 7.24483 4.77505 6.9825 4.77505C5.35602 4.77505 4.0375 6.09357 4.0375 7.72005Z" />
-												</svg>
-											</button>
+									<!-- Close -->
+									<button class="btn__close js-close-user-city-dropdown-btn" type="button">
+										<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.06066 8L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7626 15.8232 14.4697 15.5303L8 9.06066L1.53033 15.5303C1.23744 15.8232 0.762563 15.8232 0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.46967 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L9.06066 8Z"/>
+										</svg>
+									</button>
+									<!-- //Close -->
+									<div class="user-city__dropdown">
+										<p class="user-city__dropdown--text">Выберите город в котором вы находитесь</p>
+										<!-- Form -->
+										<form class="user-city__dropdown--form">
+											<div class="form-group__input--wrapper">
+												<input type="search" name="search" placeholder="Что ищем?" class="form-group__input form-group__input--search">
+
+												<button type="search" class="btn__search btn__search--absolute">
+													<svg viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M18.3163 18.0462C18.5946 18.3245 18.5946 18.7756 18.3163 19.0539C18.0381 19.3321 17.5869 19.3321 17.3087 19.0539L13.8887 15.6339C13.6104 15.3556 13.6104 14.9045 13.8887 14.6262C14.1669 14.348 14.6181 14.348 14.8963 14.6262L18.3163 18.0462ZM7.5525 15.8425C3.38137 15.8425 0 12.4612 0 8.29005C0 4.11892 3.38137 0.737549 7.5525 0.737549C11.7236 0.737549 15.105 4.11892 15.105 8.29005C15.105 12.4612 11.7236 15.8425 7.5525 15.8425ZM7.5525 14.4175C10.9366 14.4175 13.68 11.6742 13.68 8.29005C13.68 4.90592 10.9366 2.16255 7.5525 2.16255C4.16838 2.16255 1.425 4.90592 1.425 8.29005C1.425 11.6742 4.16838 14.4175 7.5525 14.4175ZM4.0375 7.72005C4.0375 7.98238 3.82484 8.19505 3.5625 8.19505C3.30016 8.19505 3.0875 7.98238 3.0875 7.72005C3.0875 5.5689 4.83135 3.82505 6.9825 3.82505C7.24483 3.82505 7.4575 4.03771 7.4575 4.30005C7.4575 4.56238 7.24483 4.77505 6.9825 4.77505C5.35602 4.77505 4.0375 6.09357 4.0375 7.72005Z" />
+													</svg>
+												</button>
+											</div>
+										</form>
+										<!-- //Form -->
+
+										<div class="user-city__dropdown--list_wrapper">
+											<ul class="user-city__dropdown--list">
+												<li>Далеко-далеко.</li>
+												<li>Мир.</li>
+												<li>Своих.</li>
+												<li>Она.</li>
+												<li>Ее?</li>
+												<li>Над.</li>
+												<li>Раз.</li>
+												<li>Злых.</li>
+												<li>Силуэт.</li>
+												<li>Все.</li>
+											</ul>
 										</div>
-									</form>
-									<!-- //Form -->
-
-									<div class="user-city__dropdown--list_wrapper">
-										<ul class="user-city__dropdown--list">
-											<li>Далеко-далеко.</li>
-											<li>Мир.</li>
-											<li>Своих.</li>
-											<li>Она.</li>
-											<li>Ее?</li>
-											<li>Над.</li>
-											<li>Раз.</li>
-											<li>Злых.</li>
-											<li>Силуэт.</li>
-											<li>Все.</li>
-										</ul>
 									</div>
 								</div>
 							</div>
@@ -72,7 +87,7 @@
 
 					<div class="footer-contacts__btns">
 						<button class="btn btn-wide js-open-callback-popup-btn" type="button">СВЯЗАТЬСЯ С НАМИ</button>
-						<a href="#" class="btn btn-wide btn-light">ВСЕ САЛОНЫ</a>
+						<a href="page-contacts.html" class="btn btn-wide btn-light">ВСЕ САЛОНЫ</a>
 					</div>
 				</div>
 
@@ -121,9 +136,9 @@
 							<nav class="footer-menu">
 								<ul>
 									<li><a href="page-about.html">О нас</a></li>
-									<li><a href="page-team.html">Команда</a></li>
-									<li><a href="page-blog.html">Новости компании</a></li>
-									<li><a href="page-missions.html">Миссия и ценности</a></li>
+									<li><a href="page-about.html">Команда</a></li>
+									<li><a href="page-about.html">Новости компании</a></li>
+									<li><a href="page-about.html">Миссия и ценности</a></li>
 									<li><a href="page-vacancies.html">Вакансии</a></li>
 								</ul>
 							</nav>
