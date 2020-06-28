@@ -15,6 +15,7 @@
 		padding 20px 0
 		&__links
 			margin-right 65px
+			margin-left 25px
 			
 		&__contacts--row
 			flex-direction column
@@ -161,7 +162,131 @@
 	// Footer
 	.footer-menus
 		padding-left 6%
+		
+	// Page about
+	.sect__about-us--promo
+		padding 90px 0
+		
+	.about-us__promo
+		p
+			font-size 14px
+			margin-bottom 30px
+			
+	.sect__about-us--content
+		padding 0
+		
+		.page-container
+			padding-right 0
+			
+	.description-block__content--right
+		padding-left 0
+		padding-right 25px
+		
+	.mission__img
+		width 100%
+		margin-left -50%
+		
+	// contacts form
+	.contact-form__wrapper
+		padding 40px 65px 60px 65px
+	
+	// Page contacts
+	.contacts__content
+		padding-left 50px
+		
+	// Page services
+	.sect-page__form-container
+		padding-left 20px
+		padding-right 20px
+		
+		.contact-form__wrapper
+			padding 40px 50px
+			
+		.sect-title
+			font-size 30px
+			
+	// Offer
+	.offer__img
+		margin-left -180px
+		
+	// Page car
+		
+	.price-lg
+		font-size 21px
+		
+	.scroll-down-link
+		width 48px
+		height 48px
+		bottom -24px
+		&:before
+			width 36px
+			height 36px
+			
+		.arrow
+			width 9px
+			height 5px
 
+	.car
+		&-header
+			padding-top 20px
+			padding-bottom 35px
+			margin-left -50px
+			margin-right -50px
+			border-radius 0 0 24px 24px
+			&-fixed
+				margin-left 0 !important
+				margin-right 0 !important
+				padding-top 10px
+				padding-bottom 20px
+				
+				.car-params
+					margin-top 13px
+			&__row
+				padding-left 50px
+				padding-right 50px
+				
+			&__title 
+				.sect-title
+					margin-right 35px
+			
+		&-technical-guarantee
+			&__package
+				padding 45px 85px
+				
+		&-params
+			padding-left 50px
+			padding-right 50px
+			
+		&-body
+			padding-top 90px
+			
+	.car-main-slider__slide
+		height 365px
+		
+	.car-main-slider__wrapper 
+		margin-top 20px
+		.swiper-slide
+			width 485px
+			
+	.car-information
+		&__controls
+			margin-bottom 30px
+		&__item--block
+			padding 30px
+			&_title
+				font-size 21px
+				line-height 25px
+				margin-bottom 25px
+				
+	.car-service
+		&__ic
+			width 84px
+			height 84px
+			background-size 50px 50px
+			
+		&__title
+			font-size 16px
+			
 +max-screen(1365px)
 	// Header
 	.header__links
@@ -175,12 +300,23 @@
 	.nav
 		margin-left 30px
 		
-+max-screen(1260px)
+	// Page car
+	.car-header
+		&__information
+			flex-wrap wrap
+			&--tools
+				width 100%
+				margin-top 20px
+		
++max-screen(1312px)
 	// Header
 	.btn__hamburger
 		display inline-block
 		
-
+	.header
+		.user-city__dropdown--wrapper
+			display none !important
+			
 	.user-city__popup
 		width 100%
 		height 100%
@@ -219,7 +355,8 @@
 				min-height 340px
 				flex-col-center()
 				
-
+	.user-city__label
+		font-size 12px
 	.user-city__dropdown
 		display inline-block
 		vertical-align middle
@@ -255,6 +392,7 @@
 		opacity 0
 		visibility hidden
 		pointer-events none
+		transition all .17s ease-in-out
 		&.is-opened
 			opacity 1
 			visibility visible
@@ -361,21 +499,78 @@
 				margin-bottom 0
 	.header__links
 		margin-right 0
+		margin-left 0
 		width 100%
 		margin-bottom 30px
+		&--tablet
+			display block
+			margin 0 30px
+			.header__links
+				margin-bottom 0
 		
 	.header__contacts
 		width 100%
 		&--row
 			align-items flex-start
 			
-			
+	// Footer
+	.footer-contacts
+		.user-city
+			&__label
+				font-size 14px
+			&__name
+				font-size 14px
+				
+	// page car
+	.car
+		&-technical-guarantee
+			&__packages--row
+				margin-left -5px
+				margin-right -5px
+			&__package
+				padding 25px 35px
+				.block-title
+					font-size 14px
+					margin-bottom 15px
+					
+				.btn
+					width 100%
+					padding-left 15px
+					padding-right 15px
+				&--wrapper
+					padding-left 5px
+					padding-right 5px
+				&--icon
+					margin-right 10px
+					width 45px
+					height 45px
+					background-size 45px 45px
+					
+				&--icons
+					margin-bottom 20px
+					
+	.car-header
+		padding-bottom 15px
+		&-fixed
+			padding-bottom 10px
+			.car-params
+				margin-top 25px
+		
+	.car-params
 
-
-			
-	
-
-
+		margin-top 13px
+		&__list
+			flex-wrap wrap
+		
+			&--item
+				width 33.3333%
+				padding-right 20px
+				margin-right 0
+				text-align left
+				margin-bottom 20px
+				font-size 12px
+				
+					
 +max-screen(1200px)
 	body
 		font-size 12px
@@ -396,7 +591,7 @@
 		padding 25px 25px 40px 25px
 		min-height auto
 		&__ic
-			margin-bottom 11px
+			margin-bottom 25px
 			width 65px
 			height 65px
 			span
@@ -405,9 +600,10 @@
 				
 		&__title
 			font-size 16px
+			margin-bottom 10px
 		&__description
 			display block
-			margin-bottom 5px
+			margin-bottom 15px
 			line-height 14px
 		.link
 			display inline-block
@@ -423,5 +619,1334 @@
 				flex 1 0 50% 
 				
 		
+	
+		
+	// Search
+	.car-categories 
+		padding-top 0
+		.list-title
+			font-size 16px
+			margin-bottom 20px
+			
+		ul
+			a
+				font-size 12px
+			
+		&__col
+			padding 0 10px 20px
+	
+	.list-column
+		column-gap 15px
+		
+	// salons map
+	.about-us__description
+		font-size 14px
+		
+	.salons
+		max-width 900px
+		height auto
+		
+	.salon-address
+		width 19px
+		height 25px
+		&:nth-child(1)
+			top 135px
+			left 70px
+		&:nth-child(2)
+			top 145px
+			left 90px
+		&:nth-child(3)
+			top 160px
+			left 260px
+			
+		&:nth-child(4)
+			left 100px
+			bottom 150px
+			
+		&:nth-child(5)
+			left 105px
+			bottom 70px
+			
+		&__contacts,
+		&__information
+			transform none
+			left -30px
+			
+		&__marker
+			width 100%
+			height 100%
+			
+	// contacts form
+	.contact-form__wrapper
+		margin-left -20px
+		margin-right -20px
+		
+		padding 15px 20px
+		
+	.contact-form
+		.form-group__input--wrapper_col
+			width 50%
+			margin-bottom 20px
+		
+			
+			&.col-w-100
+				width 100% !important
+				
+	.form-group__notice
+		font-size 14px
+		
+	// Page contacts
+	.sect__contacts
+		.map__wrapper
+			position relative
+			top auto
+			width 50%
+			right auto
+			height auto
+			
+	.contacts
+		&__content
+			padding-right 25px
+			padding-left 20px
+			
+			.page-title
+				font-size 24px
+				margin-bottom 45px
+		&__col
+			padding 40px 0 160px
+			
+	
+	// Page services
+	.sect-page__form-container
+		padding-left 20px
+		padding-right 20px
+		
+		.contact-form__wrapper
+			padding 40px 20px
+			margin-left 0
+			margin-right 0
+			
+		.sect-title
+			font-size 30px
+			
+	.contract-block
+		p
+			font-size 16px
+			line-height 19px
+			margin-bottom 25px
+			
+	// Offer
+	.offer
+		max-width 100%
+		display flex
+		align-items center
+		.page-title
+			font-size 34px
+			margin-bottom 12px
+			
+		p
+			font-size 14px
+			margin-bottom 25px
+			
+		&__content
+			width 45%
+			
+		&__img
+			position relative
+			left auto
+			margin-left 0
+			bottom auto
+			width 55%
+			top auto
+			
+	.sect__offer
+		padding 60px 0
+		
+
+	.car-header
+		margin-left -20px
+		margin-right -20px
+		&__row
+			padding-left 20px
+			padding-right 20px
+			
+
+			
+	.car-params
+		padding-left 20px
+		padding-right 20px
+		
+	.car-characteristics__col
+		width 33.3333%
+		margin-bottom 35px
+		
+	.car-information
+		margin-left -20px
+		margin-right -20px
+		&__item--block
+
+			padding 30px 20px 5px 20px
+			
+		&__advantages
+			padding 30px 20px
+			
+
+			
+	.car-characteristics__list
+		p
+			font-size 14px
+			
+	.car-advantage
+		font-size 14px
+		&__ic
+			margin-bottom 15px
+			
+	
+	.step
+		flex-direction column
+		align-items flex-start
+		&__ic
+			margin-right 0
+			margin-bottom 15px
+			
+		&__content
+			padding-top 0
+			
+	.car-service
+		flex-direction column
+		align-items center
+		text-align center
+		&__ic
+			margin-right 0
+			margin-bottom 10px
+			
+		&__title
+			font-size 14px
+			
+	.car-services
+		margin 20px 0 40px	
+		
+	.car-technical-guarantee__text
+		margin-bottom 40px
++max-screen(1100px)
+	// Sect description
+	.description-block
+		&__slider
+			width 100%
+		&__content
+			width 100%
+			padding-left 0
+			margin-top 35px
+			max-width 100%
+			&--right
+				margin-top 0
+				margin-bottom 35px
+	
+
+	// Footer
+	.footer
+		&-contacts
+			width 100%
+			margin-bottom 35px
+			display flex
+			flex-wrap wrap
+			
+			&__logo
+				width 250px
+			
+			&__btns
+				width 100%
+				display flex
+				aling-items center
+				justify-content space-between
+				margin-top 40px
+				.btn
+					margin-bottom 0
+					width 49%
+					margin-right 1%
+					&:last-child
+						margin-right 0
+				
+			.contacts
+				flex 1
+				margin-bottom 0
+				display flex
+				flex-wrap wrap
+				align-items center
+			
+			.contact__item
+				width 50%
+				margin-bottom 0
+				
+			.logo
+				margin-bottom 20px
+				
+			.user-city__wrapper
+				margin-bottom 0
+				
+		&-menus
+			padding-left 0
+			padding-top 0
+			
+	// Page about
+	.sect__about-us
+		&--promo
+			padding 105px 0
+			.page-title
+				font-size 24px
+		&--content
+			padding-top 70px
+		
+			.page-container
+				padding 0
+			
+			.description-block__content
+				padding-left 20px
+				padding-right 20px	
+			
+	.about-us__promo
+		p
+			font-size 12px
+			
+	.our-param
+		padding-left 90px
+		padding-top 70px
+		&__wrapper
+			width 50%
+			max-width none
+			margin-bottom 70px
+		&__value
+			font-size 96px
+			
+
+	.value__wrapper
+		padding-right 15px
+		&:nth-child(odd)
+			padding-left 15px
+			
+	.value
+		padding 55px 30px 60px 30px
+		&__title
+			font-size 18px
+			margin-bottom 20px
+		
+
+			
+	.card__wrapper
+		width 50%
+		
+	// Page vacancies
+	.vacancy
+		padding 55px 20px
+		margin-bottom 20px
+		&__description
+			font-size 14px
+			p
+				margin-bottom 15px
+				
+
+		&__salary
+			font-size 14px
+		
+	.block-title-lg
+		font-size 16px
+		line-height 19px
+		margin-bottom 15px
+		
+	// Page services
+	.swap-guide-step
+		display flex
+		align-items center
+		&__img
+			width 50%
+			margin-bottom 0
+			max-height none
+			
+		&__content
+			width 50%
+			padding-left 25px
+		&__wrapper
+			width 100%
+			padding-top 0
+			padding-bottom 0
+			margin-bottom 30px
+			&:last-child
+				margin-bottom 0
+				
+			&:nth-child(even)
+				.swap-guide-step
+					&__img
+						order 2
+					&__content
+						order 1
+						padding-left 0
+						padding-right 25px
+	
+	.crediting-form__title-col
+		width 100%
+		flex none
+		margin-right 0
+	
+	.crediting-form__car-col
+		margin-bottom 40px
+		
+
+			
++max-screen(1000px)
 	.sect-title__row
 		justify-content space-between
+		.slider__navigation
+			margin-left 30px
+			white-space nowrap
+	
+
+	.users-count
+		display none	
+	// Steps
+	.sect__steps
+		padding 40px 0
+		.sect-text
+			margin-bottom 25px
+	.steps
+		margin-bottom 0	
+	.step
+		flex-direction row
+		align-items center
+		&__wrapper
+			width 50%
+		&__ic
+			width 104px
+			height 104px
+			margin-right 22px
+			background-size auto
+			margin-bottom 0
+			
+		&__title
+			font-size 14px
+			
+	// Page about
+	.sect__about-us--missions
+		padding-top 160px
+		
+	.mission
+		margin-bottom 45px
+		&__img
+			top -40px
+			
+	// Page car
+	.car-header
+		&__content
+			flex none
+			width 100%
+			padding-right 0
+			
+			.back-link
+				display inline-block
+		&__title
+			position relative
+			padding-left 45px
+			.back-link
+				top 5px
+			.row
+				justify-content space-between
+				
+		&__tools
+			position relative
+			right auto
+			top auto
+			width 100%
+			display flex
+			margin-bottom 33px
+			> .btn
+				flex 1
+				order 2
+				margin-left 25px
+			
+			&--btns
+				width 350px
+				order 1
+				margin-left -12.5px
+				margin-right -12.5px
+				&_item
+					width 50%
+					padding 0 12.5px
+					&:last-child
+						margin-right 0
+						
+				.btn
+					height 100%
+					font-size 12px
+					
+	.car-header
+		&__information
+			.contact__item
+				width 33.3333%
+				margin-right 0
+				padding-right 5px
+			&--tools
+				margin-top 25px
+				
+	.car-main-slider__slide
+		height 400px
+		
+	.car-main-slider__wrapper 
+		.swiper-slide
+			width 545px
+		
+				
++max-screen(900px)
+	.salons
+		max-width 700px
+
+	.salon-address
+		width 19px
+		height 25px
+		&:nth-child(1)
+			top 105px
+			left 55px
+		&:nth-child(2)
+			top 115px
+			left 75px
+		&:nth-child(3)
+			top 130px
+			left 200px
+			
+		&:nth-child(4)
+			left 80px
+			bottom 110px
+			
+		&:nth-child(5)
+			left 85px
+			bottom 50px
+			
+		
+	// Footer
+	.footer-menus
+		&__row
+			justify-content flex-start
+		&__col
+			width 33.3333%
+			
+	// Page services
+	.faq__question
+		padding 15px
+		&--title
+			font-size 12px
+			
+	.faq__answer
+		padding 0 15px 25px 15px
+		
+	.contract-block
+		max-width 100%
+		
+		&__links
+			.btn
+				width 49%
+				margin-right 1%
+				padding-right 15px
+				padding-left 15px
+				
+	// Offer
+	.offer
+		.page-title
+			font-size 24px
+			margin-bottom 12px
+			line-height 24px
+			
+		p
+			font-size 12px
+			margin-bottom 25px
+			
+
+	// Page car
+	.car-service
+		flex-direction row
+		align-items center
+		text-align left
+		&__wrapper
+			width 50%
+			margin-bottom 30px
+		&__ic
+			margin-right 10px
+			margin-bottom 0
+			
+
++max-screen(767px)
+	.container,
+	.page-container,
+	.header
+		padding-left 10px
+		padding-right 10px
+		
+	.page-container
+		.container
+			padding 0
+		
+
+	.user-city__popup--overflow 
+		.logo,
+		.btn__close
+			display none
+			
+	.popup__overflow
+		padding 45px 10px
+		
+	.user-city
+		&__dropdown
+			padding 50px 10px 30px 10px
+			
+		&__popup
+			&--body
+				padding 15px
+				&_content
+					min-height 380px
+					
+			&--btns 
+				.btn
+					padding-left 15px
+					padding-right 15px
+	
+
+	.header__links--tablet
+		display none	
+		
+	//Search
+	.car-categories
+		&__mobile
+			display block 
+			
+		&__row
+			display none
+			
+	// Page contacts
+	.contacts__content
+		padding 0 10px
+		
+
+	.contact-form 
+		.link
+			font-size 12px
+			margin-top 10px
+			
+	// Page car
+	.car-body
+		padding-top 30px
+		
+	.car-information__controls
+		display flex
+	.btn__tab
+		width 50%
+		max-width 50%
+		font-size 12px
+		
+	.scroll-down-link
+		display none
+		
+			
++max-screen(700px)
+	.sect-title__row
+		margin-bottom 20px
+	.single-slider 
+		.slider__navigation
+			padding-left 10px
+			padding-right 10px
+	// Stocks
+	.stocks-slider__slide
+		padding-left 5px
+		padding-right 5px
+		
+	// Car card
+	.car-card
+		&__tools
+			top 15px
+			right 10px
+			
+		&__description
+			font-size 12px
+			line-height 14px
+	
+	// salons 
+	.about-us__description
+		font-size 12px
+		line-height 19px
+		margin-bottom 70px
+	.salons
+		max-width 500px
+
+	.salon-address
+		width 19px
+		height 25px
+		&:nth-child(1)
+			top 75px
+			left 40px
+		&:nth-child(2)
+			top 85px
+			left 60px
+		&:nth-child(3)
+			top 90px
+			left 135px
+			
+		&:nth-child(4)
+			left 55px
+			bottom 80px
+			
+		&:nth-child(5)
+			left 60px
+			bottom 40px
+			
+	// Footer
+	.footer
+		&__content
+			padding-left 20px
+			padding-right 20px
+		&-contacts
+			margin-bottom 40px
+			&__logo
+				width 100%
+				display flex
+				flex-direction column
+				align-items center
+				margin-bottom 40px
+				
+			.contacts
+				flex-direction column
+				align-items center
+				
+			.contact__item
+				margin-bottom 25px
+				width auto
+				min-width 185px
+				&:last-child
+					margin-bottom 0
+					
+			&__btns
+				flex-wrap wrap
+				.btn
+					margin-right 0
+					width 100%
+					margin-bottom 12px
+					padding-left 15px
+					padding-right 15px
+					&:last-child
+						margin-bottom 0
+						
+		&-menus
+			&__col
+				width 50%
+				margin-bottom 20px
+				
+	.official-partners__row
+		.footer-menus__col
+			width 100%
+			
+	.copyright
+		font-size 12px
+		
+	// Page about
+	.sect__partners
+		.sect-title__row
+			margin-bottom 70px
+			
+	// Page about
+	.sect__about-us--missions
+		padding-top 70px
+		padding-bottom 30px
+		
+	.mission
+		&__title
+			font-size 16px
+			margin-bottom 20px
+		&__description
+			font-size 14px
+			
+		&__img
+			transform none !important
+			top -50px
+			
+	.value__wrapper
+		padding-right 0
+		transform none !important
+		margin-bottom 15px
+		top auto
+		&:last-child
+			margin-bottom 0
+		&:nth-child(odd)
+			padding-left 0
+			
+	.value
+		padding 30px 10px
+		&__title
+			font-size 14px
+			line-height 16px
+			margin-bottom 15px
+		&__row
+			flex-wrap wrap
+		&__count
+			font-size 72px
+			margin-right 0
+			margin-bottom 5px	
+		&__content
+			width 100%
+			flex none
+			
+	.values 
+		.mission__title
+			margin-bottom 25px
+			
+	.sect__about-us--promo
+		padding 90px 0 40px
+		
+	.our-param__wrapper
+		width 100%
+		margin-bottom 40px
+		padding-top 0
+		padding-bottom 0
+		&:last-child
+			margin-bottom 0
+			
+	.our-param
+		padding 50px 0 0 20px
+		.block-title
+			font-size 18px
+			
+		&__description
+			font-size 14px
+		&__value
+			transform none !important
+			top -20px
+			
+	// Content
+	.content
+		font-size 14px
+		h2
+			font-size 18px
+			line-height 21px
+		h3, h4, h5, h6
+			font-size 14px
+			line-height 20px
+		
+
+	
+	// Contact form
+	.contact-form
+		&__wrapper
+			padding-top 25px
+			padding-bottom 25px
+			
+			.sect-title
+				font-size 18px
+				margin-bottom 15px
+		.form-group__input--wrapper_col
+			width 100%
+			margin-bottom 20px
+		
+	.form-group__notice
+		font-size 12px	
+		
+	// Page vacancies
+	.resume
+		padding 10px 0 30px
+	.resume-form
+		.form-group__input--wrapper
+			max-width 100%
+			&_col
+				width 100%
+				
+		.row-inputs
+			margin-bottom 0
+			
+	.sect-title-lg
+		font-size 18px
+		margin-bottom 30px
+		line-height 21px
+		
+	// Page contacts
+	.sect__contacts
+		.map__wrapper
+			width 100%
+			height 400px
+			
+	.contacts__col
+		width 100%
+		padding 30px 0 45px
+		
+		.page-title
+			margin-bottom 25px
+			
+	.route-link
+		margin-right 10px
+		
+	// Popups
+	.popup
+		.popup__body
+			padding 40px 20px 20px
+			border-radius 0
+			box-shadow none
+			display block
+		.btn__close
+			top 10px
+			right 10px
+			
+		&__title
+			font-size 18px
+		
+
+	.vacancy-popup
+		.vacancy__salary
+			margin 0
+			text-align center
+			margin-bottom 30px
+			
+
+	.popup
+		.popup__overflow
+			background-color $basic-white-color
+			padding 0 10px
+			&:before
+				display none
+			
+
+			
+	// Page services
+	.swap-guide-step
+		flex-wrap wrap
+		&__wrapper
+			margin-bottom 40px
+			
+		&__img
+			order 2
+			width 100%
+		&__content
+			order 1
+			padding 0 !important
+			width 100%
+			margin-bottom 20px
+			
+		&__count
+			font-size 21px
+			margin-bottom 12px
+			
+	.trade-in__block
+		margin-bottom 10px
+		
+	.car-technical-guarantee__package
+		padding 25px 15px
+		
+		vertical-align top
+		&--wrapper
+			width 200px
+			display inline-block
+			
+	.car-technical-guarantee__packages--row
+		display block
+		text-align center
+		white-space nowrap
+		width 100%
+		margin 0
+		padding 0 5px 40px
+		overflow-y auto
+	// Offer
+	.sect__offer
+		padding 35px 0
+	.offer
+		flex-wrap wrap
+		&__content
+			order 2
+			width 100%
+		&__img
+			order 1
+			width 100%
+			margin-bottom 22px
+			
+	.form-group__price-range--wrapper
+		margin 35px 0 15px	
+		
+	
+	// Page car
+	.car-advantage
+		&__wrapper
+			width 50%
+			margin-bottom 30px
+		
++max-screen(620px)
+	.gutters
+		padding 40px 0
+	.gutter
+		&-top
+			padding-top 40px
+		&-bottom
+			padding-bottom 40px
+			
+	.page-title
+		font-size 24px
+		
+	.sect-title
+		font-size 18px
+		line-height 21px
+		margin-bottom 15px
+		
+	.btn
+		font-size 14px
+		padding 12px 25px
+		&-mobile-wide
+			width 100%
+			padding 17px 15px
+		
+	// Promo
+	.promo-slide
+		height 340px
+		padding 30px 0
+		
+		.page-title
+			margin-bottom 20px
+			
+		&__text
+			margin-bottom 20px
+			
+		&__btns
+			.btn
+				margin-right 6px
+				padding-left 20px
+				padding-right 20px
+				
+	// Search
+	.search-tabs__controls
+		text-align center
+		margin-bottom 25px
+		&--btn
+			font-size 18px
+			
+	.search-form
+		.form-group__input--wrapper_col
+			width 100%
+			max-width 100%
+			
+		.btn
+			width 100%
+			padding-top 17px
+			padding-bottom 17px
+	
+	// Service card 
+	.card__wrapper
+		width 100%
+		padding 0 12.5px
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+		
+	.service-card__wrapper
+		flex 1 0 100%
+		max-width 100%
+		&:nth-child(1), 
+		&:nth-child(2), 
+		&:nth-child(3)
+			flex 1 0 100%
+			max-width 100%
+			
+	.sect__stocks
+		&.gutter-bottom		
+			padding-bottom 40px
+	// Steps
+	.sect__steps
+		.sect-title
+			margin-bottom 25px
+		.sect-text
+			display none
+	.steps
+		margin-bottom 15px
+	.step
+		&__wrapper
+			width 100%
+			padding-top 0
+			padding-bottom 0
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+				
+	.car-service
+		&__ic
+			width 104px
+			height 104px
+			margin-right 22px
+			background-size auto
+		&__wrapper
+			width 100%
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+		
+	// Sect description
+	.description-block
+		&__row
+			margin-left -10px
+			margin-right -10px
+		&__content
+			padding-left 10px
+			padding-right 10px
+			
+		&__slider
+			.slider__pagination
+				display none
+			
+	.btn__arrow
+		width 39px
+		height 51px
+		
+	.about-us__salons
+		padding-top 50px
+		
+	// Page vacancies
+	.sect-page
+		padding-top 60px
+		
+		.page-title
+			margin-bottom 25px
+		
+	.page-description
+		margin-bottom 25px
+		font-size 12px
+		
+	.vacancy
+		position relative
+		padding 20px 20px 90px 20px
+		
+
+		
+		.btn
+			position absolute
+			bottom 20px
+			flex none
+			width calc(100% - 40px)
+			horisontal-center()
+
+			padding 17px 15px
+		
+		&__description
+			margin-right 0
+			max-width 100%
+			flex none
+			font-size 12px
+			
+			
+		&__salary
+			max-width 100%
+			text-align left
+			
+
+			
+	.block-title-lg
+		font-size 14px
+		line-height 17px
+		margin-bottom 12px
+	
+
+	// Page services
+	.sect-page__form-container 
+		.contact-form__wrapper
+			padding 20px 10px
+			
+		.sect-title
+			text-align center
+		
+		.contact-form__text
+			text-align center
+			margin-bottom 15px
+			
+	.contact-form__wrapper,
+	.offer,
+	.sect__stocks,
+	.permalink__wrapper
+		.btn
+			width 100%
+			padding 17px 15px
+			
+.car-technical-guarantee 
+	.permalink__wrapper
+		margin-top 10px
+			
+
+	.contract-block
+		&__links
+			.btn
+				width 100%
+				margin-right 0
+				margin-bottom 10px
+				padding 17px 15px
+				&:last-child
+					margin-bottom 0
+		
+	// Page car
+	.car-params
+		padding-left 10px
+		padding-right 10px
+		
+	.car-characteristics__col
+		width 50%
+
+		
+	.car-information
+		margin-left -10px
+		margin-right -10px
+		&__item--block
+			padding 30px 10px
+
++max-screen(550px)
+	// Header
+	.header
+		padding-top 15px
+		padding-bottom 15px
+		.logo
+			img
+				max-width 140px
+		&-actions__row
+			width 250px
+			padding 25px 35px 35px 35px
+		
+
+			.logo
+				img
+					max-width 110px
+				
+		.btn__close
+			right 15px
+			top 30px
+		
+	.nav
+		padding-left 0
+		max-width 160px
+		
+		&__link
+			font-size 14px
+			
+		&__item
+			margin-bottom 30px
+			
+		&-sublist__link
+			font-size 12px
+		
+	
+	
+		
+	.header__links
+		display flex
+		flex-direction column
+		align-items flex-start
+		
+		.link-with-ic
+			padding-right 0
+			padding-left 25px
+			margin-right 0
+			margin-bottom 30px
+			&:last-child
+				margin-bottom 0
+				
+			&__ic
+				right auto
+				left 0
+	
+
+	// Search
+	.car-categories
+		&__mobile
+			ul
+				column-count 3
+				
+
+	.car-card-mini
+		max-width 100%
+		&__title
+			font-size 14px
+			margin-bottom 6px
+			line-height 17px
+			
+		&__price
+			font-size 12px
+			
+		&__content
+			padding 12px 30px 12px 20px
+		
+	.crediting-form__car-col
+		width 100%
+		
++max-screen(500px)
+	// Salons
+	.salons
+		max-width 300px
+
+	.salon-address
+		width 12px
+		height 17px
+		&:nth-child(1)
+			top 45px
+			left 23px
+		&:nth-child(2)
+			top 50px
+			left 35px
+		&:nth-child(3)
+			top 50px
+			left 80px
+			
+		&:nth-child(4)
+			left 30px
+			bottom 45px
+			
+		&:nth-child(5)
+			left 30px
+			bottom 20px
+
+
+	// Page car
+	
+	.car-characteristics__col
+		width 100%
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+			
+	.car-information__item--block
+		padding-bottom 30px
+		&_title
+			font-size 16px
+			line-height 19px
+			margin-bottom 15px
+		
+	.car-characteristics__list
+		margin-bottom 22px
+
++max-screen(400px)
+	// Search
+	.car-categories
+		&__mobile
+			ul
+				column-count 2
+				
++max-screen(370px)
+	// Page car
+	.car-advantage
+		font-size 12px
+		&__ic
+			width 75px
+			height 55px
+			background-size 75px 55px
+			
+	.car-information__advantages
+		padding-bottom 10px
+
++max-screen-height(550px)
+	.user-city__popup--overflow 
+		.logo,
+		.btn__close
+			display none
+			
+	// .popup__overflow
+	// 	padding 45px 10px
+		
+	.user-city
+		&__dropdown
+			padding 50px 10px 30px 10px
+			
+		&__popup
+			&--body
+				padding 15px
+			
+					

@@ -133,11 +133,14 @@ $(document).ready(function() {
 		label.addClass('is-active');
 	});
 
-	// $(document.body).on('click', function(e){
-	// 	if(!$(e.target).closest('.form-group__input--wrapper').length){
-	// 		$('.form-group__input--wrapper').removeClass('is-opened');
-	// 	}
-	// });
+
+
+
+	// User city
+	$('.js-close-user-city-popup-btn').on('click', function(e) {
+		e.preventDefault();
+		$('.js-user-city-popup').fadeOut(150);
+	});
 
 
 	$('.js-close-user-city-dropdown-btn').on('click',function(e) {
@@ -165,20 +168,22 @@ $(document).ready(function() {
 			$('.js-popup').fadeOut(300);
 		}
 
-		if(!dropdownContent.is(e.target) && dropdownContent.has(e.target).length === 0) {
-			$('html').removeClass('is-fixed');
-			$('.js-user-city-dropdown').fadeOut(300);
-		}
+		// if(!dropdownContent.is(e.target) && dropdownContent.has(e.target).length === 0) {
+		// 	$('html').removeClass('is-fixed');
+		// 	$('.js-user-city-dropdown').fadeOut(300);
+		// }
 
 
 
 	});
 
-	if(html < 1260) {
+	if(html < 1312) {
 		$('.user-city__block').on('click', function(e) {
 			e.preventDefault();
 
-			$(this).find('.user-city__dropdown--wrapper').fadeIn(300);
+
+
+			$('.footer').find('.user-city__dropdown--wrapper').fadeIn(300);
 			$('html').addClass('is-fixed');
 		});
 	}
@@ -356,11 +361,19 @@ $(document).ready(function() {
 		var wrapper = self.parents('section');
 
 		var carsSlider = new Swiper(self, {
-			slidesPerView: 3,
+			slidesPerView: 1,
 			spaceBetween: 0,
 			navigation: {
 				prevEl: wrapper.find('.js-cars-slider-btn-prev'),
 				nextEl: wrapper.find('.js-cars-slider-btn-next'),
+			},
+			breakpoints: {
+				1100: {
+					slidesPerView: 3
+				},
+				700: {
+					slidesPerView: 2
+				}
 			}
 		});
 	});
@@ -407,7 +420,7 @@ $(document).ready(function() {
 
 	var partnersSlider = new Swiper('.js-partners-slider', {
 		loop: true,
-		slidesPerView: 6,
+		slidesPerView: 2,
 		spaceBetween: 25,
 		autoplay: {
 			delay: 8000,
@@ -416,6 +429,20 @@ $(document).ready(function() {
 			prevEl: '.js-partners-slider-btn-prev',
 			nextEl: '.js-partners-slider-btn-next',
 		},
+		breakpoints: {
+			1500: {
+				slidesPerView: 6
+			},
+			1200: {
+				slidesPerView: 5
+			},
+			900: {
+				slidesPerView: 4
+			},
+			620: {
+				slidesPerView: 3
+			}
+		}
 	});
 
 	// Faqs
@@ -469,11 +496,6 @@ $(document).ready(function() {
 
 
 
-	// User city
-	$('.js-close-user-city-popup-btn').on('click', function(e) {
-		e.preventDefault();
-		$('.js-user-city-popup').fadeOut(150);
-	});
 
 	// Catalog filters
 	// $('.js-hide-aside-filters-btn').on('click', function(e) {
