@@ -133,7 +133,18 @@ $(document).ready(function() {
 		label.addClass('is-active');
 	});
 
+	$('.form-group__input--dropdown').on('click', function(e) {
+		var target = $(e.target);
 
+		var self = $(this);
+
+		if(target.prop('tagName') !== 'LI') {return;}
+
+		var text = target.html();
+
+		self.parents('.form-group__input--wrapper').find('.form-group__input').val(text).trigger('change');
+
+	});
 
 
 	// User city
