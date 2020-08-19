@@ -141,8 +141,11 @@ $(document).ready(function() {
 		if(target.prop('tagName') !== 'LI') {return;}
 
 		var text = target.html();
+		var value = target.attr('data-value');
 
-		self.parents('.form-group__input--wrapper').find('.form-group__input').val(text).trigger('change');
+		self.parents('.form-group__input--wrapper').find('.form-group__input').val(value).trigger('change');
+		console.log(self.parents('.form-group__input--wrapper').find('.form-group__input').val());
+		self.parents('.form-group__input--wrapper').find('.form-group__input--text').html(text).trigger('change');
 
 	});
 

@@ -81,6 +81,8 @@ input[type="search"]::-webkit-search-results-decoration
 				+ .arrow
 					display none
 					
+				
+					
 				&::-webkit-input-placeholder
 					color $grey-text-color
 				&::-moz-placeholder
@@ -89,6 +91,16 @@ input[type="search"]::-webkit-search-results-decoration
 					color $grey-text-color
 				&:-ms-input-placeholder
 					color $grey-text-color
+					
+			&--text
+				position absolute
+				display inline-block
+				font 14px $Reg
+				color $alternate-text-color
+				z-index 1
+				bottom 11px
+				left 15px
+				pointer-events none
 					
 			&--accent
 				font 14px $Bold
@@ -226,6 +238,7 @@ input[type="search"]::-webkit-search-results-decoration
 		&--with-label
 			padding 22px 15px 10px 15px
 			cursor pointer
+			color transparent
 		
 		&--label
 			display block

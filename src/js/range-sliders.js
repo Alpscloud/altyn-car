@@ -1,48 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 	// Price
-	// var priceRange = document.getElementById('priceRange');
 
-	// if (priceRange) {
-
-	// 	noUiSlider.create(priceRange, {
-	// 		connect: true,
-	// 		behaviour: 'tap',
-	// 		start: [0, 1000000],
-	// 		range: {
-	// 			'min': [0],
-	// 			'max': [1000000]
-	// 		}
-	// 	});
-
-	// 	var priceInputs = [
-	// 		document.querySelector('.js-input-price-min'), // 0
-	// 		document.querySelector('.js-input-price-max')  // 1
-	// 	];
-
-
-	// 	priceRange.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
-	// 		priceInputs[handle].value = values[handle];
-	
-	// 	});
-
-	// 	priceInputs.forEach(function(input, handle) {
-	// 		input.addEventListener('change', function() {
-	
-
-	// 			priceRange.noUiSlider.setHandle(handle, this.value);
-	// 		});
-	// 	});
-	// }
 
 	var priceRangeInputs = document.querySelectorAll('.js-range-input');
 	
 
-	if(priceRangeInputs.length > 0) {
+	if(priceRangeInputs) {
 
-		for(var i = 0; priceRangeInputs.length > 0; i++) {
-			var priceRangeInput = priceRangeInputs[i];
-
-			var priceRangeInputsParent = priceRangeInput.closest('.js-range-inputs-parent');
+		priceRangeInputs.forEach(function(input) {
+			var priceRangeInputsParent = input.closest('.js-range-inputs-parent');
 
 
 
@@ -53,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-			noUiSlider.create(priceRangeInput, {
+			noUiSlider.create(input, {
 				connect: true,
 				behaviour: 'tap',
 				start: [0, 1000000],
@@ -63,22 +29,22 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			});
 
-			priceRangeInput.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+			input.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
 				priceInputs[handle].value = values[handle];
 			});
 
 			priceInputs.forEach(function(input, handle) {
 
 				input.addEventListener('change', function() {
-					priceRangeInput.noUiSlider.setHandle(handle, this.value);
+					input.noUiSlider.setHandle(handle, this.value);
 				});
 
 			});
+		});
+	};
 
 
-		}
-
-	}
+	
 
 	// Crediting
 	var creditTermRange = document.querySelector('.js-credit-term-range');
