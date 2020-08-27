@@ -109,6 +109,7 @@ $(document).ready(function() {
 		$('html').addClass('is-fixed');
 	});
 
+
 	$('.form-group__input').on('blur', function(e) {
 		var value = $(this).val();
 		var wrapper = $(this).parents('.form-group__input--wrapper');
@@ -125,6 +126,21 @@ $(document).ready(function() {
 		}
 	});
 
+	// $(document).on('click', function(e) {
+	// 	var inputDd = $('.form-group__input--dropdown');
+
+		
+
+	// 	if(inputDd.has(e.target).length === 0){
+	// 		var wrapper = inputDd.parents('.form-group__input--wrapper');
+
+	// 		console.log(wrapper)
+	// 		// if(.hasClass('is-active')) {
+	// 		// 	inputDd.parents('.form-group__input--wrapper').removeClass('is-active');
+	// 		// }
+	// 	}
+	// });
+
 	$('.form-group__input').on('focus', function(e) {
 		var wrapper = $(this).parents('.form-group__input--wrapper');
 		var label = $(this).parents('label');
@@ -133,19 +149,33 @@ $(document).ready(function() {
 		label.addClass('is-active');
 	});
 
-	$('.form-group__input--dropdown').on('click', function(e) {
-		var target = $(e.target);
+	// $('.form-group__input--dropdown').on('click', function(e) {
+	// 	var target = $(e.target);
 
-		var self = $(this);
+	// 	var self = $(this);
 
-		if(target.prop('tagName') !== 'LI') {return;}
+	// 	if(target.prop('tagName') !== 'LI' || target.prop('tagName') !== 'DIV') {return;}
+		
+	// 	var text = target.html();
+	// 	var value = target.attr('data-value');
 
-		var text = target.html();
-		var value = target.attr('data-value');
+	// 	self.parents('.form-group__input--wrapper').find('.form-group__input').val(value).trigger('change');
+	// 	self.parents('.form-group__input--wrapper').find('.form-group__input--text').html(text).trigger('change');
 
-		self.parents('.form-group__input--wrapper').find('.form-group__input').val(value).trigger('change');
-		console.log(self.parents('.form-group__input--wrapper').find('.form-group__input').val());
-		self.parents('.form-group__input--wrapper').find('.form-group__input--text').html(text).trigger('change');
+	// });
+
+	$('select').selectize();
+
+	$(document).on('click', 'div.selectize-input div.item', function(e) {
+    var select = $('select').selectize();
+    var selectSizeControl = select[0].selectize;
+    // 1. Get the value
+    var selectedValue = $(this).attr("data-value");
+    // 2. Remove the option 
+    select[0].selectize.removeItem(selectedValue);
+
+    select[0].selectize.refreshItems();
+    select[0].selectize.refreshOptions();
 
 	});
 

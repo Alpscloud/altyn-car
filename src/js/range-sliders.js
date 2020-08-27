@@ -22,24 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
 			noUiSlider.create(input, {
 				connect: true,
 				behaviour: 'tap',
-				start: [0, 1000000],
+				start: [priceInputs[0].value, priceInputs[1].value],
 				range: {
 					'min': [0],
-					'max': [1000000]
+					'max': [100]
 				}
 			});
 
-			input.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+			input.noUiSlider.on('update', function (values, handle) {
 				priceInputs[handle].value = values[handle];
 			});
 
-			priceInputs.forEach(function(input, handle) {
-
-				input.addEventListener('change', function() {
-					input.noUiSlider.setHandle(handle, this.value);
+			priceInputs.forEach(function(item) {
+				item.addEventListener('change',function() {
+					input.noUiSlider.set(this.value);
 				});
-
 			});
+
+			
+
+			
 		});
 	};
 

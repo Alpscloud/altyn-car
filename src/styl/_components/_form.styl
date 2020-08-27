@@ -110,10 +110,22 @@ input[type="search"]::-webkit-search-results-decoration
 				position relative
 				text-align left
 				.arrow
+					height 47px
+					right 1px
+					width 35px
+					border-top-right-radius 6px
+					border-bottom-right-radius 6px
+					background-color $basic-white-color
 					position absolute
 					vertical-center()
-					right 15px
+					
 					pointer-events none
+					z-index 6
+					svg
+						width 10px
+						height 7px
+						position absolute
+						position-center()
 					
 		
 					
@@ -238,7 +250,7 @@ input[type="search"]::-webkit-search-results-decoration
 		&--with-label
 			padding 22px 15px 10px 15px
 			cursor pointer
-			color transparent
+			// color transparent
 		
 		&--label
 			display block
